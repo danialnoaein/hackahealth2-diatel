@@ -120,6 +120,8 @@ public class DLNotificationScheduler{
             
             content.body = notification.alertBody!
             
+            content.subtitle = notification.subTitle!
+            
             content.sound = (notification.soundName == nil) ? UNNotificationSound.default() : UNNotificationSound.init(named: notification.soundName!)
             
             if !(notification.attachments == nil){ content.attachments = notification.attachments! }
@@ -147,12 +149,12 @@ public class DLNotificationScheduler{
     
     // You have to manually keep in mind ios 64 notification limit
     
-    public func repeatsFromToDate (identifier:String, alertTitle:String, alertBody: String, fromDate: Date, toDate: Date, interval: Double, repeats: Repeats) {
+    public func repeatsFromToDate (identifier:String, alertTitle:String, alertBody: String, fromDate: Date, toDate: Date, interval: Double, repeats: Repeats,subtitle: String) {
         
         
         
         
-        let notification = DLNotification(identifier: identifier, alertTitle: alertTitle, alertBody: alertBody, date: fromDate, repeats: repeats)
+        let notification = DLNotification(identifier: identifier, alertTitle: alertTitle, alertBody: alertBody, date: fromDate, repeats: repeats,subTitle: subtitle)
         
         // Create multiple Notifications
         
@@ -171,7 +173,7 @@ public class DLNotificationScheduler{
             
             let identifier = identifier + String(i + 1)
             
-            let notification = DLNotification(identifier: identifier, alertTitle: alertTitle, alertBody: alertBody, date: nextDate, repeats: repeats)
+            let notification = DLNotification(identifier: identifier, alertTitle: alertTitle, alertBody: alertBody, date: nextDate, repeats: repeats,subTitle: subtitle)
             
             self.scheduleNotification(notification: notification)
         }
@@ -252,6 +254,8 @@ public class DLNotification {
     
     var alertTitle: String?
     
+    var subTitle: String?
+    
     var soundName: String?
     
     var fireDate: Date?
@@ -270,13 +274,14 @@ public class DLNotification {
     
     var region:CLRegion?
     
-    public init (identifier:String, alertTitle:String, alertBody: String, date: Date?, repeats: Repeats ) {
+    public init (identifier:String, alertTitle:String, alertBody: String, date: Date?, repeats: Repeats,subTitle: String ) {
         
         self.alertBody = alertBody
         self.alertTitle = alertTitle
         self.fireDate = date
         self.repeatInterval = repeats
         self.identifier = identifier
+        self.subTitle = subTitle
         if (repeats == .None) {
             self.repeats = false
         } else {

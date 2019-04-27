@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2YC-bt-hjM">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,45 +9,191 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Shabnam-Bold.ttf">
+            <string>Shabnam-Bold</string>
+        </array>
+        <array key="Shabnam.ttf">
+            <string>Shabnam</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--یاد آور-->
+        <!--لیست یاد آورها-->
         <scene sceneID="iIv-zr-j7Z">
             <objects>
-                <viewController id="kM6-7H-h1v" sceneMemberID="viewController">
+                <viewController id="kM6-7H-h1v" customClass="Reminder" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4hv-Sm-NPH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KwV-v4-LMe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="یاد آور" image="alarm-bell" id="mci-ou-atT"/>
+                    <navigationItem key="navigationItem" title="لیست یاد آورها" id="CjK-HH-y9D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qv-n4-qLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1041" y="-778"/>
+            <point key="canvasLocation" x="1881" y="-779"/>
+        </scene>
+        <!--Addreminder-->
+        <scene sceneID="87Z-NV-5la">
+            <objects>
+                <viewController storyboardIdentifier="addreminder" id="2mv-Pb-Rdf" customClass="Addreminder" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BOL-i1-cyx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fgm-4p-P6B"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Uo-wh-4kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="-780"/>
         </scene>
         <!--چکاپ-->
         <scene sceneID="D2q-CQ-ifU">
             <objects>
                 <viewController id="cnT-cw-xYw" customClass="Checkup" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bZc-uW-vrt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agq-Fh-JZh">
+                                <rect key="frame" x="16" y="159" width="288" height="250"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="نتیجه این چکاپ صرفا جهت آگاه سازی شما از قند خون لحظه ای شماست" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ieD-x1-reP">
+                                        <rect key="frame" x="0.0" y="8" width="288" height="100"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="U4R-c9-pbS"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mns-Ds-Op5">
+                                        <rect key="frame" x="10" y="192" width="268" height="50"/>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.83529411764705885" blue="0.36078431372549019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="U3p-pT-VVp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="17"/>
+                                        <state key="normal" title="شروع چکاپ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addcheckup:" destination="cnT-cw-xYw" eventType="touchUpInside" id="3CS-fH-rFB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Mns-Ds-Op5" firstAttribute="leading" secondItem="agq-Fh-JZh" secondAttribute="leading" constant="10" id="0T4-Qr-Sgs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mns-Ds-Op5" secondAttribute="bottom" constant="8" id="5Df-nE-t0P"/>
+                                    <constraint firstAttribute="trailing" secondItem="ieD-x1-reP" secondAttribute="trailing" id="8d8-8M-HYv"/>
+                                    <constraint firstAttribute="height" constant="250" id="e9K-Ue-SFA"/>
+                                    <constraint firstAttribute="width" constant="288" id="fS5-Ie-bCP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mns-Ds-Op5" secondAttribute="trailing" constant="10" id="jpl-X6-FW3"/>
+                                    <constraint firstItem="ieD-x1-reP" firstAttribute="leading" secondItem="agq-Fh-JZh" secondAttribute="leading" id="kFX-GI-dur"/>
+                                    <constraint firstItem="ieD-x1-reP" firstAttribute="top" secondItem="agq-Fh-JZh" secondAttribute="top" constant="8" id="uwt-j2-HtV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="agq-Fh-JZh" firstAttribute="centerY" secondItem="bZc-uW-vrt" secondAttribute="centerY" id="15A-r9-ra0"/>
+                            <constraint firstItem="agq-Fh-JZh" firstAttribute="centerX" secondItem="bZc-uW-vrt" secondAttribute="centerX" id="hsJ-8M-Wz1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VgS-tS-xHX"/>
                     </view>
                     <navigationItem key="navigationItem" title="چکاپ" id="fo7-ZR-6nD"/>
+                    <connections>
+                        <outlet property="DescriptionText" destination="ieD-x1-reP" id="KBp-ia-3iK"/>
+                        <outlet property="addbtn" destination="Mns-Ds-Op5" id="Gls-ln-DxI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5f-Mo-GPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="-7"/>
+            <point key="canvasLocation" x="1880.625" y="-8.4507042253521121"/>
+        </scene>
+        <!--Addcheckup-->
+        <scene sceneID="GQn-Fv-w63">
+            <objects>
+                <viewController storyboardIdentifier="addcheckup" id="7fq-CI-BuU" customClass="Addcheckup" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cdq-5a-MNB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2h-y1-ILp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" چکاپ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21s-eV-Kex">
+                                        <rect key="frame" x="105" y="17" width="110" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="OKY-8G-1yA"/>
+                                            <constraint firstAttribute="height" constant="30" id="q2P-yy-avi"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2F-K2-IAN">
+                                        <rect key="frame" x="9" y="10" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="BO8-sK-Mr1"/>
+                                            <constraint firstAttribute="width" constant="44" id="Ls9-Y3-Jgx"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="dismiss_butt_white">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeViewConroller:" destination="7fq-CI-BuU" eventType="touchUpInside" id="F1e-Ee-91l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEr-bD-Hg7">
+                                        <rect key="frame" x="266" y="17" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="AKE-y8-PmN"/>
+                                            <constraint firstAttribute="height" constant="30" id="tdD-e7-uwY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="16"/>
+                                        <state key="normal" title="ذخیره">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.38823529410000002" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="21s-eV-Kex" firstAttribute="centerX" secondItem="o2h-y1-ILp" secondAttribute="centerX" id="2dr-d6-1Fo"/>
+                                    <constraint firstItem="q2F-K2-IAN" firstAttribute="leading" secondItem="o2h-y1-ILp" secondAttribute="leading" constant="9" id="Ny0-MW-NdK"/>
+                                    <constraint firstItem="21s-eV-Kex" firstAttribute="centerY" secondItem="o2h-y1-ILp" secondAttribute="centerY" id="SVr-WH-0PL"/>
+                                    <constraint firstAttribute="height" constant="64" id="e4b-fB-Gid"/>
+                                    <constraint firstItem="q2F-K2-IAN" firstAttribute="top" secondItem="o2h-y1-ILp" secondAttribute="top" constant="10" id="fAi-Zq-MSi"/>
+                                    <constraint firstAttribute="bottom" secondItem="q2F-K2-IAN" secondAttribute="bottom" constant="10" id="p9w-2C-SVH"/>
+                                    <constraint firstAttribute="trailing" secondItem="XEr-bD-Hg7" secondAttribute="trailing" constant="8" id="sAm-yn-KO6"/>
+                                    <constraint firstItem="XEr-bD-Hg7" firstAttribute="centerY" secondItem="21s-eV-Kex" secondAttribute="centerY" id="twi-O2-YnL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o2h-y1-ILp" firstAttribute="leading" secondItem="71R-wr-dhl" secondAttribute="leading" id="Ucy-9H-3Kb"/>
+                            <constraint firstItem="o2h-y1-ILp" firstAttribute="trailing" secondItem="71R-wr-dhl" secondAttribute="trailing" id="cCa-ZF-RUq"/>
+                            <constraint firstItem="o2h-y1-ILp" firstAttribute="top" secondItem="Cdq-5a-MNB" secondAttribute="top" id="iek-gx-IAa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="71R-wr-dhl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KkO-7f-Lle" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2643.75" y="-9.5070422535211261"/>
         </scene>
         <!--پروفایل-->
         <scene sceneID="APZ-qi-bif">
             <objects>
                 <viewController id="g03-Zk-HYk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VCf-qV-MsL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wWQ-q8-zEG"/>
@@ -63,7 +209,7 @@
             <objects>
                 <viewController id="Rlv-3j-1Hv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YHA-kq-UaN">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6rH-gN-Yuy"/>
@@ -86,7 +232,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BPr-9V-Qwu" kind="relationship" relationship="viewControllers" id="9Km-iN-0Xw"/>
-                        <segue destination="kM6-7H-h1v" kind="relationship" relationship="viewControllers" id="s57-7T-DnI"/>
+                        <segue destination="7PG-SV-Wg0" kind="relationship" relationship="viewControllers" id="s57-7T-DnI"/>
                         <segue destination="U6H-oi-QtA" kind="relationship" relationship="viewControllers" id="FZg-uy-q4f"/>
                         <segue destination="g03-Zk-HYk" kind="relationship" relationship="viewControllers" id="Pvz-Xv-rxF"/>
                     </connections>
@@ -102,7 +248,7 @@
                     <tabBarItem key="tabBarItem" title="آموزش" image="reading" id="N09-bb-RVq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="reT-Oz-bnJ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="20"/>
@@ -124,7 +270,7 @@
                     <tabBarItem key="tabBarItem" title="چکاپ" image="glucose-meter " id="uuO-dM-VCJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7sr-IC-C9C">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -136,9 +282,32 @@
             </objects>
             <point key="canvasLocation" x="1040" y="-6.2968515742128943"/>
         </scene>
+        <!--یاد آور-->
+        <scene sceneID="WwG-2O-aun">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7PG-SV-Wg0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="یاد آور" image="alarm-bell" id="mci-ou-atT"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sEO-Fx-h2t">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kM6-7H-h1v" kind="relationship" relationship="rootViewController" id="oO4-KP-Feg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fnb-vg-TIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.625" y="-778.52112676056333"/>
+        </scene>
     </scenes>
     <resources>
         <image name="alarm-bell" width="30" height="30"/>
+        <image name="dismiss_butt_white" width="44" height="44"/>
         <image name="glucose-meter " width="30" height="30"/>
         <image name="reading" width="30" height="30"/>
     </resources>

@@ -22,6 +22,11 @@
 		D18AD32822744A3A0010496A /* Shabnam-FD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D18AD32222744A3A0010496A /* Shabnam-FD.ttf */; };
 		D18AD32B22744C2E0010496A /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD32922744C2E0010496A /* Extentions.swift */; };
 		D18AD32C22744C2E0010496A /* RightimageTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD32A22744C2E0010496A /* RightimageTextfield.swift */; };
+		D18AD332227467AD0010496A /* Addcheckup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD331227467AD0010496A /* Addcheckup.swift */; };
+		D18AD334227470830010496A /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD333227470830010496A /* Reminder.swift */; };
+		D18AD336227470950010496A /* Addreminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD335227470950010496A /* Addreminder.swift */; };
+		D18AD33A227472140010496A /* NotificationEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD338227472140010496A /* NotificationEntity+CoreDataClass.swift */; };
+		D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD339227472140010496A /* NotificationEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		D18AD32222744A3A0010496A /* Shabnam-FD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shabnam-FD.ttf"; sourceTree = "<group>"; };
 		D18AD32922744C2E0010496A /* Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 		D18AD32A22744C2E0010496A /* RightimageTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightimageTextfield.swift; sourceTree = "<group>"; };
+		D18AD331227467AD0010496A /* Addcheckup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addcheckup.swift; sourceTree = "<group>"; };
+		D18AD333227470830010496A /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		D18AD335227470950010496A /* Addreminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addreminder.swift; sourceTree = "<group>"; };
+		D18AD338227472140010496A /* NotificationEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D18AD339227472140010496A /* NotificationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D39FE661691D28DC905A0157 /* Pods-Diatel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diatel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diatel/Pods-Diatel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +106,7 @@
 		D18AD302227434CB0010496A /* Diatel */ = {
 			isa = PBXGroup;
 			children = (
+				D18AD337227471C60010496A /* CoreData */,
 				D18AD31B22744A040010496A /* Assests */,
 				D18AD31A227448E80010496A /* Extentions */,
 				D18AD319227448E00010496A /* View */,
@@ -169,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				D18AD305227434CB0010496A /* Checkup.swift */,
+				D18AD331227467AD0010496A /* Addcheckup.swift */,
 			);
 			path = "Check-UP";
 			sourceTree = "<group>";
@@ -176,6 +188,8 @@
 		D18AD32F227452850010496A /* Reminder */ = {
 			isa = PBXGroup;
 			children = (
+				D18AD333227470830010496A /* Reminder.swift */,
+				D18AD335227470950010496A /* Addreminder.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -185,6 +199,15 @@
 			children = (
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D18AD337227471C60010496A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D18AD338227472140010496A /* NotificationEntity+CoreDataClass.swift */,
+				D18AD339227472140010496A /* NotificationEntity+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,8 +356,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D18AD32B22744C2E0010496A /* Extentions.swift in Sources */,
+				D18AD33A227472140010496A /* NotificationEntity+CoreDataClass.swift in Sources */,
+				D18AD334227470830010496A /* Reminder.swift in Sources */,
 				D18AD306227434CB0010496A /* Checkup.swift in Sources */,
+				D18AD336227470950010496A /* Addreminder.swift in Sources */,
 				D18AD32C22744C2E0010496A /* RightimageTextfield.swift in Sources */,
+				D18AD332227467AD0010496A /* Addcheckup.swift in Sources */,
+				D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */,
 				D18AD30C227434CB0010496A /* Diatel.xcdatamodeld in Sources */,
 				D18AD304227434CB0010496A /* AppDelegate.swift in Sources */,
 			);
