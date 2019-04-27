@@ -10,6 +10,7 @@
     <color name="colorAccentSecond">#FBC02D</color>
 
     <color name="colorError">#b71c1c</color>
+    <color name="colorSuccessLight">#D4F1D6</color>
     <color name="colorSuccess">#2FAF39</color>
     <color name="colorSuccessDark">#1B5E20</color>
     <color name="colorBackground">#f5f5f5</color>
@@ -29,10 +30,5 @@
 
     <color name="loading_bg">#7dcccccc</color>
 
-    <!-- Screens background color-->
-    <color name="bg_screen1">#f64c73</color>
-    <color name="bg_screen2">#20d2bb</color>
-    <color name="bg_screen3">#3395ff</color>
-    <color name="bg_screen4">#c873f4</color>
 
 </resources>

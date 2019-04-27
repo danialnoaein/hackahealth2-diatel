@@ -105,23 +105,23 @@ ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidMan
 	android:name
 		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:17:19-53
 activity#hackahealth.diatel.SplashActivity
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:18:9-20:20
 	android:name
 		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:18:19-49
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:19:13-23:29
-action#android.intent.action.MAIN
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:20:17-69
-	android:name
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:20:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:22:17-77
-	android:name
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:22:27-74
 activity#hackahealth.diatel.MainActivity
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:25:9-27:20
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:name
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:25:19-47
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:21:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:22:13-26:29
+action#android.intent.action.MAIN
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:23:17-69
+	android:name
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:23:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml

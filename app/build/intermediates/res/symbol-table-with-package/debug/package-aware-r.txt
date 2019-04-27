@@ -603,10 +603,6 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
-color bg_screen1
-color bg_screen2
-color bg_screen3
-color bg_screen4
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -630,6 +626,7 @@ color colorPrimaryDark
 color colorPrimaryDark_90
 color colorSuccess
 color colorSuccessDark
+color colorSuccessLight
 color colorWhiteAccent
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
@@ -1030,6 +1027,8 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable bg_btn_success
 drawable bg_edittext_success
+drawable bg_glucometer_guide_btn
+drawable bg_immediate_checkup_btn
 drawable bg_splash_gradient
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1042,7 +1041,9 @@ drawable ic_alarm_bell
 drawable ic_alarm_bell_primary
 drawable ic_arrow_right
 drawable ic_avatar
+drawable ic_dermatology
 drawable ic_first_aid_kit
+drawable ic_glucometer
 drawable ic_glucose_meter
 drawable ic_glucose_meter_primary
 drawable ic_launcher_background
@@ -1223,6 +1224,7 @@ id right
 id right_icon
 id right_side
 id rv_bottom_nv
+id rv_main_checkups
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1290,6 +1292,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_no_checkup
 id tv_title
 id tv_toast
 id uniform
@@ -1373,7 +1376,7 @@ layout fragment_first_visit_slide_four
 layout fragment_first_visit_slide_one
 layout fragment_first_visit_slide_three
 layout fragment_first_visit_slide_two
-layout fragment_main_educational
+layout fragment_main_checkup
 layout fragment_main_reminder
 layout fragment_main_train_center
 layout layout_custom_toast

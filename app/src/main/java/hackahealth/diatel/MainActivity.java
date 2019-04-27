@@ -13,7 +13,7 @@ import com.ncapdevi.fragnav.FragNavController;
 import java.util.ArrayList;
 import java.util.List;
 
-import adapter.MenuRVAdapter;
+import adapters.MenuRVAdapter;
 import fragments.main_fragments.CheckupFragment;
 import fragments.main_fragments.ReminderFragment;
 import fragments.main_fragments.TrainCenterFragment;

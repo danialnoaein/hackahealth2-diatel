@@ -56,6 +56,10 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_glucometer.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\ic_glucometer.xml"
+    },
+    {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_btn_colored_text_material.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_immediate_checkup_btn.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\bg_immediate_checkup_btn.xml"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
@@ -142,10 +150,6 @@
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main_educational.xml.flat",
-        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\layout\\fragment_main_educational.xml"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
@@ -512,16 +516,16 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-28.0.0.aar\\ef9c5d88521cf62bba2dbfc3282fa598\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
-        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\layout\\abc_action_bar_title_item.xml"
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_layout_snackbar.xml.flat",
@@ -706,6 +710,10 @@
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_glucometer_guide_btn.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\bg_glucometer_guide_btn.xml"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1616,6 +1624,10 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\color\\design_error.xml"
     },
     {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_dermatology.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\ic_dermatology.xml"
+    },
+    {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\drawable-xhdpi-v4\\design_ic_visibility_off.png"
     },
@@ -1862,6 +1874,10 @@
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu_item.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_main_checkup.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\layout\\fragment_main_checkup.xml"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
