@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Shabnam-Bold.ttf">
+            <string>Shabnam-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectioncell" id="gTV-IL-0wX" customClass="TraningCell" customModule="Diatel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cc-1a-f95">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28D-De-mcO">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="28D-De-mcO" secondAttribute="trailing" id="14p-6J-cmI"/>
+                            <constraint firstAttribute="bottom" secondItem="28D-De-mcO" secondAttribute="bottom" id="O3B-N3-1eX"/>
+                            <constraint firstItem="28D-De-mcO" firstAttribute="leading" secondItem="6Cc-1a-f95" secondAttribute="leading" id="ch4-yU-bMs"/>
+                            <constraint firstItem="28D-De-mcO" firstAttribute="top" secondItem="6Cc-1a-f95" secondAttribute="top" id="dzd-B0-yvp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6Cc-1a-f95" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="e5w-y6-mHu"/>
+                <constraint firstAttribute="bottom" secondItem="6Cc-1a-f95" secondAttribute="bottom" id="keI-WK-yDQ"/>
+                <constraint firstItem="6Cc-1a-f95" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rMQ-Mn-CgN"/>
+                <constraint firstAttribute="trailing" secondItem="6Cc-1a-f95" secondAttribute="trailing" id="z4i-HA-oRb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="titlebtn" destination="28D-De-mcO" id="Am5-N2-DwK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -376,7 +376,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wWQ-q8-zEG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="پروفایل" id="ZMd-g3-pgv"/>
+                    <tabBarItem key="tabBarItem" title="پروفایل" image="profile" id="ZMd-g3-pgv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhx-pp-qNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -390,8 +390,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nW4-fe-vp7">
-                                <rect key="frame" x="16" y="84" width="288" height="435"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nW4-fe-vp7">
+                                <rect key="frame" x="16" y="79" width="288" height="426"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WDx-pH-rgq">
                                     <size key="itemSize" width="146" height="144"/>
@@ -401,23 +401,38 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectioncell" id="5j0-Dr-JAg">
-                                        <rect key="frame" x="74" y="0.0" width="140" height="140"/>
+                                        <rect key="frame" x="158" y="0.0" width="130" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xa2-Wz-xl6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
+                                                    <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="16"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
                                         </view>
-                                        <size key="customSize" width="140" height="140"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="xa2-Wz-xl6" secondAttribute="bottom" id="0bG-7M-ojM"/>
+                                            <constraint firstItem="xa2-Wz-xl6" firstAttribute="top" secondItem="5j0-Dr-JAg" secondAttribute="top" id="7kx-Nz-3W7"/>
+                                            <constraint firstAttribute="trailing" secondItem="xa2-Wz-xl6" secondAttribute="trailing" id="dcM-Pu-DPU"/>
+                                            <constraint firstItem="xa2-Wz-xl6" firstAttribute="leading" secondItem="5j0-Dr-JAg" secondAttribute="leading" id="zjO-cR-koT"/>
+                                        </constraints>
+                                        <size key="customSize" width="130" height="130"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nW4-fe-vp7" firstAttribute="leading" secondItem="6rH-gN-Yuy" secondAttribute="leading" constant="16" id="MMR-eX-o4f"/>
-                            <constraint firstItem="nW4-fe-vp7" firstAttribute="top" secondItem="6rH-gN-Yuy" secondAttribute="top" constant="20" id="bsm-Mj-ucg"/>
-                            <constraint firstItem="6rH-gN-Yuy" firstAttribute="trailing" secondItem="nW4-fe-vp7" secondAttribute="trailing" constant="16" id="jMW-pX-bEP"/>
-                            <constraint firstItem="nW4-fe-vp7" firstAttribute="bottom" secondItem="6rH-gN-Yuy" secondAttribute="bottom" id="wox-uV-mHe"/>
+                            <constraint firstItem="6rH-gN-Yuy" firstAttribute="bottom" secondItem="nW4-fe-vp7" secondAttribute="bottom" constant="14" id="L5k-dc-hbR"/>
+                            <constraint firstItem="nW4-fe-vp7" firstAttribute="top" secondItem="6rH-gN-Yuy" secondAttribute="top" constant="15" id="aiO-9o-fJ8"/>
+                            <constraint firstItem="nW4-fe-vp7" firstAttribute="leading" secondItem="6rH-gN-Yuy" secondAttribute="leading" constant="16" id="eIm-kE-qS5"/>
+                            <constraint firstItem="6rH-gN-Yuy" firstAttribute="trailing" secondItem="nW4-fe-vp7" secondAttribute="trailing" constant="16" id="iho-eH-lT3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6rH-gN-Yuy"/>
                     </view>
@@ -482,6 +497,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7sr-IC-C9C">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="20"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -521,6 +539,7 @@
         <image name="alarm-clock-" width="96" height="96"/>
         <image name="dismiss_butt_white" width="44" height="44"/>
         <image name="glucose-meter " width="30" height="30"/>
+        <image name="profile" width="30" height="30"/>
         <image name="reading" width="30" height="30"/>
     </resources>
 </document>
