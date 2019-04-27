@@ -42,6 +42,7 @@ class Addreminder: UIViewController {
         patientName.layer.cornerRadius = patientName.frame.height / 2
         notificationName.layer.cornerRadius = patientName.frame.height / 2
         notificationDescription.layer.cornerRadius = patientName.frame.height / 2
+        backgroundPattern.clipsToBounds = true
         self.navigationItem.title = "افزودن یادآور"
         
         

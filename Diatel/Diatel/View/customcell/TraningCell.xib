@@ -27,21 +27,19 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cc-1a-f95">
                         <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28D-De-mcO">
-                                <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzI-Qc-9Ce">
+                                <rect key="frame" x="4" y="53.5" width="122" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="17"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="28D-De-mcO" secondAttribute="trailing" id="14p-6J-cmI"/>
-                            <constraint firstAttribute="bottom" secondItem="28D-De-mcO" secondAttribute="bottom" id="O3B-N3-1eX"/>
-                            <constraint firstItem="28D-De-mcO" firstAttribute="leading" secondItem="6Cc-1a-f95" secondAttribute="leading" id="ch4-yU-bMs"/>
-                            <constraint firstItem="28D-De-mcO" firstAttribute="top" secondItem="6Cc-1a-f95" secondAttribute="top" id="dzd-B0-yvp"/>
+                            <constraint firstAttribute="trailing" secondItem="yzI-Qc-9Ce" secondAttribute="trailing" constant="4" id="0Os-oe-xQw"/>
+                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="leading" secondItem="6Cc-1a-f95" secondAttribute="leading" constant="4" id="D6k-pn-HY4"/>
+                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="centerX" secondItem="6Cc-1a-f95" secondAttribute="centerX" id="g0K-9Z-CQo"/>
+                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="centerY" secondItem="6Cc-1a-f95" secondAttribute="centerY" id="gKR-BC-Wia"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -54,8 +52,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
-                <outlet property="titlebtn" destination="28D-De-mcO" id="Am5-N2-DwK"/>
+                <outlet property="titleText" destination="yzI-Qc-9Ce" id="MPD-Ku-Bbs"/>
             </connections>
+            <point key="canvasLocation" x="-192" y="48"/>
         </collectionViewCell>
     </objects>
 </document>
