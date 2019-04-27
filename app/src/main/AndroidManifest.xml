@@ -15,7 +15,6 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".ImmediateCheckupActivity"/>
         <activity android:name=".AddReminderActivity" />
-        <activity android:name=".ArticlesActivity" />
         <activity android:name=".FirstVisitActivity" />
         <activity android:name=".SplashActivity">
 

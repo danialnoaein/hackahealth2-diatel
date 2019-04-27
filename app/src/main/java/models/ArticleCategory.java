@@ -41,12 +41,12 @@ public class ArticleCategory {
     public static List<ArticleCategory> getArticleCategories() {
         List<ArticleCategory> list = new ArrayList<>();
 
-        list.add( new ArticleCategory(0 , "درمان و پیشگیری" , "https://www.basiratgroup.com/wp-content/uploads/2019/02/Medical-Old-2-750x430.jpg"));
-        list.add( new ArticleCategory(0 , "تغذیه و رژیم" , "https://www.basiratgroup.com/wp-content/uploads/2019/02/Medical-Old-2-750x430.jpg"));
-        list.add( new ArticleCategory(0 , "علائم بالینی" , "https://www.basiratgroup.com/wp-content/uploads/2019/02/Medical-Old-2-750x430.jpg"));
-        list.add( new ArticleCategory(0 , "داروخانه" , "https://www.basiratgroup.com/wp-content/uploads/2019/02/Medical-Old-2-750x430.jpg"));
-        list.add( new ArticleCategory(0 , "بیماری های مرتبط" , "https://www.basiratgroup.com/wp-content/uploads/2019/02/Medical-Old-2-750x430.jpg"));
-        list.add( new ArticleCategory(0 , "مصاحبه پزشکان" , "https://www.basiratgroup.com/wp-content/uploads/2019/02/Medical-Old-2-750x430.jpg"));
+        list.add( new ArticleCategory(0 , "درمان و پیشگیری" , "http://0pc.ir/apppics/cheap-darman.png"));
+        list.add( new ArticleCategory(0 , "تغذیه و رژیم" , "http://0pc.ir/apppics/cheap-t.png"));
+        list.add( new ArticleCategory(0 , "علائم بالینی" , "http://0pc.ir/apppics/cheap-balini.png"));
+        list.add( new ArticleCategory(0 , "داروخانه" , "http://0pc.ir/apppics/cheap-pharmacy.png"));
+        list.add( new ArticleCategory(0 , "بیماری های مرتبط" , "http://0pc.ir/apppics/cheap-bimari.png"));
+        list.add( new ArticleCategory(0 , "مصاحبه پزشکان" , "http://0pc.ir/apppics/cheap-visit.png"));
 
         return list;
     }

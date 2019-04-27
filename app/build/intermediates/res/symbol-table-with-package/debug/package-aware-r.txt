@@ -1176,7 +1176,6 @@ id group_divider
 id groups
 id home
 id homeAsUp
-id ib_back
 id icon
 id icon_group
 id ifRoom
@@ -1195,6 +1194,7 @@ id line1
 id line3
 id listMode
 id list_item
+id ll_im_checkup
 id ll_item_container
 id ll_next_fragment
 id ll_toast
@@ -1229,7 +1229,6 @@ id right
 id right_icon
 id right_side
 id rv_article_categories
-id rv_articles
 id rv_bottom_nv
 id rv_main_checkups
 id save_image_matrix
@@ -1291,7 +1290,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1314,7 +1312,6 @@ id vp_slides
 id withText
 id wrap
 id wrap_content
-id yv_category_title
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1363,7 +1360,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_reminder
-layout activity_articles
 layout activity_first_visit
 layout activity_immediate_checkup
 layout activity_main

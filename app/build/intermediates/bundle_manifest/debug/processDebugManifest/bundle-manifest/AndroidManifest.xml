@@ -22,7 +22,6 @@
         android:theme="@style/AppTheme" >
         <activity android:name="hackahealth.diatel.ImmediateCheckupActivity" />
         <activity android:name="hackahealth.diatel.AddReminderActivity" />
-        <activity android:name="hackahealth.diatel.ArticlesActivity" />
         <activity android:name="hackahealth.diatel.FirstVisitActivity" />
         <activity android:name="hackahealth.diatel.SplashActivity" >
         </activity>
