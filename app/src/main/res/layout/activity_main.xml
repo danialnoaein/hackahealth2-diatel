@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:id="@+id/rv_bottom_nv"
-        android:background="@android:color/darker_gray"
+        android:background="@drawable/article_category_sample"
         android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

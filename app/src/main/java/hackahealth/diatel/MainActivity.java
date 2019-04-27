@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     private FragNavController frgNavController;
     private List<MenuRVAdapter.MenuItem> listBottomNv = new ArrayList<>();
 
-    ImageButton ib_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
     private void onClick(){
 
     }
-
 
     public Context getContext() {
         return context;

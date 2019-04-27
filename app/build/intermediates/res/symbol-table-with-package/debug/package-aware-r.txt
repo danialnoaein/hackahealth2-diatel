@@ -1023,6 +1023,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable article_category_sample
 drawable avd_hide_password
 drawable avd_show_password
 drawable bg_btn_success
@@ -1037,6 +1038,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable error_background
+drawable gradient_rv_item_train_category
 drawable ic_alarm_bell
 drawable ic_alarm_bell_primary
 drawable ic_arrow_right
@@ -1174,11 +1176,14 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id ib_back
 id icon
 id icon_group
 id ifRoom
 id image
 id imv_icon
+id imv_poster
+id imv_thumbnail
 id info
 id invisible
 id italic
@@ -1223,6 +1228,8 @@ id radio
 id right
 id right_icon
 id right_side
+id rv_article_categories
+id rv_articles
 id rv_bottom_nv
 id rv_main_checkups
 id save_image_matrix
@@ -1284,6 +1291,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1292,6 +1300,7 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_date
 id tv_no_checkup
 id tv_title
 id tv_toast
@@ -1305,6 +1314,7 @@ id vp_slides
 id withText
 id wrap
 id wrap_content
+id yv_category_title
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1380,6 +1390,8 @@ layout fragment_main_checkup
 layout fragment_main_reminder
 layout fragment_main_train_center
 layout layout_custom_toast
+layout layout_rv_item_article
+layout layout_rv_item_article_category
 layout layout_rv_menu_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
