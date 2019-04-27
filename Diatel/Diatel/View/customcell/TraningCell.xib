@@ -28,18 +28,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="130" height="130"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzI-Qc-9Ce">
-                                <rect key="frame" x="4" y="53.5" width="122" height="23.5"/>
+                                <rect key="frame" x="0.0" y="105" width="130" height="25"/>
                                 <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheap-visit" translatesAutoresizingMaskIntoConstraints="NO" id="TGs-dg-7Zh">
+                                <rect key="frame" x="0.0" y="0.0" width="130" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="2xe-qY-qDR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="yzI-Qc-9Ce" secondAttribute="trailing" constant="4" id="0Os-oe-xQw"/>
-                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="leading" secondItem="6Cc-1a-f95" secondAttribute="leading" constant="4" id="D6k-pn-HY4"/>
-                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="centerX" secondItem="6Cc-1a-f95" secondAttribute="centerX" id="g0K-9Z-CQo"/>
-                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="centerY" secondItem="6Cc-1a-f95" secondAttribute="centerY" id="gKR-BC-Wia"/>
+                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="top" secondItem="TGs-dg-7Zh" secondAttribute="bottom" id="3Lm-QV-5CU"/>
+                            <constraint firstItem="TGs-dg-7Zh" firstAttribute="top" secondItem="6Cc-1a-f95" secondAttribute="top" id="4dK-A0-xl2"/>
+                            <constraint firstAttribute="bottom" secondItem="yzI-Qc-9Ce" secondAttribute="bottom" id="9xk-K4-ow5"/>
+                            <constraint firstItem="TGs-dg-7Zh" firstAttribute="leading" secondItem="6Cc-1a-f95" secondAttribute="leading" id="CYH-kE-82B"/>
+                            <constraint firstAttribute="trailing" secondItem="yzI-Qc-9Ce" secondAttribute="trailing" id="Ske-7s-1r0"/>
+                            <constraint firstAttribute="trailing" secondItem="TGs-dg-7Zh" secondAttribute="trailing" id="Vqm-74-M2D"/>
+                            <constraint firstItem="yzI-Qc-9Ce" firstAttribute="leading" secondItem="6Cc-1a-f95" secondAttribute="leading" id="ahI-Uh-iFo"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -52,9 +61,13 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="imageHeader" destination="TGs-dg-7Zh" id="GTm-wi-VJ2"/>
                 <outlet property="titleText" destination="yzI-Qc-9Ce" id="MPD-Ku-Bbs"/>
             </connections>
             <point key="canvasLocation" x="-192" y="48"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="cheap-visit" width="500" height="500"/>
+    </resources>
 </document>

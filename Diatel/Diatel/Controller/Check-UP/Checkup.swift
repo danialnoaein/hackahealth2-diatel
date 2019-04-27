@@ -21,7 +21,7 @@ class Checkup: UIViewController {
         view.setGradientBackground(colorTop: color1, colorBottom: color2)
         
         // Do any additional setup after loading the view, typically from a nib.
-        DescriptionText.font = UIFont(name: "Shabnam-Bold", size: 18.0);
+        DescriptionText.font = UIFont(name: "Shabnam-Bold", size: 14.0);
         addbtn.layer.cornerRadius = 10
         diabetTest.layer.cornerRadius = 10
         

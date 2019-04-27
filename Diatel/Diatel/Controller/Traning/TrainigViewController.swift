@@ -15,7 +15,7 @@ class TrainigViewController: UIViewController,UICollectionViewDelegate,UICollect
 
     @IBOutlet weak var collectionview: UICollectionView!
     let titles = ["درمان و پیشگیری","تغذیه و رژیم","علائم بالینی","دارو خانه" ,"بیماری های مرتبط","مصاحبه پزشکان"];
-
+    let imagesName = [#imageLiteral(resourceName: "cheap-darman"),#imageLiteral(resourceName: "cheap-t"),#imageLiteral(resourceName: "cheap-bimari"),#imageLiteral(resourceName: "cheap-pharmacy"),#imageLiteral(resourceName: "cheap-balini"),#imageLiteral(resourceName: "cheap-visit")]
     override func viewDidLoad() {
         super.viewDidLoad();
         collectionview.delegate = self
@@ -40,7 +40,7 @@ class TrainigViewController: UIViewController,UICollectionViewDelegate,UICollect
         let color2 = UIColor(red: 0.1254901961, green: 0.3882352941, blue: 0.6078431373, alpha: 1)
         cell.setGradientBackground(colorTop: color1, colorBottom: color2)
         cell.titleText.text = titles[indexPath.row]
-        
+        cell.imageHeader.image = imagesName[indexPath.row]
         return cell
     }
     

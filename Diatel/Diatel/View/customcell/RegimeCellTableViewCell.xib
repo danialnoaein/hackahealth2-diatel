@@ -28,31 +28,47 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bc-P9-w8o">
                         <rect key="frame" x="16" y="11" width="288" height="118"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صبحانه :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-2L-KTK">
-                                <rect key="frame" x="130" y="8" width="150" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3b-Oe-dY0">
+                                <rect key="frame" x="-8" y="-5" width="305" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="صبحانه :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOV-2L-KTK">
+                                        <rect key="frame" x="199" y="7" width="100" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="73g-CX-nCO"/>
+                                            <constraint firstAttribute="height" constant="27" id="XLX-03-tgB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شنبه" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnh-eI-2bO">
+                                        <rect key="frame" x="8" y="7" width="133" height="27"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="dqU-Nc-RnE"/>
+                                            <constraint firstAttribute="width" constant="133" id="ewI-Bw-6He"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9980931878" green="0.75772172209999999" blue="0.032601628450000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="L0t-IN-JBh"/>
-                                    <constraint firstAttribute="height" constant="21" id="wZE-Ou-q4N"/>
+                                    <constraint firstItem="Vnh-eI-2bO" firstAttribute="top" secondItem="R3b-Oe-dY0" secondAttribute="top" constant="7" id="QQV-lp-K93"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vnh-eI-2bO" secondAttribute="bottom" constant="8" id="YHY-Ml-fXk"/>
+                                    <constraint firstAttribute="height" constant="42" id="eqp-2p-ocs"/>
+                                    <constraint firstItem="Vnh-eI-2bO" firstAttribute="leading" secondItem="R3b-Oe-dY0" secondAttribute="leading" constant="8" id="jxL-B0-faL"/>
+                                    <constraint firstItem="WOV-2L-KTK" firstAttribute="leading" secondItem="Vnh-eI-2bO" secondAttribute="trailing" constant="58" id="lHk-OE-zI9"/>
+                                    <constraint firstAttribute="trailing" secondItem="WOV-2L-KTK" secondAttribute="trailing" constant="6" id="mLb-ce-xqO"/>
+                                    <constraint firstAttribute="bottom" secondItem="WOV-2L-KTK" secondAttribute="bottom" constant="8" id="ucN-xK-1wp"/>
+                                    <constraint firstItem="WOV-2L-KTK" firstAttribute="top" secondItem="R3b-Oe-dY0" secondAttribute="top" constant="7" id="zXy-L2-nos"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شنبه" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnh-eI-2bO">
-                                <rect key="frame" x="8" y="8" width="80" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Uco-hE-xsd"/>
-                                    <constraint firstAttribute="width" constant="80" id="c7E-GO-PM7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut " textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q2-tn-wur">
-                                <rect key="frame" x="8" y="37" width="272" height="73"/>
+                                <rect key="frame" x="8" y="45" width="272" height="73"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="73" id="YWq-s9-Byp"/>
+                                    <constraint firstAttribute="height" constant="73" id="SaZ-sR-Dlm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -60,25 +76,24 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="2Q2-tn-wur" secondAttribute="bottom" constant="8" id="Eho-UD-G35"/>
-                            <constraint firstItem="WOV-2L-KTK" firstAttribute="top" secondItem="1Bc-P9-w8o" secondAttribute="top" constant="8" id="Imd-L1-Eq6"/>
-                            <constraint firstAttribute="trailing" secondItem="WOV-2L-KTK" secondAttribute="trailing" constant="8" id="PHk-fR-FEX"/>
-                            <constraint firstItem="Vnh-eI-2bO" firstAttribute="top" secondItem="1Bc-P9-w8o" secondAttribute="top" constant="8" id="cnq-m3-Uz1"/>
-                            <constraint firstItem="Vnh-eI-2bO" firstAttribute="leading" secondItem="1Bc-P9-w8o" secondAttribute="leading" constant="8" id="iwl-Fh-ltH"/>
-                            <constraint firstAttribute="trailing" secondItem="2Q2-tn-wur" secondAttribute="trailing" constant="8" id="jhl-TY-GCs"/>
-                            <constraint firstItem="2Q2-tn-wur" firstAttribute="leading" secondItem="1Bc-P9-w8o" secondAttribute="leading" constant="8" id="lse-IS-gMt"/>
+                            <constraint firstAttribute="bottom" secondItem="2Q2-tn-wur" secondAttribute="bottom" id="HSN-cW-4C4"/>
+                            <constraint firstItem="2Q2-tn-wur" firstAttribute="leading" secondItem="1Bc-P9-w8o" secondAttribute="leadingMargin" id="KK5-wV-ZZ8"/>
+                            <constraint firstItem="2Q2-tn-wur" firstAttribute="top" secondItem="R3b-Oe-dY0" secondAttribute="bottom" constant="8" id="P4U-S8-ldN"/>
+                            <constraint firstItem="2Q2-tn-wur" firstAttribute="trailing" secondItem="1Bc-P9-w8o" secondAttribute="trailingMargin" id="RyP-8e-3pc"/>
+                            <constraint firstItem="2Q2-tn-wur" firstAttribute="centerX" secondItem="R3b-Oe-dY0" secondAttribute="centerX" id="fEU-LT-85z"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="0vx-U3-srz"/>
-                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="8Ry-XH-le9"/>
-                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Xdu-3P-R05"/>
-                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="pOV-RS-86J"/>
+                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Wd-6v-wZZ"/>
+                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="bOK-k2-QWE"/>
+                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lte-dq-Hxo"/>
+                    <constraint firstItem="1Bc-P9-w8o" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="s6I-Wp-IHK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backgroundContainer" destination="R3b-Oe-dY0" id="4x1-Od-1fA"/>
                 <outlet property="container" destination="1Bc-P9-w8o" id="4EX-ek-fLK"/>
                 <outlet property="dayName" destination="Vnh-eI-2bO" id="ire-Lv-qXU"/>
                 <outlet property="meals" destination="2Q2-tn-wur" id="UEF-dV-epq"/>

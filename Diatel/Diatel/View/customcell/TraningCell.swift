@@ -11,6 +11,7 @@ import UIKit
 class TraningCell: UICollectionViewCell {
 
     
+    @IBOutlet weak var imageHeader: UIImageView!
     @IBOutlet weak var titleText: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
