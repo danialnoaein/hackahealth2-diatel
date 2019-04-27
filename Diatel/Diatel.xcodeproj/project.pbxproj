@@ -32,6 +32,9 @@
 		D18AD34222748F450010496A /* TrainigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD34122748F450010496A /* TrainigViewController.swift */; };
 		D18AD345227497500010496A /* TraningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD343227497500010496A /* TraningCell.swift */; };
 		D18AD346227497500010496A /* TraningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18AD344227497500010496A /* TraningCell.xib */; };
+		D18AD3492274A8D60010496A /* TrainingTablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD3472274A8D60010496A /* TrainingTablecell.swift */; };
+		D18AD34A2274A8D60010496A /* TrainingTablecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18AD3482274A8D60010496A /* TrainingTablecell.xib */; };
+		D18AD34C2274AB100010496A /* DetailTraning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD34B2274AB100010496A /* DetailTraning.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		D18AD34122748F450010496A /* TrainigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainigViewController.swift; sourceTree = "<group>"; };
 		D18AD343227497500010496A /* TraningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraningCell.swift; sourceTree = "<group>"; };
 		D18AD344227497500010496A /* TraningCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TraningCell.xib; sourceTree = "<group>"; };
+		D18AD3472274A8D60010496A /* TrainingTablecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTablecell.swift; sourceTree = "<group>"; };
+		D18AD3482274A8D60010496A /* TrainingTablecell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingTablecell.xib; sourceTree = "<group>"; };
+		D18AD34B2274AB100010496A /* DetailTraning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTraning.swift; sourceTree = "<group>"; };
 		D39FE661691D28DC905A0157 /* Pods-Diatel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diatel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diatel/Pods-Diatel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				D18AD34122748F450010496A /* TrainigViewController.swift */,
+				D18AD34B2274AB100010496A /* DetailTraning.swift */,
 			);
 			path = Traning;
 			sourceTree = "<group>";
@@ -229,6 +236,8 @@
 				D18AD33E2274783A0010496A /* ReminderCell.xib */,
 				D18AD343227497500010496A /* TraningCell.swift */,
 				D18AD344227497500010496A /* TraningCell.xib */,
+				D18AD3472274A8D60010496A /* TrainingTablecell.swift */,
+				D18AD3482274A8D60010496A /* TrainingTablecell.xib */,
 			);
 			path = customcell;
 			sourceTree = "<group>";
@@ -301,6 +310,7 @@
 				D18AD32822744A3A0010496A /* Shabnam-FD.ttf in Resources */,
 				D18AD311227434CB0010496A /* LaunchScreen.storyboard in Resources */,
 				D18AD32622744A3A0010496A /* Shabnam-Light-FD.ttf in Resources */,
+				D18AD34A2274A8D60010496A /* TrainingTablecell.xib in Resources */,
 				D18AD30E227434CB0010496A /* Assets.xcassets in Resources */,
 				D18AD346227497500010496A /* TraningCell.xib in Resources */,
 				D18AD3402274783A0010496A /* ReminderCell.xib in Resources */,
@@ -385,7 +395,9 @@
 				D18AD334227470830010496A /* Reminder.swift in Sources */,
 				D18AD33F2274783A0010496A /* ReminderCell.swift in Sources */,
 				D18AD306227434CB0010496A /* Checkup.swift in Sources */,
+				D18AD34C2274AB100010496A /* DetailTraning.swift in Sources */,
 				D18AD336227470950010496A /* Addreminder.swift in Sources */,
+				D18AD3492274A8D60010496A /* TrainingTablecell.swift in Sources */,
 				D18AD32C22744C2E0010496A /* RightimageTextfield.swift in Sources */,
 				D18AD332227467AD0010496A /* Addcheckup.swift in Sources */,
 				D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */,
