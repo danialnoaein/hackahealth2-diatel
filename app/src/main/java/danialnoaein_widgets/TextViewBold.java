@@ -11,18 +11,18 @@ import general.Fonts;
 public class TextViewBold extends android.support.v7.widget.AppCompatTextView {
     public TextViewBold(Context context) {
         super(context);
-        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_bold_num_fa").getTypeface());
+        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_bold").getTypeface());
 
     }
 
     public TextViewBold(Context context, AttributeSet attrs) {
         super(context, attrs);
-        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_bold_num_fa").getTypeface());
+        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_bold").getTypeface());
     }
 
     public TextViewBold(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_bold_num_fa").getTypeface());
+        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_bold").getTypeface());
     }
 
 }

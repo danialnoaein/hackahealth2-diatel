@@ -11,18 +11,18 @@ import general.Fonts;
 public class TextView extends android.support.v7.widget.AppCompatTextView {
     public TextView(Context context) {
         super(context);
-        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_num_fa").getTypeface());
+        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam").getTypeface());
 
     }
 
     public TextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_num_fa").getTypeface());
+        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam").getTypeface());
     }
 
     public TextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam_num_fa").getTypeface());
+        /*if(!isInEditMode())*/this.setTypeface(new Fonts(context, "shabnam").getTypeface());
     }
 
 }

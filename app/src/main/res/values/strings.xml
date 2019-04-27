@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Diatel</string>
+    <string name="app_name">دیاتل</string>
 
     <!--TimeSinceAgo-->
     <string name="relative_time_just_now"> چند لحظه پیش</string>
