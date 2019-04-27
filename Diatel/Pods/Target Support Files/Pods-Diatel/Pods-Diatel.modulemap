@@ -1,0 +1,6 @@
+framework module Pods_Diatel {
+  umbrella header "Pods-Diatel-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2YC-bt-hjM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--یاد آور-->
+        <scene sceneID="iIv-zr-j7Z">
+            <objects>
+                <viewController id="kM6-7H-h1v" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hv-Sm-NPH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KwV-v4-LMe"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="یاد آور" id="mci-ou-atT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qv-n4-qLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="-778"/>
+        </scene>
+        <!--چکاپ-->
+        <scene sceneID="D2q-CQ-ifU">
+            <objects>
+                <viewController id="cnT-cw-xYw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZc-uW-vrt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VgS-tS-xHX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="چکاپ" id="uuO-dM-VCJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d5f-Mo-GPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="-6"/>
+        </scene>
+        <!--پروفایل-->
+        <scene sceneID="APZ-qi-bif">
+            <objects>
+                <viewController id="g03-Zk-HYk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VCf-qV-MsL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="wWQ-q8-zEG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="پروفایل" id="ZMd-g3-pgv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhx-pp-qNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="627"/>
+        </scene>
+        <!--چکاپ-->
+        <scene sceneID="XhT-Xk-QZI">
+            <objects>
+                <viewController id="Rlv-3j-1Hv" customClass="Checkup" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHA-kq-UaN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6rH-gN-Yuy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="چکاپ" id="Wrv-HW-Nvq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNm-AW-fd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="-1485"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="srd-dH-P1o">
+            <objects>
+                <tabBarController id="2YC-bt-hjM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="W7U-u8-0aZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BPr-9V-Qwu" kind="relationship" relationship="viewControllers" id="9Km-iN-0Xw"/>
+                        <segue destination="kM6-7H-h1v" kind="relationship" relationship="viewControllers" id="s57-7T-DnI"/>
+                        <segue destination="cnT-cw-xYw" kind="relationship" relationship="viewControllers" id="FZg-uy-q4f"/>
+                        <segue destination="g03-Zk-HYk" kind="relationship" relationship="viewControllers" id="Pvz-Xv-rxF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIL-kF-sVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="-777"/>
+        </scene>
+        <!--آموزش-->
+        <scene sceneID="ZKJ-mO-ja8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BPr-9V-Qwu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="آموزش" id="N09-bb-RVq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="reT-Oz-bnJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="20"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Rlv-3j-1Hv" kind="relationship" relationship="rootViewController" id="ajc-Qh-ttv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3a-rU-TBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="-1484.257871064468"/>
+        </scene>
+    </scenes>
+</document>

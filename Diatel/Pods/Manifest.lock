@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (4.6.0)
+  - DLLocalNotifications (0.06)
+  - Kingfisher (4.6.2)
+  - McPicker (0.5.2)
+  - SwiftyJSON (4.0.0)
+  - XLPagerTabStrip (8.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DLLocalNotifications
+  - Kingfisher (~> 4.0)
+  - McPicker
+  - SwiftyJSON
+  - XLPagerTabStrip (~> 8.0)
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DLLocalNotifications: 751d53da896bc396bb23d4d3570b7fd3c7654e4e
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
+  McPicker: 3c21f279480d04ba7f8a4ae8445f59c7e0931a99
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  XLPagerTabStrip: d1ab378af0923320ec0b5eab11d7b2f803d31261
+
+PODFILE CHECKSUM: b36a972c88c83ec3cc6914f5938b13f4377dcba0
+
+COCOAPODS: 1.4.0
