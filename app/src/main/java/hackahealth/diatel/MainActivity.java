@@ -15,6 +15,7 @@ import java.util.List;
 
 import adapters.MenuRVAdapter;
 import fragments.main_fragments.CheckupFragment;
+import fragments.main_fragments.RegimeFragment;
 import fragments.main_fragments.ReminderFragment;
 import fragments.main_fragments.TrainCenterFragment;
 
@@ -44,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
         listBottomNv.add(0, new MenuRVAdapter().new MenuItem(FragNavController.TAB1, R.drawable.ic_reading, R.drawable.ic_reading_primary, R.color.white, R.color.white, R.color.grey_30, R.color.colorPrimary, "آموزش", TrainCenterFragment.newInstance(), false));
         listBottomNv.add(1, new MenuRVAdapter().new MenuItem(FragNavController.TAB2, R.drawable.ic_alarm_bell, R.drawable.ic_alarm_bell_primary, R.color.white, R.color.white, R.color.grey_30, R.color.colorPrimary, "یادآور", ReminderFragment.newInstance(), false));
-        listBottomNv.add(2, new MenuRVAdapter().new MenuItem(FragNavController.TAB3, R.drawable.ic_glucose_meter, R.drawable.ic_glucose_meter_primary, R.color.white, R.color.white, R.color.grey_30, R.color.colorPrimary, "چکاپ", CheckupFragment.newInstance(), true));
+        listBottomNv.add(2, new MenuRVAdapter().new MenuItem(FragNavController.TAB3, R.drawable.ic_dish, R.drawable.ic_dish_primary, R.color.white, R.color.white, R.color.grey_30, R.color.colorPrimary, "تغذیه", RegimeFragment.newInstance(), false));
+        listBottomNv.add(3, new MenuRVAdapter().new MenuItem(FragNavController.TAB4, R.drawable.ic_glucose_meter, R.drawable.ic_glucose_meter_primary, R.color.white, R.color.white, R.color.grey_30, R.color.colorPrimary, "چکاپ", CheckupFragment.newInstance(), true));
 
         rv_bottom_nv.setLayoutManager(new GridLayoutManager(getContext(), listBottomNv.size()) {
             @Override
@@ -89,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }, listBottomNv.size()).build();
 
-        frgNavController.switchTab(FragNavController.TAB3);
+        frgNavController.switchTab(FragNavController.TAB4);
 
     }
 

@@ -13,12 +13,11 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ImmediateCheckupActivity"/>
+        <activity android:name=".GlucometerGuideActivity"></activity>
+        <activity android:name=".ImmediateCheckupActivity" />
         <activity android:name=".AddReminderActivity" />
         <activity android:name=".FirstVisitActivity" />
-        <activity android:name=".SplashActivity">
-
-        </activity>
+        <activity android:name=".SplashActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

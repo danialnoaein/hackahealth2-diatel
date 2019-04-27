@@ -3,7 +3,6 @@ package hackahealth.diatel;
 import android.content.Context;
 import android.os.Build;
 import android.support.v4.app.Fragment;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +19,7 @@ import fragments.firstvisit_fragments.SlideOneFragment;
 import fragments.firstvisit_fragments.SlideThreeFragment;
 import fragments.firstvisit_fragments.SlideTwoFragment;
 import general.SharedPrefHandler;
+import general.ViewPager;
 
 public class FirstVisitActivity extends AppCompatActivity {
 
@@ -46,6 +46,13 @@ public class FirstVisitActivity extends AppCompatActivity {
 
         findViews();
         onClick();
+        initPager();
+
+
+    }
+
+    private void initPager() {
+
         fragments.add(SlideOneFragment.newInstance());
         fragments.add(SlideTwoFragment.newInstance());
         fragments.add(SlideThreeFragment.newInstance());

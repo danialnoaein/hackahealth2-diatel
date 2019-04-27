@@ -47,7 +47,7 @@
                 android:text="Next"
                 android:padding="16dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_arrow_right"/>
+                app:srcCompat="@drawable/ic_arrow_right"/>
 
         </LinearLayout>
 

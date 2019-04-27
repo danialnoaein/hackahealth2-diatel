@@ -16,4 +16,15 @@
     <string name="skip">  پرش</string>
     <string name="start">  شروع</string>
 
+    <!--Glu Guide Slides-->
+    <string name="glu_guide_slide_one">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_two">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_three">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_four">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_five">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_six">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_seven">دست های خود را شسته و خشک کنید</string>
+
+
+
 </resources>

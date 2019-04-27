@@ -20,11 +20,11 @@
         android:supportsRtl="false"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="hackahealth.diatel.GlucometerGuideActivity" />
         <activity android:name="hackahealth.diatel.ImmediateCheckupActivity" />
         <activity android:name="hackahealth.diatel.AddReminderActivity" />
         <activity android:name="hackahealth.diatel.FirstVisitActivity" />
-        <activity android:name="hackahealth.diatel.SplashActivity" >
-        </activity>
+        <activity android:name="hackahealth.diatel.SplashActivity" />
         <activity android:name="hackahealth.diatel.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
