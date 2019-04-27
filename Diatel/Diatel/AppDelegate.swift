@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //MARK: Custom Font For UITabbarController
         /**********************************************************/
-        UITabBarItem.appearance().setTitleTextAttributes([ NSAttributedStringKey.font: UIFont(name: "Shabnam-Bold", size: 12)!], for: UIControlState.normal);
+        UITabBarItem.appearance().setTitleTextAttributes([ NSAttributedStringKey.font: UIFont(name: "Shabnam-Bold", size: 10)!], for: UIControlState.normal);
 
         let customFont = UIFont(name: "Shabnam", size: 17.0);
         UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: customFont!], for: .normal);

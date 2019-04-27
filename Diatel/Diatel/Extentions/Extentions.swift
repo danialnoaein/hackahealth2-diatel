@@ -115,6 +115,17 @@ extension UIView {
         layer.shadowOffset = CGSize(width: CGFloat(0), height: CGFloat(0))
         layer.shadowOpacity = 0.5
     }
+    
+    func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        gradientLayer.locations = [0, 1]
+        gradientLayer.frame = bounds
+        
+        layer.insertSublayer(gradientLayer, at: 0)
+    }
 }
 //MARK: Extention For Changing Font UISearchbar
 /**********************************************************/
