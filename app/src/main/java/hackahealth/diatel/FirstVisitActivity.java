@@ -14,12 +14,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 import adapters.FragmentPagerVpAdapter;
+import danialnoaein_widgets.ViewPager;
 import fragments.firstvisit_fragments.SlideFourFragment;
 import fragments.firstvisit_fragments.SlideOneFragment;
 import fragments.firstvisit_fragments.SlideThreeFragment;
 import fragments.firstvisit_fragments.SlideTwoFragment;
 import general.SharedPrefHandler;
-import general.ViewPager;
 
 public class FirstVisitActivity extends AppCompatActivity {
 
@@ -48,7 +48,6 @@ public class FirstVisitActivity extends AppCompatActivity {
         onClick();
         initPager();
 
-
     }
 
     private void initPager() {
@@ -60,7 +59,6 @@ public class FirstVisitActivity extends AppCompatActivity {
         vp_slides.setAdapter(new FragmentPagerVpAdapter(getSupportFragmentManager(), fragments, new String[]{}));
 
     }
-
 
     private void findViews() {
         vp_slides = findViewById(R.id.vp_slides);
@@ -82,7 +80,6 @@ public class FirstVisitActivity extends AppCompatActivity {
             }
         });
     }
-
 
     public Context getContext() {
         return context;

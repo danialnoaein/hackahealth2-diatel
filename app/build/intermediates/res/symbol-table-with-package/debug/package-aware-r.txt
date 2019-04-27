@@ -1055,6 +1055,7 @@ drawable ic_glucometer
 drawable ic_glucose_meter
 drawable ic_glucose_meter_primary
 drawable ic_glucosemeter
+drawable ic_hourglass
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_launcher_icon
