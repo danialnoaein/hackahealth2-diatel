@@ -9,5 +9,6 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_immediate_checkup);
+
     }
 }
