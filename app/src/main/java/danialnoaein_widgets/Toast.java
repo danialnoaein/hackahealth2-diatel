@@ -11,7 +11,8 @@ import android.widget.TextView;
 import java.util.HashMap;
 import java.util.Map;
 
-import ipino.ir.ipino.R;
+import hackahealth.diatel.R;
+
 
 /**
  * Created by AMz on 11/4/2016.
