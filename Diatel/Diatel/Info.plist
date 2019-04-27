@@ -41,5 +41,14 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Shabnam-Bold.ttf</string>
+		<string>Shabnam-Light.ttf</string>
+		<string>Shabnam.ttf</string>
+		<string>Shabnam-Bold-FD.ttf</string>
+		<string>Shabnam-FD.ttf</string>
+		<string>Shabnam-Light-FD.ttf</string>
+	</array>
 </dict>
 </plist>
