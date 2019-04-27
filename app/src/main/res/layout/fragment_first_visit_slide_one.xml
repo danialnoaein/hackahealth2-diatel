@@ -5,20 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#E8F5E9">
+    android:background="@color/firstVisitSlideBackground">
 
     <ImageView
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:tint="@color/colorSuccessDark"
+        android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_avatar"/>
-    <danialnoaein_widgets.TextViewBold
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/colorSuccessDark"
-        android:text="مشخصات عمومی"/>
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white" />
+
+        <danialnoaein_widgets.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@color/firstVisitSlideBackground"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="مشخصات عمومی"/>
+
+    </RelativeLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,15 +54,17 @@
             android:padding="8dp"
             android:maxLines="1"
             android:maxLength="30"
-            android:background="@drawable/bg_edittext_success"
+            android:background="@drawable/bg_edittext_first_visit"
             android:layout_marginBottom="8dp"
+            android:textColor="@android:color/white"
             android:hint="نام و نام خانوادگی"/>
 
         <danialnoaein_widgets.EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:background="@drawable/bg_edittext_success"
+            android:background="@drawable/bg_edittext_first_visit"
+            android:textColor="@android:color/white"
             android:layout_marginBottom="8dp"
             android:inputType="number"
             android:maxLines="1"
@@ -53,7 +76,7 @@
             android:layout_height="48dp"
             android:layout_gravity="right"
             android:gravity="right"
-            android:background="@drawable/bg_edittext_success"
+            android:background="@drawable/bg_edittext_first_visit"
             android:orientation="horizontal">
             <RadioGroup
                 android:layout_width="0dp"
@@ -63,33 +86,27 @@
                 android:orientation="horizontal">
 
                 <danialnoaein_widgets.RadioButton
-                    android:layout_width="80dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
                     android:text="مرد"/>
 
                 <danialnoaein_widgets.RadioButton
-                    android:layout_width="80dp"
-                    android:layout_marginLeft="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle"
                     android:text="زن"/>
 
             </RadioGroup>
 
-
-            <danialnoaein_widgets.TextViewBold
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:padding="8dp"
-                android:gravity="right|center_vertical"
-                android:hint="جنسیت : "/>
-
-
-
         </LinearLayout>
 
-
-
     </LinearLayout>
-
 
 </LinearLayout>

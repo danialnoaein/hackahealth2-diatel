@@ -5,20 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="#61EC6B">
+    android:background="@color/firstVisitSlideBackground">
 
     <ImageView
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:tint="@color/colorSuccessDark"
+        android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_phone_call"/>
-    <danialnoaein_widgets.TextViewBold
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/colorSuccessDark"
-        android:text="شماره تلفن"/>
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/white" />
+
+        <danialnoaein_widgets.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="@color/firstVisitSlideBackground"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:text="شماره تلفن"/>
+
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,9 +51,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:background="@drawable/bg_edittext_success"
+            android:background="@drawable/bg_edittext_first_visit"
             android:inputType="number"
             android:maxLines="1"
+            android:textColor="@android:color/white"
             android:maxLength="11"
             android:layout_marginBottom="16dp"
             android:hint="شماره تلفن(09123456789)"/>
@@ -43,8 +64,8 @@
             android:layout_height="wrap_content"
             android:text="ورود"
             android:id="@+id/btn_register"
-            android:textColor="@android:color/white"
-            android:background="@drawable/bg_btn_success"/>
+            android:textColor="@color/firstVisitSlideBackground"
+            android:background="@android:color/white"/>
 
     </LinearLayout>
 

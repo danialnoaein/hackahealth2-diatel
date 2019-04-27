@@ -1,33 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".ImmediateCheckupActivity">
 
     <!--Toolbar-->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:background="@color/colorPrimary"
         android:id="@+id/ll_toolbar"
+        android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
         android:gravity="right|center_vertical">
 
         <danialnoaein_widgets.TextViewBold
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
+            android:layout_weight="1"
             android:gravity="center"
-            android:text="چکاپ"/>
+            android:text="چکاپ"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <danialnoaein_widgets.EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edittext_primary_dark"
+                    android:padding="12dp"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:hint="میزان قند خون" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:adjustViewBounds="true"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <danialnoaein_widgets.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="زمان انجام آزمایش : " />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ناشتا"/>
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="دو ساعت بعد از غذا"/>
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="بارداری - ناشتا"/>
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="بارداری - بعد از غذا"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:adjustViewBounds="true"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <danialnoaein_widgets.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:text="علائم بالینی : " />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"
+                        android:layout_gravity="right">
+
+                        <danialnoaein_widgets.CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                            android:text="تکرر ادرار"/>
+
+                        <danialnoaein_widgets.CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                            android:text="خشکی دهان"/>
+
+                        <danialnoaein_widgets.CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                            android:text="تشنگی بیش از حد"/>
+
+                        <danialnoaein_widgets.CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                            android:text="احساس ناگهانی خستگی"/>
+
+                        <danialnoaein_widgets.CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                            android:text="احساس سوزش و مورمور شدن دست و پا"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <danialnoaein_widgets.ButtonBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:id="@+id/btn_checkup"
+                android:background="@drawable/success_background"
+                android:textColor="@android:color/white"
+                android:text="انجام چکاپ"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 
 
-
-
-</RelativeLayout>
+</LinearLayout>

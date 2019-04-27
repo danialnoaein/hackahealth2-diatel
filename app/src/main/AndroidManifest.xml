@@ -13,7 +13,8 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".GlucometerGuideActivity"></activity>
+        <activity android:name=".CheckUpResultActivity"></activity>
+        <activity android:name=".GlucometerGuideActivity" />
         <activity android:name=".ImmediateCheckupActivity" />
         <activity android:name=".AddReminderActivity" />
         <activity android:name=".FirstVisitActivity" />
@@ -24,9 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

@@ -20,6 +20,7 @@
         android:supportsRtl="false"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="hackahealth.diatel.CheckUpResultActivity" />
         <activity android:name="hackahealth.diatel.GlucometerGuideActivity" />
         <activity android:name="hackahealth.diatel.ImmediateCheckupActivity" />
         <activity android:name="hackahealth.diatel.AddReminderActivity" />
@@ -31,8 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="hackahealth.diatel.MainActivity" >
-        </activity>
+        <activity android:name="hackahealth.diatel.MainActivity" />
     </application>
 
 </manifest>

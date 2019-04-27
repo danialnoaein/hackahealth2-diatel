@@ -38,13 +38,14 @@
                 android:layout_height="?attr/actionBarSize"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:textColor="@color/colorSuccess"
+                android:textColor="@android:color/white"
                 android:text="ادامه"/>
 
             <ImageView
                 android:layout_width="?attr/actionBarSize"
                 android:layout_height="?attr/actionBarSize"
                 android:text="Next"
+                android:tint="@android:color/white"
                 android:padding="16dp"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 app:srcCompat="@drawable/ic_arrow_right"/>
