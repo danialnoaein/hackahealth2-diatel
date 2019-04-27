@@ -2,7 +2,7 @@ package general;
 
 import android.content.Context;
 
-import ipino.ir.ipino.R;
+import hackahealth.diatel.R;
 
 
 public class TimeSinceAgo {
