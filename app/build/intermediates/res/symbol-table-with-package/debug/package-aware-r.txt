@@ -603,6 +603,10 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color bg_screen1
+color bg_screen2
+color bg_screen3
+color bg_screen4
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -625,6 +629,7 @@ color colorPrimaryAlpha
 color colorPrimaryDark
 color colorPrimaryDark_90
 color colorSuccess
+color colorSuccessDark
 color colorWhiteAccent
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
@@ -1023,6 +1028,8 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_btn_success
+drawable bg_edittext_success
 drawable bg_splash_gradient
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
@@ -1033,15 +1040,21 @@ drawable design_snackbar_background
 drawable error_background
 drawable ic_alarm_bell
 drawable ic_alarm_bell_primary
+drawable ic_arrow_right
+drawable ic_avatar
+drawable ic_first_aid_kit
 drawable ic_glucose_meter
 drawable ic_glucose_meter_primary
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_launcher_icon
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_phone_call
 drawable ic_reading
 drawable ic_reading_primary
+drawable ic_weight_scale
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1111,6 +1124,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_register
 id buttonPanel
 id center
 id center_horizontal
@@ -1142,7 +1156,7 @@ id end
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
-id exp_bookcuti
+id exp_diatel
 id exp_magical
 id expand_activities_button
 id expanded_menu
@@ -1176,6 +1190,7 @@ id line3
 id listMode
 id list_item
 id ll_item_container
+id ll_next_fragment
 id ll_toast
 id ll_toolbar
 id masked
@@ -1283,6 +1298,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id vp_slides
 id withText
 id wrap
 id wrap_content
@@ -1353,6 +1369,10 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout fragment_first_visit_slide_four
+layout fragment_first_visit_slide_one
+layout fragment_first_visit_slide_three
+layout fragment_first_visit_slide_two
 layout fragment_main_educational
 layout fragment_main_reminder
 layout fragment_main_train_center
@@ -1421,6 +1441,7 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
+string next
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -1434,6 +1455,8 @@ string relative_time_one_hour_ago
 string relative_time_one_minute_ago
 string relative_time_yesterday
 string search_menu_title
+string skip
+string start
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

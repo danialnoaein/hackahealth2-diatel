@@ -11,16 +11,16 @@ import general.Fonts;
 public class RadioButton extends android.support.v7.widget.AppCompatRadioButton {
     public RadioButton(Context context) {
         super(context);
-        this.setTypeface(new Fonts(context, "shabnam_num_fa").getTypeface());
+        this.setTypeface(new Fonts(context, "shabnam").getTypeface());
     }
 
     public RadioButton(Context context, AttributeSet attrs) {
         super(context, attrs);
-        this.setTypeface(new Fonts(context, "shabnam_num_fa").getTypeface());
+        this.setTypeface(new Fonts(context, "shabnam").getTypeface());
     }
 
     public RadioButton(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.setTypeface(new Fonts(context, "shabnam_num_fa").getTypeface());
+        this.setTypeface(new Fonts(context, "shabnam").getTypeface());
     }
 }

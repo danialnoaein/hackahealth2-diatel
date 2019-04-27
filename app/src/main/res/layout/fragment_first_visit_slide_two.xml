@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#D7F8DA">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:tint="@color/colorSuccessDark"
+        app:srcCompat="@drawable/ic_weight_scale"/>
+    <danialnoaein_widgets.TextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/colorSuccessDark"
+        android:text="مشخصات جسمی"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <danialnoaein_widgets.EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/bg_edittext_success"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:hint="قد (به سانتیمتر)"/>
+
+        <danialnoaein_widgets.EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/bg_edittext_success"
+            android:layout_marginBottom="8dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+            android:hint="وزن (به کیلوگرم)"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

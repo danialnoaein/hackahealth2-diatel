@@ -10,4 +10,10 @@
     <string name="relative_time_yesterday"> دیروز</string>
     <string name="relative_time_days_ago"> روز پیش</string>
 
+
+    <!--First Visit Activity-->
+    <string name="next">بعدی</string>
+    <string name="skip">  پرش</string>
+    <string name="start">  شروع</string>
+
 </resources>

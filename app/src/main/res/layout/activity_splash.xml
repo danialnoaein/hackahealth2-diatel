@@ -17,7 +17,7 @@
         <ImageView
             android:layout_width="240dp"
             android:layout_height="240dp"
-            android:src="@drawable/ic_alarm_bell"/>
+            android:src="@drawable/ic_launcher_icon"/>
 
         <net.cachapa.expandablelayout.ExpandableLayout
             android:id="@+id/exp_diatel"
