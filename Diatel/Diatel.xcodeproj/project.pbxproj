@@ -35,6 +35,12 @@
 		D18AD3492274A8D60010496A /* TrainingTablecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD3472274A8D60010496A /* TrainingTablecell.swift */; };
 		D18AD34A2274A8D60010496A /* TrainingTablecell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18AD3482274A8D60010496A /* TrainingTablecell.xib */; };
 		D18AD34C2274AB100010496A /* DetailTraning.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD34B2274AB100010496A /* DetailTraning.swift */; };
+		D18AD3502274CBDC0010496A /* SlideItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD34F2274CBDC0010496A /* SlideItem.swift */; };
+		D18AD3522274CC080010496A /* SlideItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18AD3512274CC080010496A /* SlideItem.xib */; };
+		D18AD3542274D2380010496A /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD3532274D2380010496A /* SliderViewController.swift */; };
+		D18AD3572274E3D00010496A /* RegimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD3562274E3D00010496A /* RegimeViewController.swift */; };
+		D18AD35A2274E65E0010496A /* RegimeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD3582274E65E0010496A /* RegimeCellTableViewCell.swift */; };
+		D18AD35B2274E65E0010496A /* RegimeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18AD3592274E65E0010496A /* RegimeCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +75,12 @@
 		D18AD3472274A8D60010496A /* TrainingTablecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTablecell.swift; sourceTree = "<group>"; };
 		D18AD3482274A8D60010496A /* TrainingTablecell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingTablecell.xib; sourceTree = "<group>"; };
 		D18AD34B2274AB100010496A /* DetailTraning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTraning.swift; sourceTree = "<group>"; };
+		D18AD34F2274CBDC0010496A /* SlideItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideItem.swift; sourceTree = "<group>"; };
+		D18AD3512274CC080010496A /* SlideItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideItem.xib; sourceTree = "<group>"; };
+		D18AD3532274D2380010496A /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		D18AD3562274E3D00010496A /* RegimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeViewController.swift; sourceTree = "<group>"; };
+		D18AD3582274E65E0010496A /* RegimeCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegimeCellTableViewCell.swift; sourceTree = "<group>"; };
+		D18AD3592274E65E0010496A /* RegimeCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegimeCellTableViewCell.xib; sourceTree = "<group>"; };
 		D39FE661691D28DC905A0157 /* Pods-Diatel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diatel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diatel/Pods-Diatel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +150,7 @@
 		D18AD318227448D30010496A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D18AD3552274E3900010496A /* regime */,
 				D18AD330227452940010496A /* Profile */,
 				D18AD32F227452850010496A /* Reminder */,
 				D18AD32E227452780010496A /* Check-UP */,
@@ -200,6 +213,9 @@
 			children = (
 				D18AD305227434CB0010496A /* Checkup.swift */,
 				D18AD331227467AD0010496A /* Addcheckup.swift */,
+				D18AD3532274D2380010496A /* SliderViewController.swift */,
+				D18AD34F2274CBDC0010496A /* SlideItem.swift */,
+				D18AD3512274CC080010496A /* SlideItem.xib */,
 			);
 			path = "Check-UP";
 			sourceTree = "<group>";
@@ -238,8 +254,18 @@
 				D18AD344227497500010496A /* TraningCell.xib */,
 				D18AD3472274A8D60010496A /* TrainingTablecell.swift */,
 				D18AD3482274A8D60010496A /* TrainingTablecell.xib */,
+				D18AD3582274E65E0010496A /* RegimeCellTableViewCell.swift */,
+				D18AD3592274E65E0010496A /* RegimeCellTableViewCell.xib */,
 			);
 			path = customcell;
+			sourceTree = "<group>";
+		};
+		D18AD3552274E3900010496A /* regime */ = {
+			isa = PBXGroup;
+			children = (
+				D18AD3562274E3D00010496A /* RegimeViewController.swift */,
+			);
+			path = regime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +330,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18AD35B2274E65E0010496A /* RegimeCellTableViewCell.xib in Resources */,
 				D18AD32522744A3A0010496A /* Shabnam-Bold.ttf in Resources */,
+				D18AD3522274CC080010496A /* SlideItem.xib in Resources */,
 				D18AD32722744A3A0010496A /* Shabnam.ttf in Resources */,
 				D18AD32322744A3A0010496A /* Shabnam-Light.ttf in Resources */,
 				D18AD32822744A3A0010496A /* Shabnam-FD.ttf in Resources */,
@@ -395,6 +423,7 @@
 				D18AD334227470830010496A /* Reminder.swift in Sources */,
 				D18AD33F2274783A0010496A /* ReminderCell.swift in Sources */,
 				D18AD306227434CB0010496A /* Checkup.swift in Sources */,
+				D18AD3542274D2380010496A /* SliderViewController.swift in Sources */,
 				D18AD34C2274AB100010496A /* DetailTraning.swift in Sources */,
 				D18AD336227470950010496A /* Addreminder.swift in Sources */,
 				D18AD3492274A8D60010496A /* TrainingTablecell.swift in Sources */,
@@ -402,7 +431,10 @@
 				D18AD332227467AD0010496A /* Addcheckup.swift in Sources */,
 				D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */,
 				D18AD30C227434CB0010496A /* Diatel.xcdatamodeld in Sources */,
+				D18AD35A2274E65E0010496A /* RegimeCellTableViewCell.swift in Sources */,
+				D18AD3572274E3D00010496A /* RegimeViewController.swift in Sources */,
 				D18AD304227434CB0010496A /* AppDelegate.swift in Sources */,
+				D18AD3502274CBDC0010496A /* SlideItem.swift in Sources */,
 				D18AD345227497500010496A /* TraningCell.swift in Sources */,
 				D18AD34222748F450010496A /* TrainigViewController.swift in Sources */,
 			);

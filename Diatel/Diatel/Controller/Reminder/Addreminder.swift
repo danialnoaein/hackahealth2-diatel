@@ -24,6 +24,7 @@ class Addreminder: UIViewController {
     @IBOutlet weak var daysInterval: UIButton!
     @IBOutlet weak var savebutton: UIBarButtonItem!
     @IBOutlet weak var closebutton: UIBarButtonItem!
+    @IBOutlet weak var nursephonenumber: UITextField!
     var currentdate : Date?
     var selectedstartdate : String?
     var timeInterval : Int?
@@ -42,6 +43,7 @@ class Addreminder: UIViewController {
         patientName.layer.cornerRadius = patientName.frame.height / 2
         notificationName.layer.cornerRadius = patientName.frame.height / 2
         notificationDescription.layer.cornerRadius = patientName.frame.height / 2
+        nursephonenumber.layer.cornerRadius = nursephonenumber.frame.height / 2
         backgroundPattern.clipsToBounds = true
         self.navigationItem.title = "افزودن یادآور"
         
