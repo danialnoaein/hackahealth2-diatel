@@ -32,6 +32,10 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_splash_gradient.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\bg_splash_gradient.xml"
+    },
+    {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_alarm_bell.png.flat",
         "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_alarm_bell.png"
     },

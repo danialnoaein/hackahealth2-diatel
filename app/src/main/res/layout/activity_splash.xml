@@ -1,9 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    tools:context=".SplashActivity"
+    android:background="@drawable/bg_splash_gradient">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/ic_alarm_bell"/>
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/exp_diatel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:el_expanded="false"
+            android:orientation="vertical"
+            app:el_duration="500">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <danialnoaein_widgets.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="دیاتل"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="36sp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"/>
+
+                <net.cachapa.expandablelayout.ExpandableLayout
+                    android:id="@+id/exp_magical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:el_expanded="false"
+                    app:el_duration="500">
+
+                    <danialnoaein_widgets.TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- همیار دیابت -"
+                        android:textSize="16dp"
+                        android:textColor="@android:color/white"/>
+
+                </net.cachapa.expandablelayout.ExpandableLayout>
+
+            </LinearLayout>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/pb_loading"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        app:SpinKit_Color="@color/colorAccentSecond"/>
+
+</RelativeLayout>

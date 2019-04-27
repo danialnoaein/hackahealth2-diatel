@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f19c0c590032d133d2678833bf729ceb\AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\35b7bd560df2646333486da32c682e6e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.ncapdevi:frag-nav:2.4.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\frag-nav-2.4.0.aar\451b9da2a55eb7813866651f445b2d7c\AndroidManifest.xml:2:1-12:12
@@ -41,25 +41,25 @@ MERGED from [com.android.support:interpolator:28.0.0] C:\Users\Daniel\.gradle\ca
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\ca4ddee673f265c0cbb069f4c42d8727\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\8cd19f4c30c2915ab6a6b915dc4351c7\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\0be165720a0488836970fa26a1806287\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
+INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:3:5-33
 		INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
 		INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:1-28:12
 		INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:5:5-24:19
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f19c0c590032d133d2678833bf729ceb\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\f19c0c590032d133d2678833bf729ceb\AndroidManifest.xml:22:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] C:\Users\Daniel\.gradle\caches\transforms-1\files-1.1\circleimageview-2.1.0.aar\4bed5fe6be369feea93520e8e3533125\AndroidManifest.xml:9:5-20
@@ -101,23 +101,23 @@ ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidMan
 	android:name
 		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:15:19-53
 activity#hackahealth.diatel.SplashActivity
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:16:9-52
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
 		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:16:19-49
-activity#hackahealth.diatel.MainActivity
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:17:9-23:20
-	android:name
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:17:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:20:27-74
+activity#hackahealth.diatel.MainActivity
+ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:23:9-25:20
+	android:name
+		ADDED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml:23:19-47
 uses-sdk
 INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Projects\DiatelProject\hackahealth2-diatel\app\src\main\AndroidManifest.xml
