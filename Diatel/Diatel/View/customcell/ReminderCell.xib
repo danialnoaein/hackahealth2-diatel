@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Shabnam-Bold.ttf">
+            <string>Shabnam-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="remindercell" rowHeight="140" id="KGk-i7-Jjw" customClass="ReminderCell" customModule="Diatel" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTU-q7-ejF">
+                        <rect key="frame" x="10" y="6" width="300" height="125.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="loX-9g-mLx">
+                                <rect key="frame" x="2" y="2" width="296" height="121.5"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q1d-dz-gu4">
+                                        <rect key="frame" x="0.0" y="0.0" width="296" height="45.5"/>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.38823529410000002" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5bZ-HU-sxj">
+                                        <rect key="frame" x="0.0" y="45.5" width="296" height="38"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvI-pT-vUt">
+                                                <rect key="frame" x="0.0" y="0.0" width="148" height="38"/>
+                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="15"/>
+                                                <color key="textColor" red="0.12549019610000001" green="0.38823529410000002" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjB-fI-Wtq">
+                                                <rect key="frame" x="148" y="0.0" width="148" height="38"/>
+                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="15"/>
+                                                <color key="textColor" red="0.12549019610000001" green="0.38823529410000002" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBz-Gt-IkZ">
+                                        <rect key="frame" x="0.0" y="83.5" width="296" height="38"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="15"/>
+                                        <color key="textColor" red="0.0061954348350000002" green="0.32133394479999999" blue="0.367829293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="loX-9g-mLx" firstAttribute="top" secondItem="iTU-q7-ejF" secondAttribute="top" constant="2" id="93L-rN-JzR"/>
+                            <constraint firstItem="loX-9g-mLx" firstAttribute="leading" secondItem="iTU-q7-ejF" secondAttribute="leading" constant="2" id="KIh-73-r9G"/>
+                            <constraint firstAttribute="bottom" secondItem="loX-9g-mLx" secondAttribute="bottom" constant="2" id="tJp-55-tQV"/>
+                            <constraint firstAttribute="trailing" secondItem="loX-9g-mLx" secondAttribute="trailing" constant="2" id="wzu-al-rLl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iTU-q7-ejF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Bkj-rl-a8z"/>
+                    <constraint firstAttribute="bottom" secondItem="iTU-q7-ejF" secondAttribute="bottom" constant="8" id="KDA-mw-xVn"/>
+                    <constraint firstItem="iTU-q7-ejF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="VOx-3e-Tkb"/>
+                    <constraint firstAttribute="trailing" secondItem="iTU-q7-ejF" secondAttribute="trailing" constant="10" id="czI-cr-O1l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="container" destination="iTU-q7-ejF" id="fDR-Dk-L6D"/>
+                <outlet property="id" destination="qBz-Gt-IkZ" id="2xg-8z-e1Q"/>
+                <outlet property="patientName" destination="QjB-fI-Wtq" id="nch-Tj-Z4B"/>
+                <outlet property="time" destination="pvI-pT-vUt" id="lJt-3C-BAX"/>
+                <outlet property="title" destination="q1d-dz-gu4" id="WhS-nN-q6q"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="102"/>
+        </tableViewCell>
+    </objects>
+</document>

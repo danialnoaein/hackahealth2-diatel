@@ -22,17 +22,45 @@
         <scene sceneID="iIv-zr-j7Z">
             <objects>
                 <viewController id="kM6-7H-h1v" customClass="Reminder" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4hv-Sm-NPH">
+                    <view key="view" contentMode="scaleAspectFill" id="4hv-Sm-NPH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="لیست یادآور شما خالی می باشد ،برای افزودن یاد آور روی + بزنید " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muy-tv-42m">
+                                <rect key="frame" x="16" y="244.5" width="288" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="8du-Sj-0Pn"/>
+                                    <constraint firstAttribute="height" constant="80" id="NVq-wA-NCF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AQT-Mq-aFb">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="muy-tv-42m" firstAttribute="centerY" secondItem="4hv-Sm-NPH" secondAttribute="centerY" id="77J-rh-cLR"/>
+                            <constraint firstItem="AQT-Mq-aFb" firstAttribute="bottom" secondItem="KwV-v4-LMe" secondAttribute="bottom" id="7Z1-tx-dwk"/>
+                            <constraint firstItem="AQT-Mq-aFb" firstAttribute="leading" secondItem="KwV-v4-LMe" secondAttribute="leading" id="eVY-gt-8yn"/>
+                            <constraint firstItem="AQT-Mq-aFb" firstAttribute="top" secondItem="KwV-v4-LMe" secondAttribute="top" id="f3k-ZS-xeJ"/>
+                            <constraint firstItem="muy-tv-42m" firstAttribute="centerX" secondItem="4hv-Sm-NPH" secondAttribute="centerX" id="lUu-Ub-Dm9"/>
+                            <constraint firstItem="AQT-Mq-aFb" firstAttribute="trailing" secondItem="KwV-v4-LMe" secondAttribute="trailing" id="wrB-Ko-7L7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KwV-v4-LMe"/>
                     </view>
                     <navigationItem key="navigationItem" title="لیست یاد آورها" id="CjK-HH-y9D"/>
+                    <connections>
+                        <outlet property="placeholdertext" destination="muy-tv-42m" id="jiy-Ui-eWJ"/>
+                        <outlet property="tableview" destination="AQT-Mq-aFb" id="lmK-mU-r2P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qv-n4-qLM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="-779"/>
+            <point key="canvasLocation" x="1880.625" y="-779.57746478873241"/>
         </scene>
         <!--Addreminder-->
         <scene sceneID="87Z-NV-5la">
@@ -41,13 +69,163 @@
                     <view key="view" contentMode="scaleToFill" id="BOL-i1-cyx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-color" translatesAutoresizingMaskIntoConstraints="NO" id="tbJ-cD-vhS">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSX-0L-xQW">
+                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="8wK-4y-UEG"/>
+                                    <constraint firstAttribute="height" constant="44" id="bnP-PQ-I2j"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.0061954348350000002" green="0.32133394479999999" blue="0.367829293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="16"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="افزودن یادآور" id="ZMd-9N-KB3">
+                                        <barButtonItem key="leftBarButtonItem" title="بستن" id="bq9-Et-4I9">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="closeViewController:" destination="2mv-Pb-Rdf" id="Kqd-cT-paF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="ذخیره" id="2aG-5H-eQk">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <action selector="saveReminder:" destination="2mv-Pb-Rdf" id="5Wm-An-Bbq"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-v3-Ebg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock-" translatesAutoresizingMaskIntoConstraints="NO" id="sxg-th-KJd">
+                                        <rect key="frame" x="120.5" y="10" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="SF1-PB-pyf"/>
+                                            <constraint firstAttribute="height" constant="80" id="ejY-m9-Znq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rl1-uc-vsg">
+                                        <rect key="frame" x="10" y="130" width="300" height="350"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="54D-5G-tlh">
+                                                <rect key="frame" x="10" y="0.0" width="280" height="350"/>
+                                                <subviews>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام بیمار" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfP-m7-Eij">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.69635595029999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="نام یادآور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-tt-hIt">
+                                                        <rect key="frame" x="0.0" y="60" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.69964683220000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="توضیحات" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eOr-m5-NmP">
+                                                        <rect key="frame" x="0.0" y="120" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="0.6954730308" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqC-ba-JkE">
+                                                        <rect key="frame" x="0.0" y="180" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                                        <state key="normal" title="زمان شروع">
+                                                            <color key="titleColor" red="0.0061954348350000002" green="0.32133394479999999" blue="0.367829293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="selectdate:" destination="2mv-Pb-Rdf" eventType="touchUpInside" id="vhJ-xr-eCQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBO-Ma-w8q">
+                                                        <rect key="frame" x="0.0" y="240" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                                        <state key="normal" title="دوره یادآوری به ساعت">
+                                                            <color key="titleColor" red="0.0061954348350000002" green="0.32133394479999999" blue="0.367829293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="timeinterval:" destination="2mv-Pb-Rdf" eventType="touchUpInside" id="Dci-i2-7Ac"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K8-D0-v0f">
+                                                        <rect key="frame" x="0.0" y="300" width="280" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                                        <state key="normal" title="مدت دوره به روز">
+                                                            <color key="titleColor" red="0.0061954348350000002" green="0.32133394479999999" blue="0.367829293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="DaysInterval:" destination="2mv-Pb-Rdf" eventType="touchUpInside" id="sl8-jQ-AK7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="54D-5G-tlh" firstAttribute="leading" secondItem="Rl1-uc-vsg" secondAttribute="leading" constant="10" id="SMb-gI-1em"/>
+                                            <constraint firstAttribute="bottom" secondItem="54D-5G-tlh" secondAttribute="bottom" id="XoN-yn-Xxe"/>
+                                            <constraint firstAttribute="trailing" secondItem="54D-5G-tlh" secondAttribute="trailing" constant="10" id="YwP-FH-apY"/>
+                                            <constraint firstItem="54D-5G-tlh" firstAttribute="top" secondItem="Rl1-uc-vsg" secondAttribute="top" id="gSc-We-EQr"/>
+                                            <constraint firstAttribute="height" constant="350" id="xN2-4Q-ueD"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="sxg-th-KJd" firstAttribute="leading" secondItem="lqi-v3-Ebg" secondAttribute="leading" constant="120.5" id="Enj-h3-2rF"/>
+                                    <constraint firstItem="Rl1-uc-vsg" firstAttribute="leading" secondItem="lqi-v3-Ebg" secondAttribute="leading" constant="10" id="HPf-VB-8Xc"/>
+                                    <constraint firstItem="sxg-th-KJd" firstAttribute="centerX" secondItem="lqi-v3-Ebg" secondAttribute="centerX" id="L8D-Sm-SJX"/>
+                                    <constraint firstItem="Rl1-uc-vsg" firstAttribute="top" secondItem="sxg-th-KJd" secondAttribute="bottom" constant="40" id="N9f-U7-AVc"/>
+                                    <constraint firstItem="sxg-th-KJd" firstAttribute="top" secondItem="lqi-v3-Ebg" secondAttribute="top" constant="10" id="RyR-h0-NaV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rl1-uc-vsg" secondAttribute="trailing" constant="10" id="T6h-pG-fj7"/>
+                                    <constraint firstAttribute="trailing" secondItem="sxg-th-KJd" secondAttribute="trailing" constant="119.5" id="bf2-XB-S9i"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rl1-uc-vsg" secondAttribute="bottom" constant="8" id="pZv-Cb-RPS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tbJ-cD-vhS" firstAttribute="top" secondItem="CSX-0L-xQW" secondAttribute="bottom" id="28r-Qa-z1O"/>
+                            <constraint firstItem="lqi-v3-Ebg" firstAttribute="bottom" secondItem="fgm-4p-P6B" secondAttribute="bottom" id="85l-3W-gV6"/>
+                            <constraint firstItem="tbJ-cD-vhS" firstAttribute="leading" secondItem="fgm-4p-P6B" secondAttribute="leading" id="8Gm-9M-WxZ"/>
+                            <constraint firstItem="tbJ-cD-vhS" firstAttribute="trailing" secondItem="fgm-4p-P6B" secondAttribute="trailing" id="LvV-mH-1JF"/>
+                            <constraint firstItem="lqi-v3-Ebg" firstAttribute="trailing" secondItem="fgm-4p-P6B" secondAttribute="trailing" id="Pja-9N-byt"/>
+                            <constraint firstItem="lqi-v3-Ebg" firstAttribute="leading" secondItem="fgm-4p-P6B" secondAttribute="leading" id="T30-sE-IGS"/>
+                            <constraint firstItem="tbJ-cD-vhS" firstAttribute="bottom" secondItem="fgm-4p-P6B" secondAttribute="bottom" id="YGL-Sw-oE7"/>
+                            <constraint firstItem="CSX-0L-xQW" firstAttribute="trailing" secondItem="fgm-4p-P6B" secondAttribute="trailing" id="e3e-1o-htG"/>
+                            <constraint firstItem="lqi-v3-Ebg" firstAttribute="top" secondItem="CSX-0L-xQW" secondAttribute="bottom" id="mU4-sW-llk"/>
+                            <constraint firstItem="CSX-0L-xQW" firstAttribute="leading" secondItem="fgm-4p-P6B" secondAttribute="leading" id="tDg-1Q-E14"/>
+                            <constraint firstItem="CSX-0L-xQW" firstAttribute="top" secondItem="fgm-4p-P6B" secondAttribute="top" id="xZH-rU-zOz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fgm-4p-P6B"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundPattern" destination="tbJ-cD-vhS" id="o9j-Mh-mJI"/>
+                        <outlet property="closebutton" destination="bq9-Et-4I9" id="a0N-ul-s4a"/>
+                        <outlet property="daysInterval" destination="7K8-D0-v0f" id="VOh-jc-cio"/>
+                        <outlet property="intervalButton" destination="uBO-Ma-w8q" id="YK1-ey-k6f"/>
+                        <outlet property="notificationDescription" destination="eOr-m5-NmP" id="cPw-4D-lf6"/>
+                        <outlet property="notificationName" destination="5cU-tt-hIt" id="kRj-bt-m0x"/>
+                        <outlet property="patientName" destination="tfP-m7-Eij" id="40v-Ww-GcY"/>
+                        <outlet property="savebutton" destination="2aG-5H-eQk" id="kJr-i7-mFs"/>
+                        <outlet property="startdate" destination="NqC-ba-JkE" id="5Xt-fD-zWD"/>
+                        <outlet property="starttimeButton" destination="NqC-ba-JkE" id="9OQ-hM-8vd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Uo-wh-4kl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2678" y="-780"/>
+            <point key="canvasLocation" x="2627" y="-777"/>
         </scene>
         <!--چکاپ-->
         <scene sceneID="D2q-CQ-ifU">
@@ -207,18 +385,50 @@
         <!--آموزش-->
         <scene sceneID="XhT-Xk-QZI">
             <objects>
-                <viewController id="Rlv-3j-1Hv" sceneMemberID="viewController">
+                <viewController id="Rlv-3j-1Hv" customClass="TrainigViewController" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YHA-kq-UaN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nW4-fe-vp7">
+                                <rect key="frame" x="16" y="84" width="288" height="435"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WDx-pH-rgq">
+                                    <size key="itemSize" width="146" height="144"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sectioncell" id="5j0-Dr-JAg">
+                                        <rect key="frame" x="74" y="0.0" width="140" height="140"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="140" height="140"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nW4-fe-vp7" firstAttribute="leading" secondItem="6rH-gN-Yuy" secondAttribute="leading" constant="16" id="MMR-eX-o4f"/>
+                            <constraint firstItem="nW4-fe-vp7" firstAttribute="top" secondItem="6rH-gN-Yuy" secondAttribute="top" constant="20" id="bsm-Mj-ucg"/>
+                            <constraint firstItem="6rH-gN-Yuy" firstAttribute="trailing" secondItem="nW4-fe-vp7" secondAttribute="trailing" constant="16" id="jMW-pX-bEP"/>
+                            <constraint firstItem="nW4-fe-vp7" firstAttribute="bottom" secondItem="6rH-gN-Yuy" secondAttribute="bottom" id="wox-uV-mHe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6rH-gN-Yuy"/>
                     </view>
                     <navigationItem key="navigationItem" title="آموزش" id="Wrv-HW-Nvq"/>
+                    <connections>
+                        <outlet property="collectionview" destination="nW4-fe-vp7" id="jcg-L2-9Zv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yNm-AW-fd4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="-1485"/>
+            <point key="canvasLocation" x="1880.625" y="-1485.2112676056338"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="srd-dH-P1o">
@@ -306,7 +516,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Main-color" width="1300" height="1300"/>
         <image name="alarm-bell" width="30" height="30"/>
+        <image name="alarm-clock-" width="96" height="96"/>
         <image name="dismiss_butt_white" width="44" height="44"/>
         <image name="glucose-meter " width="30" height="30"/>
         <image name="reading" width="30" height="30"/>

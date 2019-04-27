@@ -27,6 +27,9 @@
 		D18AD336227470950010496A /* Addreminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD335227470950010496A /* Addreminder.swift */; };
 		D18AD33A227472140010496A /* NotificationEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD338227472140010496A /* NotificationEntity+CoreDataClass.swift */; };
 		D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD339227472140010496A /* NotificationEntity+CoreDataProperties.swift */; };
+		D18AD33F2274783A0010496A /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD33D2274783A0010496A /* ReminderCell.swift */; };
+		D18AD3402274783A0010496A /* ReminderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18AD33E2274783A0010496A /* ReminderCell.xib */; };
+		D18AD34222748F450010496A /* TrainigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD34122748F450010496A /* TrainigViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		D18AD335227470950010496A /* Addreminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addreminder.swift; sourceTree = "<group>"; };
 		D18AD338227472140010496A /* NotificationEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D18AD339227472140010496A /* NotificationEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D18AD33D2274783A0010496A /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		D18AD33E2274783A0010496A /* ReminderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderCell.xib; sourceTree = "<group>"; };
+		D18AD34122748F450010496A /* TrainigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainigViewController.swift; sourceTree = "<group>"; };
 		D39FE661691D28DC905A0157 /* Pods-Diatel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diatel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Diatel/Pods-Diatel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +139,7 @@
 		D18AD319227448E00010496A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D18AD33C227478000010496A /* customcell */,
 				D18AD307227434CB0010496A /* Main.storyboard */,
 				D18AD30F227434CB0010496A /* LaunchScreen.storyboard */,
 			);
@@ -172,6 +179,7 @@
 		D18AD32D227452630010496A /* Traning */ = {
 			isa = PBXGroup;
 			children = (
+				D18AD34122748F450010496A /* TrainigViewController.swift */,
 			);
 			path = Traning;
 			sourceTree = "<group>";
@@ -208,6 +216,15 @@
 				D18AD339227472140010496A /* NotificationEntity+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D18AD33C227478000010496A /* customcell */ = {
+			isa = PBXGroup;
+			children = (
+				D18AD33D2274783A0010496A /* ReminderCell.swift */,
+				D18AD33E2274783A0010496A /* ReminderCell.xib */,
+			);
+			path = customcell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +296,7 @@
 				D18AD311227434CB0010496A /* LaunchScreen.storyboard in Resources */,
 				D18AD32622744A3A0010496A /* Shabnam-Light-FD.ttf in Resources */,
 				D18AD30E227434CB0010496A /* Assets.xcassets in Resources */,
+				D18AD3402274783A0010496A /* ReminderCell.xib in Resources */,
 				D18AD32422744A3A0010496A /* Shabnam-Bold-FD.ttf in Resources */,
 				D18AD309227434CB0010496A /* Main.storyboard in Resources */,
 			);
@@ -358,6 +376,7 @@
 				D18AD32B22744C2E0010496A /* Extentions.swift in Sources */,
 				D18AD33A227472140010496A /* NotificationEntity+CoreDataClass.swift in Sources */,
 				D18AD334227470830010496A /* Reminder.swift in Sources */,
+				D18AD33F2274783A0010496A /* ReminderCell.swift in Sources */,
 				D18AD306227434CB0010496A /* Checkup.swift in Sources */,
 				D18AD336227470950010496A /* Addreminder.swift in Sources */,
 				D18AD32C22744C2E0010496A /* RightimageTextfield.swift in Sources */,
@@ -365,6 +384,7 @@
 				D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */,
 				D18AD30C227434CB0010496A /* Diatel.xcdatamodeld in Sources */,
 				D18AD304227434CB0010496A /* AppDelegate.swift in Sources */,
+				D18AD34222748F450010496A /* TrainigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
