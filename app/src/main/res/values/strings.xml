@@ -18,12 +18,13 @@
 
     <!--Glu Guide Slides-->
     <string name="glu_guide_slide_one">دست های خود را شسته و خشک کنید</string>
-    <string name="glu_guide_slide_two">دست های خود را شسته و خشک کنید</string>
-    <string name="glu_guide_slide_three">دست های خود را شسته و خشک کنید</string>
-    <string name="glu_guide_slide_four">دست های خود را شسته و خشک کنید</string>
-    <string name="glu_guide_slide_five">دست های خود را شسته و خشک کنید</string>
-    <string name="glu_guide_slide_six">دست های خود را شسته و خشک کنید</string>
-    <string name="glu_guide_slide_seven">دست های خود را شسته و خشک کنید</string>
+    <string name="glu_guide_slide_two">دستگاه گلوکومتر خود را حاضر کنید، هر دستگاه تفاوت های جزئی خاص خود را دارد، دستورالعمل و نحوه کارکردن با آن را با دقت مطالعه کنید. در ابتدا بهتراست تحت نظر یک پرستار آموزش دهنده دیابت این کار را انجام دهید</string>
+    <string name="glu_guide_slide_three">محل مورد نظر برای خون گرفتن را مشخص کنید، برای این مار همیشه از یک نقطه ثابت استفاده نکنید، بهتر است هربار یک انگشت  را انتخاب کنید</string>
+    <string name="glu_guide_slide_four">سوزن و قلم را آماده نمایید. درست مثل دستگاه های گلوکوکتر، قلم ها نیز تفاوت هایی باهم دارند. دستورالعمل کار با قلم را خوانده و با دقت آنرا اجرا کنید</string>
+    <string name="glu_guide_slide_five">قلم را مقابل انگشتتان قرار داده و آن را به سمت انگشت فشار دهید</string>
+    <string name="glu_guide_slide_six">با کمی فشاردادن قطره ای خون خارج می شود. اگر خون خارج نمی شود دست خود را به سمت پایین گرفته و به آرامی انگشت را فشار دهید</string>
+    <string name="glu_guide_slide_seven">قطره خون را روی نوار اندازه گیری قند قرار دهید و آن را در دستگاه گذاشته و منتظر بمانید تا نتیجه روی صفحه دستگاه ظاهر شود</string>
+    <string name="glu_guide_slide_eight">نتیجه را در قسمت " چکاپ " ثبت نمایید</string>
 
 
 

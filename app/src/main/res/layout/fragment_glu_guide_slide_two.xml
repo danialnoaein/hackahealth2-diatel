@@ -16,6 +16,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
+        android:padding="16dp"
         android:orientation="vertical"
         android:background="@drawable/bg_glu_guide_tip">
         
@@ -23,7 +24,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:tint="@android:color/white"
-            app:srcCompat="@drawable/ic_glucose_meter"
+            app:srcCompat="@drawable/ic_content"
             android:layout_marginBottom="16dp"/>
         
         <danialnoaein_widgets.TextView

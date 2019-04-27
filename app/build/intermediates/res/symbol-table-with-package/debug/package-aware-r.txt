@@ -1393,6 +1393,7 @@ layout fragment_first_visit_slide_four
 layout fragment_first_visit_slide_one
 layout fragment_first_visit_slide_three
 layout fragment_first_visit_slide_two
+layout fragment_glu_guide_slide_eight
 layout fragment_glu_guide_slide_five
 layout fragment_glu_guide_slide_four
 layout fragment_glu_guide_slide_one
@@ -1469,6 +1470,7 @@ string character_counter_content_description
 string character_counter_pattern
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string glu_guide_slide_eight
 string glu_guide_slide_five
 string glu_guide_slide_four
 string glu_guide_slide_one

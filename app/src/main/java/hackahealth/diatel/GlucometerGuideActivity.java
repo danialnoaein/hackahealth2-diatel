@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import adapters.FragmentPagerVpAdapter;
+import fragments.glu_guide_fragments.SlideEightFragment;
 import fragments.glu_guide_fragments.SlideFiveFragment;
 import fragments.glu_guide_fragments.SlideFourFragment;
 import fragments.glu_guide_fragments.SlideOneFragment;
@@ -50,6 +51,7 @@ public class GlucometerGuideActivity extends AppCompatActivity {
         fragments.add(SlideFiveFragment.newInstance());
         fragments.add(SlideSixFragment.newInstance());
         fragments.add(SlideSevenFragment.newInstance());
+        fragments.add(SlideEightFragment.newInstance());
         vp_slides.setAdapter(new FragmentPagerVpAdapter(getSupportFragmentManager(), fragments, new String[]{}));
     }
 
@@ -63,7 +65,7 @@ public class GlucometerGuideActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (vp_slides.getCurrentItem() == 5){
+                if (vp_slides.getCurrentItem() == 6){
                     ll_next_fragment.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {

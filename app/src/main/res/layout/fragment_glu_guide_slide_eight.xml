@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingRight="40dp"
+    android:paddingBottom="80dp"
+    android:paddingLeft="40dp"
+    android:paddingTop="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/bg_glu_guide_tip">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_dermatology"
+            android:layout_marginBottom="16dp"/>
+
+        <danialnoaein_widgets.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/glu_guide_slide_eight"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -24,8 +24,8 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:tint="@android:color/white"
                 app:srcCompat="@drawable/ic_dermatology" />
 
@@ -33,9 +33,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center_vertical"
                 android:text="شروع چکاپ"
                 android:textColor="@android:color/white"
-                android:textSize="36sp" />
+                android:textSize="32sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,30 +50,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="قبل از هر وعده غذایی، ۲ ساعت بعد از هر وعده غذایی، قبل خواب"
+                android:text="- قبل از هر وعده غذایی، ۲ ساعت بعد از هر وعده غذایی، قبل خواب"
                 android:textColor="@android:color/white" />
 
             <danialnoaein_widgets.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="12"
+                android:text="- حتما هنگام افت قند خون در نیمه شب (۲ تا ۳ بامداد)"
                 android:textColor="@android:color/white" />
 
             <danialnoaein_widgets.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="12"
+                android:text="- حداقل 1 بار در روز برای افراد دیابتی که از طریق نرم افزارها قند خود را کنترل می کنند"
                 android:textColor="@android:color/white" />
 
             <danialnoaein_widgets.TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
-                android:text="12"
+                android:text="- حداقل 4 بار تست قند در روز برای بیمارانی که انسولین تزریق می کنند"
                 android:textColor="@android:color/white" />
-            
+
 
         </LinearLayout>
 
