@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //MARK: Notification Authrotize
+        /**********************************************************/
+        let notificationcenter = UNUserNotificationCenter.current();
+        notificationcenter.requestAuthorization(options: [.badge,.sound,.alert]) { (guarented, error) in
+            if guarented == true{
+                print("Accepted")
+            }
+        }
+        
+        //MARK: Custom Font For UITabbarController
+        /**********************************************************/
+        UITabBarItem.appearance().setTitleTextAttributes([ NSAttributedStringKey.font: UIFont(name: "Shabnam-Bold", size: 12)!], for: UIControlState.normal);
+
+        let customFont = UIFont(name: "Shabnam", size: 17.0);
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: customFont!], for: .normal);
         return true
     }
 
