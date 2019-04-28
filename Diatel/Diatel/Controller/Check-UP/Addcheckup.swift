@@ -8,7 +8,7 @@
 
 import UIKit
 import McPicker
-
+import Alamofire
 
 enum patientStatus {
     case normal
@@ -159,31 +159,55 @@ class Addcheckup: UIViewController {
     
     @IBAction func savecheckup(_ sender: UIButton) {
         
-        if sugarAmount.text != "" && haveSick != false && timeTest.titleLabel?.text != "زمان انجام آزمایش"{
+        if sugarAmount.text != "" && sickInPast.titleLabel?.text != "سابقه دیابت" && timeTest.titleLabel?.text != "زمان انجام آزمایش"{
             haveDangrous = isDangrous()
             if ((cigarets == true || drugs == true || pragnent == true || workoutRegular == true) && haveSick == true){
                 statusUser = .danger
-                simpleAlert("danger")
+                  sendUserdata()
+                //simpleAlert("danger")
             }else{
                 if haveSick == true{
                     statusUser = .alarm
-                    simpleAlert("alarm")
+                      sendUserdata()
+                   // simpleAlert("alarm")
                 }else{
                     statusUser = .normal
-                    simpleAlert("normal")
+                      sendUserdata()
+                  //  simpleAlert("normal")
                 }
             }
+            
+            sendUserdata()
         }else{
             simpleAlert("میزان قند خون ، زمان تست و سابقه بیماری الزامی می باشند")
         }
-
-        
-        
         
     }
     
     
-    
+    func sendUserdata(){
+         self.showHUD("در حال ارسال اطلاعات");
+        let frequentUrination = Int(truncating: NSNumber(value:cigarets))
+        let dryMouth = Int(truncating: NSNumber(value:alcohol))
+        let excessiveThirst = Int(truncating: NSNumber(value:workoutRegular))
+        let suddenFeeling = Int(truncating: NSNumber(value:pragnent))
+        let feelingBurningHands = Int(truncating: NSNumber(value:drugs))
+       
+        let parameters = ["bloodSuger" : "\(sugarAmount.text!)","checkupTime" : "100","frequentUrination" : "\(frequentUrination)","dryMouth" : "\(dryMouth)","excessiveThirst" : "\(excessiveThirst)","suddenFeeling" : "\(suddenFeeling)","feelingBurningHands" : "\(feelingBurningHands)","userId":"1"] as [String : Any]
+        
+        Alamofire.request("http://noaein.ir/diatel/index.php/app/registerCheckup", method: .post, parameters: parameters).responseJSON { (response) in
+            if response.result.isSuccess{
+                self.hideHUD();
+
+            }else{
+                
+                self.hideHUD();
+                self.simpleAlert("error happend !")
+                
+            }
+        }
+
+    }
     
     
     
