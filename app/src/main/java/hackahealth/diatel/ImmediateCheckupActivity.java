@@ -141,7 +141,6 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 registerCheckUpInServer();
-                checkUp();
                 pb_loading.setVisibility(View.VISIBLE);
                 btn_checkup.setVisibility(View.GONE);
 
@@ -192,10 +191,10 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
 
                 Log.e("statusCode", statusCode + "");
                 Log.e("responseString", responseString + "");
-                //startResultActivity();
+                checkUp();
             }
         });
-        
+
     }
 
     private void checkUp() {
