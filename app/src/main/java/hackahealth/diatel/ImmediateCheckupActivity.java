@@ -168,6 +168,8 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
         params.put("excessiveThirst", excessiveThirst);
         params.put("suddenFeeling", suddenFeeling);
         params.put("feelingBurningHands", feelingBurningHands);
+        params.put("feelingBurningHands", feelingBurningHands);
+        params.put("dangerLevel", getDangerLevel());
         params.put("userId", sharedPref.getInt("userId", 0));
 
         String requestUrl = "http://noaein.ir/diatel/index.php/app/registerCheckup";
@@ -193,24 +195,13 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
                 //startResultActivity();
             }
         });
-
-
+        
     }
 
     private void checkUp() {
 
         Intent intent = new Intent(ImmediateCheckupActivity.this , CheckUpResultActivity.class);
-
-
-        if ( cb_frequentUrination.isChecked() || cb_dryMouth.isChecked() || cb_excessiveThirst.isChecked() || cb_suddenFeeling.isChecked() || cb_feelingBurningHands.isChecked() ){
-            intent.putExtra("DANGER_LEVEL" , 2);// Most Dangerous LEVEL
-        }else{
-            if ( checkBloodSugarLevelDanger()){
-                intent.putExtra("DANGER_LEVEL" , 1);//Danger Level
-            }else{
-                intent.putExtra("DANGER_LEVEL" , 0);//Normal Level
-            }
-        }
+        intent.putExtra("DANGER_LEVEL" , getDangerLevel());//Danger Level
         startActivity(intent);
         finish();
 
@@ -287,12 +278,19 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
 
     }
 
-    private void startResultActivity() {
+    private int getDangerLevel(){
 
-        Intent intent = new Intent(ImmediateCheckupActivity.this, CheckUpResultActivity.class);
-        startActivity(intent);
-        finish();
-
+        int dangerLevel;
+        if ( cb_frequentUrination.isChecked() || cb_dryMouth.isChecked() || cb_excessiveThirst.isChecked() || cb_suddenFeeling.isChecked() || cb_feelingBurningHands.isChecked() ){
+            dangerLevel = 2;
+        }else{
+            if ( checkBloodSugarLevelDanger()){
+                dangerLevel = 1;
+            }else{
+                dangerLevel = 0;
+            }
+        }
+        return dangerLevel;
     }
 
 

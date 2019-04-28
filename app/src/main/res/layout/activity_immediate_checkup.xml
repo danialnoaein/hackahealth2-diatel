@@ -133,7 +133,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/rb_checkup_time_3"
-                            android:text="باردار بعد از غذا"/>
+                            android:text="باردار دو ساعت بعد از غذا"/>
 
                         <danialnoaein_widgets.RadioButton
                             android:layout_width="match_parent"
@@ -145,7 +145,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/rb_checkup_time_5"
-                            android:text="باردار با سابقه دیابت بعد از غذا"/>
+                            android:text="باردار با سابقه دیابت دو ساعت بعد از غذا"/>
 
 
                     </RadioGroup>
