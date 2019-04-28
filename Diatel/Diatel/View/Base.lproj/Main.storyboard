@@ -71,10 +71,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-color" translatesAutoresizingMaskIntoConstraints="NO" id="tbJ-cD-vhS">
-                                <rect key="frame" x="0.0" y="64" width="321" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="1300" height="504"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSX-0L-xQW">
-                                <rect key="frame" x="0.0" y="20" width="321" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="1300" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bnP-PQ-I2j"/>
                                 </constraints>
@@ -100,7 +100,7 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-v3-Ebg">
-                                <rect key="frame" x="0.0" y="64" width="321" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="1300" height="504"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock-" translatesAutoresizingMaskIntoConstraints="NO" id="sxg-th-KJd">
                                         <rect key="frame" x="120.5" y="10" width="80" height="80"/>
@@ -509,7 +509,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nW4-fe-vp7">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW4-fe-vp7">
                                 <rect key="frame" x="16" y="69" width="288" height="436"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WDx-pH-rgq">
