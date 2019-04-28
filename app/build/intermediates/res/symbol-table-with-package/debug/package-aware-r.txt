@@ -1149,10 +1149,11 @@ id auto
 id barrier
 id beginning
 id blocking
-id blood_sugar
 id bottom
 id btn_checkup
 id btn_done_guide
+id btn_get_regime_program
+id btn_go_to_main_activity
 id btn_register
 id buttonPanel
 id cb_dryMouth
@@ -1191,6 +1192,7 @@ id end
 id enterAlways
 id enterAlwaysCollapsed
 id et_age
+id et_blood_sugar
 id et_family_deseis
 id et_height
 id et_name
@@ -1233,6 +1235,7 @@ id line1
 id line3
 id listMode
 id list_item
+id ll_container_bg
 id ll_diabet_type
 id ll_diabetes_risk_test
 id ll_glu_guide
@@ -1271,6 +1274,8 @@ id rb_checkup_time_0
 id rb_checkup_time_1
 id rb_checkup_time_2
 id rb_checkup_time_3
+id rb_checkup_time_4
+id rb_checkup_time_5
 id rb_man
 id rb_no
 id rb_woman
@@ -1352,6 +1357,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id tv_date
+id tv_result_message
 id tv_title
 id tv_toast
 id uniform
@@ -1511,6 +1517,9 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string danger_level_0
+string danger_level_1
+string danger_level_2
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string glu_guide_slide_eight

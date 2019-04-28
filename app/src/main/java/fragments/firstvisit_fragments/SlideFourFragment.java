@@ -43,7 +43,7 @@ public class SlideFourFragment extends Fragment {
     String WEIGHT_KEY = "weight";
     String HEIGHT_KEY = "height";
 
-    String HAVE_DIABET_KEY = "have_diabet";
+    String HAS_DIABETES_KEY = "has_diabetes";
     String FAMILY_DESEIS = "family_deseis";
 
     String PHONE_NUMBER_KEY = "phone_number";
@@ -72,7 +72,7 @@ public class SlideFourFragment extends Fragment {
         initViews();
         onClick();
 
-        sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        sharedPref = getContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE);
         editor = sharedPref.edit();
 
     }
@@ -104,20 +104,27 @@ public class SlideFourFragment extends Fragment {
         params.put("weight", sharedPref.getInt(WEIGHT_KEY, 0));
         params.put("diseaseHistory", 0);
         params.put("familyDisease", sharedPref.getString(FAMILY_DESEIS, ""));
-        params.put("diabetType", sharedPref.getInt(HAVE_DIABET_KEY, 0));
+        params.put("diabetType", sharedPref.getInt(HAS_DIABETES_KEY, 0));
         params.put("phoneNumber", sharedPref.getString(PHONE_NUMBER_KEY, ""));
         params.put("nursePhoneNuber", sharedPref.getString(NURSE_PHONE_NUMBER_KEY, ""));
         String requestUrl = "http://noaein.ir/diatel/index.php/app/registerUser";
 
         AsyncHttpClient client = new AsyncHttpClient();
         client.post(requestUrl, params, new TextHttpResponseHandler() {
+
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
 
                 Log.e("statusCode", statusCode + "");
                 Log.e("responseString", responseString + "");
                 Log.e("throwable", throwable + "");
-                //progressDialog.dismiss();
+
+                if (statusCode == 0){
+                    btn_register.setVisibility(View.VISIBLE);
+                    pb_loading.setVisibility(View.GONE);
+                    danialnoaein_widgets.Toast.makeTEXT(getContext() , "خطا در برقراری ارتباط با سرور" , danialnoaein_widgets.Toast.TOAST_TYPE_DEFAULT);
+                }
+
             }
 
             @Override

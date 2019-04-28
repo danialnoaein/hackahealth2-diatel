@@ -26,5 +26,10 @@
     <string name="glu_guide_slide_seven">قطره خون را روی نوار اندازه گیری قند قرار دهید و آن را در دستگاه گذاشته و منتظر بمانید تا نتیجه روی صفحه دستگاه ظاهر شود</string>
     <string name="glu_guide_slide_eight">نتیجه را در قسمت " چکاپ " ثبت نمایید</string>
 
+    <!--Checkup Result Messages-->
+    <string name="danger_level_0">قند خون شما طبیعی است</string>
+    <string name="danger_level_1">قند خون شما غیرطبیعی است</string>
+    <string name="danger_level_2">قند خون شما در وضعیت هشدار قرار دارد. لطفا به پزشک مراجعه کنید</string>
+
 
 </resources>

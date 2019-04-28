@@ -40,7 +40,7 @@ public class FirstVisitActivity extends AppCompatActivity {
     String WEIGHT_KEY = "weight";
     String HEIGHT_KEY = "height";
 
-    String HAVE_DIABET_KEY = "have_diabet";
+    String HAS_DIABETES_KEY = "has_diabetes";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,12 +58,8 @@ public class FirstVisitActivity extends AppCompatActivity {
         onClick();
         initPager();
 
-        sharedPref = getPreferences(Context.MODE_PRIVATE);
+        sharedPref = getSharedPreferences("MyPref",Context.MODE_PRIVATE);
         editor = sharedPref.edit();
-
-        //TODO: Remove after debug phase
-        editor.clear();
-        editor.apply();
 
     }
 
@@ -103,7 +99,7 @@ public class FirstVisitActivity extends AppCompatActivity {
                         }
                         break;
                     case 2:
-                        if ( sharedPref.getInt(HAVE_DIABET_KEY,2) == 2 ){
+                        if ( sharedPref.getInt(HAS_DIABETES_KEY,2) == 2 ){
                             showError();
                         }else{
                             vp_slides.setCurrentItem(vp_slides.getCurrentItem()+1);

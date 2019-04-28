@@ -2,6 +2,7 @@ package hackahealth.diatel;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,11 +18,16 @@ public class SplashActivity extends AppCompatActivity {
     ExpandableLayout exp_diatel, exp_magical;
     SpinKitView pb_loading;
 
+    SharedPreferences sharedPref;
+    SharedPreferences.Editor editor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
+
+        clearShrdPrefs();
 
         findViews();
         new Handler().postDelayed(new Runnable() {
@@ -69,5 +75,14 @@ public class SplashActivity extends AppCompatActivity {
 
     public Context getContext() {
         return context;
+    }
+
+    private void clearShrdPrefs(){
+        sharedPref = getSharedPreferences("MyPref",Context.MODE_PRIVATE);
+        editor = sharedPref.edit();
+
+        //TODO: Remove after debug phase
+        editor.clear();
+        editor.apply();
     }
 }

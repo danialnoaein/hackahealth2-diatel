@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_edittext_primary_dark"
                     android:padding="12dp"
-                    android:id="@+id/blood_sugar"
+                    android:id="@+id/et_blood_sugar"
                     android:maxLines="1"
                     android:inputType="number"
                     android:maxLength="3"
@@ -127,13 +127,26 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/rb_checkup_time_2"
-                            android:text="بارداری - ناشتا"/>
+                            android:text="باردار در ناشتا"/>
 
                         <danialnoaein_widgets.RadioButton
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/rb_checkup_time_3"
-                            android:text="بارداری - بعد از غذا"/>
+                            android:text="باردار بعد از غذا"/>
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_checkup_time_4"
+                            android:text="باردار با سابقه دیابت در ناشتا"/>
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_checkup_time_5"
+                            android:text="باردار با سابقه دیابت بعد از غذا"/>
+
 
                     </RadioGroup>
 

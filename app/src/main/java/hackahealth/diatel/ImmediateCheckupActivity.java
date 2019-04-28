@@ -15,6 +15,8 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.RequestParams;
 import com.loopj.android.http.TextHttpResponseHandler;
 
+import java.util.Map;
+
 import cz.msebera.android.httpclient.Header;
 import danialnoaein_widgets.ButtonBold;
 import danialnoaein_widgets.CheckBox;
@@ -28,14 +30,14 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
     ButtonBold btn_checkup;
     LinearLayout ll_glu_guide;
 
-    EditText blood_sugar;
+    EditText et_blood_sugar;
 
     RadioGroup rg_checkup_time;
-    RadioButton rb_checkup_time_0,rb_checkup_time_1,rb_checkup_time_2,rb_checkup_time_3;
+    RadioButton rb_checkup_time_0, rb_checkup_time_1, rb_checkup_time_2, rb_checkup_time_3, rb_checkup_time_4, rb_checkup_time_5;
 
-    CheckBox cb_frequentUrination,cb_dryMouth,cb_excessiveThirst,cb_suddenFeeling,cb_feelingBurningHands;
+    CheckBox cb_frequentUrination, cb_dryMouth, cb_excessiveThirst, cb_suddenFeeling, cb_feelingBurningHands;
 
-    int bloodSugarTime = 5;
+    int bloodSugarTime = 7;
     int frequentUrination = 0;
     int dryMouth = 0;
     int excessiveThirst = 0;
@@ -47,6 +49,8 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
 
     SpinKitView pb_loading;
 
+    String HAS_DIABETES_KEY = "has_diabetes";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,14 +60,15 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
         initViews();
         onClick();
 
-        sharedPref = getPreferences(Context.MODE_PRIVATE);
+        sharedPref = getSharedPreferences("MyPref",Context.MODE_PRIVATE);
         editor = sharedPref.edit();
+
     }
 
     private void findViews() {
         btn_checkup = findViewById(R.id.btn_checkup);
         ll_glu_guide = findViewById(R.id.ll_glu_guide);
-        blood_sugar = findViewById(R.id.blood_sugar);
+        et_blood_sugar = findViewById(R.id.et_blood_sugar);
 
         rg_checkup_time = findViewById(R.id.rg_checkup_time);
 
@@ -71,12 +76,15 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
         rb_checkup_time_1 = findViewById(R.id.rb_checkup_time_1);
         rb_checkup_time_2 = findViewById(R.id.rb_checkup_time_2);
         rb_checkup_time_3 = findViewById(R.id.rb_checkup_time_3);
+        rb_checkup_time_4 = findViewById(R.id.rb_checkup_time_4);
+        rb_checkup_time_5 = findViewById(R.id.rb_checkup_time_5);
 
         cb_frequentUrination = findViewById(R.id.cb_frequentUrination);
         cb_dryMouth = findViewById(R.id.cb_dryMouth);
         cb_excessiveThirst = findViewById(R.id.cb_excessiveThirst);
         cb_suddenFeeling = findViewById(R.id.cb_suddenFeeling);
         cb_feelingBurningHands = findViewById(R.id.cb_feelingBurningHands);
+
 
         pb_loading = findViewById(R.id.pb_loading);
 
@@ -87,7 +95,7 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
         rg_checkup_time.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch(checkedId){
+                switch (checkedId) {
                     case R.id.rb_checkup_time_0:
                         bloodSugarTime = 0;
                         break;
@@ -100,23 +108,29 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
                     case R.id.rb_checkup_time_3:
                         bloodSugarTime = 3;
                         break;
+                    case R.id.rb_checkup_time_4:
+                        bloodSugarTime = 4;
+                        break;
+                    case R.id.rb_checkup_time_5:
+                        bloodSugarTime = 5;
+                        break;
                 }
             }
         });
 
-        if ( cb_frequentUrination.isChecked() ){
+        if (cb_frequentUrination.isChecked()) {
             frequentUrination = 1;
         }
-        if ( cb_dryMouth.isChecked() ){
+        if (cb_dryMouth.isChecked()) {
             dryMouth = 1;
         }
-        if ( cb_excessiveThirst.isChecked() ){
+        if (cb_excessiveThirst.isChecked()) {
             excessiveThirst = 1;
         }
-        if ( cb_suddenFeeling.isChecked() ){
+        if (cb_suddenFeeling.isChecked()) {
             suddenFeeling = 1;
         }
-        if ( cb_feelingBurningHands.isChecked() ){
+        if (cb_feelingBurningHands.isChecked()) {
             feelingBurningHands = 1;
         }
 
@@ -126,33 +140,35 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
         btn_checkup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                registerUserInServer();
+                registerCheckUpInServer();
+                checkUp();
                 pb_loading.setVisibility(View.VISIBLE);
                 btn_checkup.setVisibility(View.GONE);
+
             }
         });
 
         ll_glu_guide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ImmediateCheckupActivity.this , GlucometerGuideActivity.class);
+                Intent intent = new Intent(ImmediateCheckupActivity.this, GlucometerGuideActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
     }
 
-    private void registerUserInServer() {
+    private void registerCheckUpInServer() {
 
         RequestParams params = new RequestParams();
-        params.put("bloodSuger", blood_sugar.getText().toString() );
+        params.put("bloodSuger", et_blood_sugar.getText().toString());
         params.put("checkupTime", bloodSugarTime);
-        params.put("frequentUrination", frequentUrination );
+        params.put("frequentUrination", frequentUrination);
         params.put("dryMouth", dryMouth);
         params.put("excessiveThirst", excessiveThirst);
         params.put("suddenFeeling", suddenFeeling);
-        params.put("feelingBurningHands", feelingBurningHands );
-        params.put("userId", sharedPref.getInt( "userId", 0));
+        params.put("feelingBurningHands", feelingBurningHands);
+        params.put("userId", sharedPref.getInt("userId", 0));
 
         String requestUrl = "http://noaein.ir/diatel/index.php/app/registerCheckup";
 
@@ -164,7 +180,7 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
                 Log.e("statusCode", statusCode + "");
                 Log.e("responseString", responseString + "");
                 Log.e("throwable", throwable + "");
-                Toast.makeTEXT(getApplicationContext(), "خطا در ارسال اطلاعات" , Toast.TOAST_TYPE_DEFAULT);
+                Toast.makeTEXT(getApplicationContext(), "خطا در ارسال اطلاعات", Toast.TOAST_TYPE_DEFAULT);
                 pb_loading.setVisibility(View.GONE);
                 btn_checkup.setVisibility(View.VISIBLE);
             }
@@ -174,19 +190,109 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
 
                 Log.e("statusCode", statusCode + "");
                 Log.e("responseString", responseString + "");
-                startResultActivity();
+                //startResultActivity();
             }
         });
 
 
     }
 
+    private void checkUp() {
+
+        Intent intent = new Intent(ImmediateCheckupActivity.this , CheckUpResultActivity.class);
+
+
+        if ( cb_frequentUrination.isChecked() || cb_dryMouth.isChecked() || cb_excessiveThirst.isChecked() || cb_suddenFeeling.isChecked() || cb_feelingBurningHands.isChecked() ){
+            intent.putExtra("DANGER_LEVEL" , 2);// Most Dangerous LEVEL
+        }else{
+            if ( checkBloodSugarLevelDanger()){
+                intent.putExtra("DANGER_LEVEL" , 1);//Danger Level
+            }else{
+                intent.putExtra("DANGER_LEVEL" , 0);//Normal Level
+            }
+        }
+        startActivity(intent);
+
+    }
+
+    private boolean checkBloodSugarLevelDanger() {
+        int bloodSugarNumber = Integer.parseInt(et_blood_sugar.getText().toString());
+        int hasDiabetes = sharedPref.getInt(HAS_DIABETES_KEY,0);
+
+        if (rb_checkup_time_0.isChecked()) {
+            if (hasDiabetes == 0) {
+                if (bloodSugarNumber > 70 && bloodSugarNumber < 99) {
+                    return false;
+                } else {
+                    return true;
+                }
+            } else if (hasDiabetes == 1) {
+                if (bloodSugarNumber > 80 && bloodSugarNumber < 130) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        } else if (rb_checkup_time_1.isChecked()) {
+            if (hasDiabetes == 0) {
+                if (bloodSugarNumber > 80 && bloodSugarNumber < 140) {
+                    return false;
+                } else {
+                    return true;
+                }
+            } else if (hasDiabetes == 1) {
+                if (bloodSugarNumber > 100 && bloodSugarNumber < 180) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        } else if (rb_checkup_time_2.isChecked()) {
+
+            if (bloodSugarNumber > 65 && bloodSugarNumber < 95) {
+                return false;
+            } else {
+                return true;
+            }
+
+        } else if (rb_checkup_time_3.isChecked()) {
+
+            if (bloodSugarNumber > 65 && bloodSugarNumber < 130) {
+                return false;
+            } else {
+                return true;
+            }
+
+        } else if (rb_checkup_time_4.isChecked()) {
+
+            if (bloodSugarNumber > 60 && bloodSugarNumber < 99) {
+                return false;
+            } else {
+                return true;
+            }
+
+        } else if (rb_checkup_time_5.isChecked()) {
+
+            if (bloodSugarNumber > 100 && bloodSugarNumber < 129) {
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+
+        return true;
+
+    }
+
     private void startResultActivity() {
 
-        Intent intent = new Intent( ImmediateCheckupActivity.this, CheckUpResultActivity.class);
+        Intent intent = new Intent(ImmediateCheckupActivity.this, CheckUpResultActivity.class);
         startActivity(intent);
         finish();
 
     }
+
 
 }

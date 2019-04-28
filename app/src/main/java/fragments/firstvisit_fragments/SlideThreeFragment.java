@@ -28,7 +28,7 @@ public class SlideThreeFragment extends Fragment {
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
 
-    String HAVE_DIABET_KEY = "have_diabet";
+    String HAS_DIABETES_KEY = "has_diabetes";
     String FAMILY_DESEIS = "family_deseis";
 
     EditText et_family_deseis;
@@ -56,7 +56,7 @@ public class SlideThreeFragment extends Fragment {
         initViews();
         onClick();
 
-        sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        sharedPref = getContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE);
         editor = sharedPref.edit();
 
     }
@@ -84,11 +84,11 @@ public class SlideThreeFragment extends Fragment {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch(checkedId){
                     case R.id.rb_yes:
-                        editor.putInt(HAVE_DIABET_KEY , 1);
+                        editor.putInt(HAS_DIABETES_KEY , 1);
                         ll_diabet_type.setVisibility(View.VISIBLE);
                         break;
                     case R.id.rb_no:
-                        editor.putInt(HAVE_DIABET_KEY , 0);
+                        editor.putInt(HAS_DIABETES_KEY , 0);
                         ll_diabet_type.setVisibility(View.GONE);
                         break;
                 }

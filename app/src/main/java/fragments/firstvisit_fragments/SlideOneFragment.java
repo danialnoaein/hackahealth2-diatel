@@ -56,7 +56,7 @@ public class SlideOneFragment  extends Fragment {
         initViews();
         onClick();
 
-        sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        sharedPref = getContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE);
         editor = sharedPref.edit();
     }
 

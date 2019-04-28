@@ -1,17 +1,20 @@
 package hackahealth.diatel;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.widget.ImageButton;
 
 import com.ncapdevi.fragnav.FragNavController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import adapters.MenuRVAdapter;
 import fragments.main_fragments.CheckupFragment;
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     private FragNavController frgNavController;
     private List<MenuRVAdapter.MenuItem> listBottomNv = new ArrayList<>();
 
+    SharedPreferences sharedPref;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         setupBottomNv();
         initFragments(savedInstanceState);
         onClick();
+
+        sharedPref = getContext().getSharedPreferences("MyPref",Context.MODE_PRIVATE);
+        editor = sharedPref.edit();
+
+
     }
 
     private void findViews() {
