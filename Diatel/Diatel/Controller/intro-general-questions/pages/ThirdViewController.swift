@@ -18,12 +18,27 @@ class ThirdViewController: UIViewController {
         view.setGradientBackground(colorTop: color1, colorBottom: color2)
         
         // Do any additional setup after loading the view.
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit();
+        let donebutton = UIBarButtonItem(title: "بستن", style: UIBarButtonItemStyle.done, target: self, action: #selector(self.doneclick));
+        
+        toolbar.setItems([donebutton], animated: false);
         familyBackground.layer.borderColor = UIColor.white.cgColor
         familyBackground.layer.borderWidth = 1
         familyBackground.layer.cornerRadius = 10
+        familyBackground.inputAccessoryView = toolbar
     }
 
-
-
+    @objc func doneclick() {
+        self.view.endEditing(true)
+    }
+    @IBAction func checkboxTapped(_ sender: UIButton) {
+        if sender.image(for: .normal) == #imageLiteral(resourceName: "unchecked-checkbox"){
+            sender.setImage(#imageLiteral(resourceName: "checked-checkbox"), for: .normal)
+        }else{
+            sender.setImage(#imageLiteral(resourceName: "unchecked-checkbox"), for: .normal)
+        }
+    }
+    
 
 }
