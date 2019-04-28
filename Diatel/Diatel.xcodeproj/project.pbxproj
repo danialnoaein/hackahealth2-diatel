@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B872CFC15019EFC00F6D3C2C /* Pods_Diatel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1B97CEF7609F53C99201D2 /* Pods_Diatel.framework */; };
+		D13F981822756C0D008F02E7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F981722756C0D008F02E7 /* PageViewController.swift */; };
+		D13F981B22756C4C008F02E7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F981A22756C4C008F02E7 /* FirstViewController.swift */; };
+		D13F981D22756C59008F02E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F981C22756C59008F02E7 /* SecondViewController.swift */; };
+		D13F981F22756C65008F02E7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F981E22756C65008F02E7 /* ThirdViewController.swift */; };
+		D13F982122756C71008F02E7 /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13F982022756C71008F02E7 /* ForthViewController.swift */; };
 		D18AD304227434CB0010496A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD303227434CB0010496A /* AppDelegate.swift */; };
 		D18AD306227434CB0010496A /* Checkup.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AD305227434CB0010496A /* Checkup.swift */; };
 		D18AD309227434CB0010496A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D18AD307227434CB0010496A /* Main.storyboard */; };
@@ -46,6 +51,11 @@
 /* Begin PBXFileReference section */
 		1C1B97CEF7609F53C99201D2 /* Pods_Diatel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diatel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B674B9143CE4025EB89C90B /* Pods-Diatel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diatel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Diatel/Pods-Diatel.debug.xcconfig"; sourceTree = "<group>"; };
+		D13F981722756C0D008F02E7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		D13F981A22756C4C008F02E7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D13F981C22756C59008F02E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D13F981E22756C65008F02E7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D13F982022756C71008F02E7 /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		D18AD300227434CB0010496A /* Diatel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diatel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D18AD303227434CB0010496A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D18AD305227434CB0010496A /* Checkup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkup.swift; sourceTree = "<group>"; };
@@ -113,6 +123,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D13F981622756BC3008F02E7 /* intro-general-questions */ = {
+			isa = PBXGroup;
+			children = (
+				D13F981922756C25008F02E7 /* pages */,
+				D13F981722756C0D008F02E7 /* PageViewController.swift */,
+			);
+			path = "intro-general-questions";
+			sourceTree = "<group>";
+		};
+		D13F981922756C25008F02E7 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				D13F981A22756C4C008F02E7 /* FirstViewController.swift */,
+				D13F981C22756C59008F02E7 /* SecondViewController.swift */,
+				D13F981E22756C65008F02E7 /* ThirdViewController.swift */,
+				D13F982022756C71008F02E7 /* ForthViewController.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
 		D18AD2F7227434CB0010496A = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +180,7 @@
 		D18AD318227448D30010496A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D13F981622756BC3008F02E7 /* intro-general-questions */,
 				D18AD3552274E3900010496A /* regime */,
 				D18AD330227452940010496A /* Profile */,
 				D18AD32F227452850010496A /* Reminder */,
@@ -418,17 +449,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D13F981D22756C59008F02E7 /* SecondViewController.swift in Sources */,
 				D18AD32B22744C2E0010496A /* Extentions.swift in Sources */,
 				D18AD33A227472140010496A /* NotificationEntity+CoreDataClass.swift in Sources */,
 				D18AD334227470830010496A /* Reminder.swift in Sources */,
 				D18AD33F2274783A0010496A /* ReminderCell.swift in Sources */,
 				D18AD306227434CB0010496A /* Checkup.swift in Sources */,
+				D13F982122756C71008F02E7 /* ForthViewController.swift in Sources */,
 				D18AD3542274D2380010496A /* SliderViewController.swift in Sources */,
+				D13F981B22756C4C008F02E7 /* FirstViewController.swift in Sources */,
 				D18AD34C2274AB100010496A /* DetailTraning.swift in Sources */,
 				D18AD336227470950010496A /* Addreminder.swift in Sources */,
 				D18AD3492274A8D60010496A /* TrainingTablecell.swift in Sources */,
 				D18AD32C22744C2E0010496A /* RightimageTextfield.swift in Sources */,
 				D18AD332227467AD0010496A /* Addcheckup.swift in Sources */,
+				D13F981822756C0D008F02E7 /* PageViewController.swift in Sources */,
 				D18AD33B227472140010496A /* NotificationEntity+CoreDataProperties.swift in Sources */,
 				D18AD30C227434CB0010496A /* Diatel.xcdatamodeld in Sources */,
 				D18AD35A2274E65E0010496A /* RegimeCellTableViewCell.swift in Sources */,
@@ -437,6 +472,7 @@
 				D18AD3502274CBDC0010496A /* SlideItem.swift in Sources */,
 				D18AD345227497500010496A /* TraningCell.swift in Sources */,
 				D18AD34222748F450010496A /* TrainigViewController.swift in Sources */,
+				D13F981F22756C65008F02E7 /* ThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
