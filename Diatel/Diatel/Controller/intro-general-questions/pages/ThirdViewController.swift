@@ -11,6 +11,7 @@ import UIKit
 class ThirdViewController: UIViewController {
 
     @IBOutlet weak var familyBackground: UITextField!
+    @IBOutlet weak var container: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let color1 = UIColor(red: 0.2352941176, green: 0.6823529412, blue: 0.6392156863, alpha: 1)
@@ -27,6 +28,9 @@ class ThirdViewController: UIViewController {
         familyBackground.layer.borderWidth = 1
         familyBackground.layer.cornerRadius = 10
         familyBackground.inputAccessoryView = toolbar
+        container.layer.borderColor = UIColor.white.cgColor
+        container.layer.borderWidth = 1
+        container.layer.cornerRadius = 10
     }
 
     @objc func doneclick() {
@@ -40,5 +44,10 @@ class ThirdViewController: UIViewController {
         }
     }
     
-
+    @IBAction func netxtViewcontroller(_ sender: UIButton) {
+        let pageController = self.parent as! UIPageViewController
+        
+        pageController.goToNextPage()
+    }
+    
 }
