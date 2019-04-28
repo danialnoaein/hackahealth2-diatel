@@ -234,7 +234,7 @@
             </objects>
             <point key="canvasLocation" x="2627" y="-777"/>
         </scene>
-        <!--چکاپ-->
+        <!-- شروع چکاپ-->
         <scene sceneID="D2q-CQ-ifU">
             <objects>
                 <viewController id="cnT-cw-xYw" customClass="Checkup" customModule="Diatel" customModuleProvider="target" sceneMemberID="viewController">
@@ -316,7 +316,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VgS-tS-xHX"/>
                     </view>
-                    <navigationItem key="navigationItem" title="چکاپ" id="fo7-ZR-6nD"/>
+                    <navigationItem key="navigationItem" title=" شروع چکاپ" id="fo7-ZR-6nD"/>
                     <connections>
                         <outlet property="DescriptionText" destination="ieD-x1-reP" id="KBp-ia-3iK"/>
                         <outlet property="addbtn" destination="Mns-Ds-Op5" id="Gls-ln-DxI"/>
@@ -439,7 +439,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93154436350000003" green="0.25191146139999998" blue="0.1889742613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.69831913709640503" blue="0.75419753789901733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="dKV-w0-NHr" secondAttribute="bottom" constant="15" id="3RA-os-zG2"/>
                                     <constraint firstItem="m6Q-aY-RF8" firstAttribute="leading" secondItem="WU3-kZ-hpj" secondAttribute="leading" constant="8" id="7eC-kG-3wU"/>
@@ -458,20 +458,21 @@
                                 <rect key="frame" x="16" y="461" width="288" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0U-DA-q5f">
-                                        <rect key="frame" x="1" y="1" width="286" height="48"/>
+                                        <rect key="frame" x="4" y="4" width="280" height="42"/>
+                                        <color key="backgroundColor" red="0.0" green="0.69831913710000004" blue="0.75419753789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="17"/>
                                         <state key="normal" title="درخواست رژیم از کارشناس تغذیه">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.93154436350000003" green="0.25191146139999998" blue="0.1889742613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.69831913710000004" blue="0.75419753789999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="s0U-DA-q5f" secondAttribute="bottom" constant="1" id="B5F-oL-MAI"/>
-                                    <constraint firstItem="s0U-DA-q5f" firstAttribute="leading" secondItem="GYv-lJ-tnl" secondAttribute="leading" constant="1" id="GWQ-17-aRJ"/>
-                                    <constraint firstItem="s0U-DA-q5f" firstAttribute="top" secondItem="GYv-lJ-tnl" secondAttribute="top" constant="1" id="T3p-Av-tUi"/>
+                                    <constraint firstAttribute="bottom" secondItem="s0U-DA-q5f" secondAttribute="bottom" constant="4" id="B5F-oL-MAI"/>
+                                    <constraint firstItem="s0U-DA-q5f" firstAttribute="leading" secondItem="GYv-lJ-tnl" secondAttribute="leading" constant="4" id="GWQ-17-aRJ"/>
+                                    <constraint firstItem="s0U-DA-q5f" firstAttribute="top" secondItem="GYv-lJ-tnl" secondAttribute="top" constant="4" id="T3p-Av-tUi"/>
                                     <constraint firstAttribute="height" constant="50" id="XvX-fo-txv"/>
-                                    <constraint firstAttribute="trailing" secondItem="s0U-DA-q5f" secondAttribute="trailing" constant="1" id="gpN-bX-9vB"/>
+                                    <constraint firstAttribute="trailing" secondItem="s0U-DA-q5f" secondAttribute="trailing" constant="4" id="gpN-bX-9vB"/>
                                 </constraints>
                             </view>
                         </subviews>
