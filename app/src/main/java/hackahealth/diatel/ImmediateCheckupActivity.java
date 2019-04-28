@@ -212,6 +212,7 @@ public class ImmediateCheckupActivity extends AppCompatActivity {
             }
         }
         startActivity(intent);
+        finish();
 
     }
 

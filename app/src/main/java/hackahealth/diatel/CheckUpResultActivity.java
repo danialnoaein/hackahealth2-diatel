@@ -10,15 +10,16 @@ import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import danialnoaein_widgets.Button;
+import danialnoaein_widgets.ButtonBold;
 import danialnoaein_widgets.TextView;
 import danialnoaein_widgets.Toast;
 
 public class CheckUpResultActivity extends AppCompatActivity {
 
-    Button btn_go_to_main_activity,btn_get_regime_program;
+    ButtonBold btn_go_to_main_activity,btn_get_regime_program;
     TextView tv_result_message;
 
-    LinearLayout ll_container_bg;
+    LinearLayout ll_container_bg,ll_toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +75,7 @@ public class CheckUpResultActivity extends AppCompatActivity {
         btn_get_regime_program = findViewById(R.id.btn_get_regime_program);
         tv_result_message = findViewById(R.id.tv_result_message);
         ll_container_bg = findViewById(R.id.ll_container_bg);
-
+        ll_toolbar = findViewById(R.id.ll_toolbar);
     }
 
     private void changeBackgroundColor( int dangerLevel ) {
@@ -90,9 +91,9 @@ public class CheckUpResultActivity extends AppCompatActivity {
             case 2:
                 color = R.color.colorError;
                 break;
-
         }
-        ll_container_bg.setBackgroundColor(color);
+        ll_container_bg.setBackgroundColor(getResources().getColor(color));
+        ll_toolbar.setBackgroundColor(getResources().getColor(color));
         Window window = CheckUpResultActivity.this.getWindow();
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
