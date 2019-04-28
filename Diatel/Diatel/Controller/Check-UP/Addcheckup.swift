@@ -9,7 +9,7 @@
 import UIKit
 import McPicker
 import Alamofire
-
+import SwiftyJSON
 enum patientStatus {
     case normal
     case danger
@@ -131,7 +131,7 @@ class Addcheckup: UIViewController {
         }
     }
     @IBAction func selectInterval(_ sender: UIButton) {
-        McPicker.show(data: [["ناشتا", " دو ساعت بعد ازغذا", "باردار در ناشتا", "باردار بعد از غذا","باردار با سابقه دیابت در ناشتا", "باردار با سابقه دیابت بعد از غذا"]]) { (selections: [Int : String]) -> Void in
+        McPicker.show(data: [["ناشتا", "دو ساعت بعد ازغذا", "باردار در ناشتا", "باردار بعد از غذا","باردار با سابقه دیابت در ناشتا", "باردار با سابقه دیابت بعد از غذا"]]) { (selections: [Int : String]) -> Void in
             if let title = selections[0] {
                 
                 self.timeTest.setTitle( title , for: .normal)
@@ -163,21 +163,20 @@ class Addcheckup: UIViewController {
             haveDangrous = isDangrous()
             if ((cigarets == true || drugs == true || pragnent == true || workoutRegular == true) && haveSick == true){
                 statusUser = .danger
-                  sendUserdata()
-                //simpleAlert("danger")
+                
+                simpleAlert("وضعیت شما در حالت هشدار وخیم می باشد")
             }else{
                 if haveSick == true{
                     statusUser = .alarm
-                      sendUserdata()
-                   // simpleAlert("alarm")
+                    
+                   simpleAlert("وضعیت شما در حال هشدار می باشد")
                 }else{
                     statusUser = .normal
-                      sendUserdata()
-                  //  simpleAlert("normal")
+                    
+                   simpleAlert("وضعیت شما نرمال می باشد")
                 }
             }
-            
-            sendUserdata()
+          sendUserdata()
         }else{
             simpleAlert("میزان قند خون ، زمان تست و سابقه بیماری الزامی می باشند")
         }
@@ -192,18 +191,19 @@ class Addcheckup: UIViewController {
         let excessiveThirst = Int(truncating: NSNumber(value:workoutRegular))
         let suddenFeeling = Int(truncating: NSNumber(value:pragnent))
         let feelingBurningHands = Int(truncating: NSNumber(value:drugs))
-       
-        let parameters = ["bloodSuger" : "\(sugarAmount.text!)","checkupTime" : "100","frequentUrination" : "\(frequentUrination)","dryMouth" : "\(dryMouth)","excessiveThirst" : "\(excessiveThirst)","suddenFeeling" : "\(suddenFeeling)","feelingBurningHands" : "\(feelingBurningHands)","userId":"1"] as [String : Any]
+        
+        let parameters = ["bloodSuger" : sugarAmount.text!,"checkupTime" : "12","frequentUrination" : "\(frequentUrination)","dryMouth" : "\(dryMouth)","excessiveThirst" : "\(excessiveThirst)","suddenFeeling" : "\(suddenFeeling)","feelingBurningHands" : "\(feelingBurningHands)","userId":"1","dangerLevel":"1"] as [String : Any]
         
         Alamofire.request("http://noaein.ir/diatel/index.php/app/registerCheckup", method: .post, parameters: parameters).responseJSON { (response) in
             if response.result.isSuccess{
                 self.hideHUD();
+                print(JSON(response.data!))
 
             }else{
                 
                 self.hideHUD();
-                self.simpleAlert("error happend !")
-                
+            
+           
             }
         }
 
