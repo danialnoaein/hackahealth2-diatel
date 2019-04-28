@@ -15,7 +15,10 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let color1 = UIColor(red: 0.2352941176, green: 0.6823529412, blue: 0.6392156863, alpha: 1)
+        let color2 = UIColor(red: 0.1254901961, green: 0.3882352941, blue: 0.6078431373, alpha: 1)
+        view.setGradientBackground(colorTop: color2, colorBottom: color1)
+        
         // Do any additional setup after loading the view.
         let toolbar = UIToolbar();
         toolbar.sizeToFit();

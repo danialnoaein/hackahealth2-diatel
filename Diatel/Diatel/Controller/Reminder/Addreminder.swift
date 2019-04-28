@@ -57,6 +57,7 @@ class Addreminder: UIViewController {
         notificationName.inputAccessoryView = toolbar
         notificationDescription.inputAccessoryView = toolbar
         patientName.inputAccessoryView = toolbar
+        nursephonenumber.inputAccessoryView = toolbar
         
         
         
