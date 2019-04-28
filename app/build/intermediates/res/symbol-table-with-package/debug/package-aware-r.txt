@@ -620,6 +620,8 @@ color colorAccentSecond
 color colorBackground
 color colorError
 color colorImageViewBackground
+color colorPink
+color colorPinkDark
 color colorPrimary
 color colorPrimaryAlpha
 color colorPrimaryDark
@@ -1033,6 +1035,7 @@ drawable bg_btn_success
 drawable bg_edittext_first_visit
 drawable bg_edittext_primary_dark
 drawable bg_edittext_success
+drawable bg_get_gift_btn
 drawable bg_glu_guide_tip
 drawable bg_glucometer_guide_btn
 drawable bg_immediate_checkup_btn
@@ -1045,6 +1048,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable error_background
+drawable free_badge
 drawable gradient_rv_item_train_category
 drawable ic_acupuncture
 drawable ic_alarm_bell
@@ -1057,6 +1061,7 @@ drawable ic_dish
 drawable ic_dish_primary
 drawable ic_download
 drawable ic_first_aid_kit
+drawable ic_gift
 drawable ic_glucometer
 drawable ic_glucose_meter
 drawable ic_glucose_meter_primary
@@ -1144,10 +1149,17 @@ id auto
 id barrier
 id beginning
 id blocking
+id blood_sugar
 id bottom
 id btn_checkup
+id btn_done_guide
 id btn_register
 id buttonPanel
+id cb_dryMouth
+id cb_excessiveThirst
+id cb_feelingBurningHands
+id cb_frequentUrination
+id cb_suddenFeeling
 id center
 id center_horizontal
 id center_vertical
@@ -1222,6 +1234,7 @@ id line3
 id listMode
 id list_item
 id ll_diabet_type
+id ll_diabetes_risk_test
 id ll_glu_guide
 id ll_im_checkup
 id ll_item_container
@@ -1254,10 +1267,15 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id rb_checkup_time_0
+id rb_checkup_time_1
+id rb_checkup_time_2
+id rb_checkup_time_3
 id rb_man
 id rb_no
 id rb_woman
 id rb_yes
+id rg_checkup_time
 id rg_diabet_type
 id rg_gender
 id rg_have_diabet

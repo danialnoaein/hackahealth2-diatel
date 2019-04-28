@@ -1,6 +1,7 @@
 package hackahealth.diatel;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import adapters.FragmentPagerVpAdapter;
+import danialnoaein_widgets.Button;
 import fragments.glu_guide_fragments.SlideEightFragment;
 import fragments.glu_guide_fragments.SlideFiveFragment;
 import fragments.glu_guide_fragments.SlideFourFragment;
@@ -31,7 +33,7 @@ public class GlucometerGuideActivity extends AppCompatActivity {
     ViewPager vp_slides;
     List<Fragment> fragments = new ArrayList<>();
     LinearLayout ll_next_fragment;
-
+    Button btn_done_guide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,7 @@ public class GlucometerGuideActivity extends AppCompatActivity {
     private void findViews() {
         vp_slides = findViewById(R.id.vp_slides);
         ll_next_fragment = findViewById(R.id.ll_next_fragment);
+        btn_done_guide = findViewById(R.id.btn_done_guide);
     }
 
     private void onClick() {
@@ -69,6 +72,8 @@ public class GlucometerGuideActivity extends AppCompatActivity {
                     ll_next_fragment.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
+                            Intent intent = new Intent( GlucometerGuideActivity.this ,ImmediateCheckupActivity.class);
+                            startActivity(intent);
                             finish();
                         }
                     });
@@ -77,6 +82,14 @@ public class GlucometerGuideActivity extends AppCompatActivity {
                     vp_slides.setCurrentItem(vp_slides.getCurrentItem()+1);
                 }
 
+            }
+        });
+        btn_done_guide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent( GlucometerGuideActivity.this ,ImmediateCheckupActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

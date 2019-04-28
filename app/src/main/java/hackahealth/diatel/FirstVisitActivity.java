@@ -6,7 +6,6 @@ import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -22,10 +21,6 @@ import fragments.firstvisit_fragments.SlideFourFragment;
 import fragments.firstvisit_fragments.SlideOneFragment;
 import fragments.firstvisit_fragments.SlideThreeFragment;
 import fragments.firstvisit_fragments.SlideTwoFragment;
-import general.SharedPrefHandler;
-
-import static danialnoaein_widgets.Toast.TOAST_TYPE_DEFAULT;
-import static danialnoaein_widgets.Toast.TOAST_TYPE_ERROR;
 
 public class FirstVisitActivity extends AppCompatActivity {
 
@@ -37,7 +32,7 @@ public class FirstVisitActivity extends AppCompatActivity {
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
 
-    //    Shared Pref Keys
+    // Shared Pref Keys
     String NAME_KEY = "name";
     String AGE_KEY = "age";
     String GENDER_KEY = "gender";
@@ -59,7 +54,6 @@ public class FirstVisitActivity extends AppCompatActivity {
 //            finish();
 //        }
 
-
         findViews();
         onClick();
         initPager();
@@ -67,6 +61,7 @@ public class FirstVisitActivity extends AppCompatActivity {
         sharedPref = getPreferences(Context.MODE_PRIVATE);
         editor = sharedPref.edit();
 
+        //TODO: Remove after debug phase
         editor.clear();
         editor.apply();
 
@@ -144,4 +139,5 @@ public class FirstVisitActivity extends AppCompatActivity {
         }
 
     }
+
 }

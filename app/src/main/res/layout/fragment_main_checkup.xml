@@ -96,26 +96,32 @@
 
     <!--Glucometer Guide Button-->
     <LinearLayout
-        android:id="@+id/ll_glu_guide"
+        android:id="@+id/ll_diabetes_risk_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_glucometer_guide_btn"
+        android:background="@drawable/bg_get_gift_btn"
         android:gravity="right|center_vertical"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:padding="4dp">
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:rotation="-45"
+            app:srcCompat="@drawable/free_badge"/>
 
         <danialnoaein_widgets.TextViewBold
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:gravity="right|center_vertical"
-            android:text="  آموزش کار با گلوکومتر"
+            android:text="  یک ماه برنامه تغذیه رایگان هدیه بگیرید"
             android:textColor="@android:color/white" />
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
             android:tint="@android:color/white"
-            app:srcCompat="@drawable/ic_glucometer" />
+            app:srcCompat="@drawable/ic_gift" />
 
     </LinearLayout>
 

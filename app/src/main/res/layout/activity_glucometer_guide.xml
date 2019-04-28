@@ -42,18 +42,27 @@
             android:layout_margin="16dp"
             android:gravity="center">
 
+            <danialnoaein_widgets.Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:id="@+id/btn_done_guide"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_btn_success"
+                android:text="بلدم"/>
+
             <LinearLayout
                 android:id="@+id/ll_next_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@drawable/bg_ll_glu_guide_slide_next">
 
+
                 <ImageView
                     android:layout_width="?attr/actionBarSize"
                     android:layout_height="?attr/actionBarSize"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:padding="16dp"
-                    android:text="Next"
                     android:tint="@android:color/white"
                     app:srcCompat="@drawable/ic_arrow_right" />
 

@@ -34,12 +34,38 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!--Glucometer Guide Button-->
+            <LinearLayout
+                android:id="@+id/ll_glu_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_glucometer_guide_btn"
+                android:gravity="right|center_vertical"
+                android:layout_margin="4dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <danialnoaein_widgets.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:text="  آموزش کار با گلوکومتر"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_glucometer" />
+
+            </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="right"
-                android:focusable="true"
-                android:focusableInTouchMode="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:layout_margin="4dp"
                 android:orientation="vertical">
 
@@ -48,6 +74,7 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_edittext_primary_dark"
                     android:padding="12dp"
+                    android:id="@+id/blood_sugar"
                     android:maxLines="1"
                     android:inputType="number"
                     android:maxLength="3"
@@ -81,26 +108,31 @@
                     <RadioGroup
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/rg_checkup_time"
                         android:gravity="right">
 
                         <danialnoaein_widgets.RadioButton
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:id="@+id/rb_checkup_time_0"
                             android:text="ناشتا"/>
 
                         <danialnoaein_widgets.RadioButton
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:id="@+id/rb_checkup_time_1"
                             android:text="دو ساعت بعد از غذا"/>
 
                         <danialnoaein_widgets.RadioButton
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:id="@+id/rb_checkup_time_2"
                             android:text="بارداری - ناشتا"/>
 
                         <danialnoaein_widgets.RadioButton
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:id="@+id/rb_checkup_time_3"
                             android:text="بارداری - بعد از غذا"/>
 
                     </RadioGroup>
@@ -143,6 +175,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:button="@null"
+                            android:id="@+id/cb_frequentUrination"
                             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                             android:text="تکرر ادرار"/>
 
@@ -150,6 +183,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:button="@null"
+                            android:id="@+id/cb_dryMouth"
                             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                             android:text="خشکی دهان"/>
 
@@ -157,6 +191,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:button="@null"
+                            android:id="@+id/cb_excessiveThirst"
                             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                             android:text="تشنگی بیش از حد"/>
 
@@ -164,6 +199,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:button="@null"
+                            android:id="@+id/cb_suddenFeeling"
                             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                             android:text="احساس ناگهانی خستگی"/>
 
@@ -171,6 +207,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:button="@null"
+                            android:id="@+id/cb_feelingBurningHands"
                             android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
                             android:text="احساس سوزش و مورمور شدن دست و پا"/>
 
@@ -185,13 +222,20 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:id="@+id/btn_checkup"
-                android:background="@drawable/success_background"
+                android:background="@drawable/bg_get_gift_btn"
                 android:textColor="@android:color/white"
                 android:text="انجام چکاپ"/>
 
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/pb_loading"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                app:SpinKit_Color="@color/colorAccentSecond"/>
+
         </LinearLayout>
     </ScrollView>
-
-
 
 </LinearLayout>

@@ -1016,6 +1016,10 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\drawable\\ic_mtrl_chip_close_circle.xml"
     },
     {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_bg_get_gift_btn.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\bg_get_gift_btn.xml"
+    },
+    {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_gradient_rv_item_train_category.xml.flat",
         "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\gradient_rv_item_train_category.xml"
     },
@@ -1180,6 +1184,10 @@
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_free_badge.png.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\free_badge.png"
+    },
+    {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\35b7bd560df2646333486da32c682e6e\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
@@ -1258,6 +1266,10 @@
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
         "source": "C:\\Users\\Daniel\\.gradle\\caches\\transforms-1\\files-1.1\\design-28.0.0.aar\\f19c0c590032d133d2678833bf729ceb\\res\\color\\mtrl_tabs_icon_color_selector.xml"
+    },
+    {
+        "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_gift.xml.flat",
+        "source": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\src\\main\\res\\drawable\\ic_gift.xml"
     },
     {
         "merged": "D:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_48dp.png.flat",

@@ -9,6 +9,9 @@
     <color name="colorWhiteAccent">#FFA697</color>
     <color name="colorAccentSecond">#FBC02D</color>
 
+    <color name="colorPink">#E91E63</color>
+    <color name="colorPinkDark">#C2185B</color>
+
     <color name="colorError">#b71c1c</color>
     <color name="colorSuccessLight">#D4F1D6</color>
     <color name="colorSuccess">#2FAF39</color>

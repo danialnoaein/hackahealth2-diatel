@@ -34,7 +34,7 @@ public class CheckupFragment extends Fragment {
     TextView tv_no_checkup;
     //AnyChartView anyChartView;
     LineChart chart;
-    LinearLayout ll_im_checkup , ll_glu_guide;
+    LinearLayout ll_im_checkup , ll_diabetes_risk_test;
 
     public static CheckupFragment newInstance() {
         Bundle args = new Bundle();
@@ -53,7 +53,7 @@ public class CheckupFragment extends Fragment {
     }
 
     private void findViews(View fragmentView) {
-        ll_glu_guide = fragmentView.findViewById(R.id.ll_glu_guide);
+        ll_diabetes_risk_test = fragmentView.findViewById(R.id.ll_diabetes_risk_test);
         ll_im_checkup = fragmentView.findViewById(R.id.ll_im_checkup);
         chart = fragmentView.findViewById(R.id.chart);
     }
@@ -69,24 +69,13 @@ public class CheckupFragment extends Fragment {
         ll_im_checkup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity() , ImmediateCheckupActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        ll_glu_guide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
                 Intent intent = new Intent(getActivity() , GlucometerGuideActivity.class);
                 startActivity(intent);
             }
         });
-    }
 
-    private void noCheckup(){
-        tv_no_checkup.setVisibility(View.VISIBLE);
-    }
 
+    }
 
     private void lineChart(){
         ArrayList<Entry> entries = new ArrayList<>();
