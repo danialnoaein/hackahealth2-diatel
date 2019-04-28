@@ -35,13 +35,44 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
 
-                <danialnoaein_widgets.TextViewBold
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_vertical"
-                    android:text="شروع چکاپ"
-                    android:textColor="@android:color/white"
-                    android:textSize="28sp" />
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_weight="1">
+
+                        <danialnoaein_widgets.TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32dp"
+                            android:background="@drawable/bg_glucometer_guide_btn"
+                            android:paddingTop="4dp"
+                            android:paddingBottom="4dp"
+                            android:layout_marginRight="16dp"
+                            android:paddingLeft="8dp"
+                            android:id="@+id/tv_tap_hint"
+                            android:paddingRight="8dp"
+                            android:textColor="@android:color/white"
+                            android:text="اینجا بزنید"/>
+
+                    </LinearLayout>
+
+                    <danialnoaein_widgets.TextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="شروع چکاپ"
+                        android:id="@+id/tvb_start_checkup_btn_title"
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp" />
+
+
+
+                </LinearLayout>
+
 
                 <danialnoaein_widgets.TextViewBold
                     android:layout_width="match_parent"

@@ -1,93 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/firstVisitSlideBackground"
     android:gravity="center"
-    android:background="@color/firstVisitSlideBackground">
+    android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:tint="@android:color/white"
-        app:srcCompat="@drawable/ic_phone_call"/>
-
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:gravity="center">
+        android:layout_height="wrap_content">
 
-        <View android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_centerInParent="true"
-            android:background="@android:color/white" />
-
-        <danialnoaein_widgets.TextViewBold
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
             android:gravity="center"
-            android:background="@color/firstVisitSlideBackground"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
-            android:layout_centerInParent="true"
-            android:textColor="@android:color/white"
-            android:text="شماره تلفن"/>
+            android:orientation="vertical">
 
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_phone_call" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp">
 
-        <danialnoaein_widgets.EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="@drawable/bg_edittext_first_visit"
-            android:inputType="number"
-            android:maxLines="1"
-            android:id="@+id/et_phone_number"
-            android:textColor="@android:color/white"
-            android:maxLength="11"
-            android:layout_marginBottom="16dp"
-            android:hint="شماره تلفن(09123456789)"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/white" />
 
-        <danialnoaein_widgets.EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="@drawable/bg_edittext_first_visit"
-            android:inputType="number"
-            android:maxLines="1"
-            android:textColor="@android:color/white"
-            android:maxLength="11"
-            android:id="@+id/et_nurse_phone_number"
-            android:layout_marginBottom="16dp"
-            android:hint="شماره تلفن پرستار یا همیار(09123456789)"/>
+                <danialnoaein_widgets.TextViewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/firstVisitSlideBackground"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="شماره تلفن"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
 
-        <danialnoaein_widgets.ButtonBold
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ورود"
-            android:id="@+id/btn_register"
-            android:textColor="@color/firstVisitSlideBackground"
-            android:background="@android:color/white"/>
+            </RelativeLayout>
 
-        <com.github.ybq.android.spinkit.SpinKitView
-            android:id="@+id/pb_loading"
-            style="@style/SpinKitView.Large.Circle"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:visibility="gone"
-            android:layout_gravity="center"
-            app:SpinKit_Color="@color/colorAccentSecond"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
 
-    </LinearLayout>
+                <danialnoaein_widgets.EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edittext_first_visit"
+                    android:hint="شماره تلفن(09123456789)"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white" />
 
+                <danialnoaein_widgets.EditText
+                    android:id="@+id/et_nurse_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/bg_edittext_first_visit"
+                    android:hint="شماره تلفن پرستار یا همیار(09123456789)"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white" />
+
+                <danialnoaein_widgets.ButtonBold
+                    android:id="@+id/btn_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:text="ورود"
+                    android:textColor="@color/firstVisitSlideBackground" />
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    android:id="@+id/pb_loading"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:SpinKit_Color="@color/colorAccentSecond" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

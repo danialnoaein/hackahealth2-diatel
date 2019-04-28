@@ -1,232 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/firstVisitSlideBackground"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:background="@color/firstVisitSlideBackground">
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:layout_width="72dp"
-        android:layout_height="72dp"
-        android:tint="@android:color/white"
-        app:srcCompat="@drawable/ic_first_aid_kit"/>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:gravity="center">
-
-        <View android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:layout_centerInParent="true"
-            android:background="@android:color/white" />
-
-        <danialnoaein_widgets.TextViewBold
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:background="@color/firstVisitSlideBackground"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
-            android:layout_centerInParent="true"
-            android:textColor="@android:color/white"
-            android:text="سوابق پزشکی"/>
-
-    </RelativeLayout>
-
-    <LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
+            android:gravity="center"
             android:orientation="vertical">
 
-            <LinearLayout
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:tint="@android:color/white"
+                app:srcCompat="@drawable/ic_first_aid_kit" />
+
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_gravity="right"
-                android:gravity="right"
-                android:layout_marginBottom="4dp"
-                android:background="@drawable/bg_edittext_first_visit"
-                android:orientation="horizontal">
-                <RadioGroup
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:gravity="right"
-                    android:id="@+id/rg_have_diabet"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp">
 
-                    <danialnoaein_widgets.RadioButton
-                        android:layout_width="80dp"
-                        android:layout_height="match_parent"
-                        android:button="@null"
-                        android:id="@+id/rb_yes"
-                        android:textColor="@android:color/white"
-                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-                        android:text="بله"/>
-
-                    <danialnoaein_widgets.RadioButton
-                        android:layout_width="80dp"
-                        android:layout_height="match_parent"
-                        android:button="@null"
-                        android:id="@+id/rb_no"
-                        android:textColor="@android:color/white"
-                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-                        android:text="خیر"/>
-
-                </RadioGroup>
-
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/white" />
 
                 <danialnoaein_widgets.TextViewBold
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:padding="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/firstVisitSlideBackground"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="سوابق پزشکی"
                     android:textColor="@android:color/white"
-                    android:gravity="right|center_vertical"
-                    android:text="آیا سابقه دیابت دارید : "/>
+                    android:textSize="24sp" />
 
-
-
-            </LinearLayout>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:gravity="right"
-                android:visibility="gone"
-                android:id="@+id/ll_diabet_type"
-                android:layout_marginBottom="8dp"
-                android:background="@drawable/bg_edittext_first_visit"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:orientation="vertical">
 
-                <danialnoaein_widgets.TextViewBold
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:paddingRight="8dp"
-                    android:textColor="@android:color/white"
-                    android:gravity="right|center_vertical"
-                    android:text="نوع دیابت : "/>
-
-                <RadioGroup
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/bg_edittext_first_visit"
                     android:gravity="right"
-                    android:paddingRight="8dp"
-                    android:id="@+id/rg_diabet_type"
-                    android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                    <danialnoaein_widgets.RadioButton
+                    <RadioGroup
+                        android:id="@+id/rg_have_diabet"
                         android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:button="@null"
-                        android:textColor="@android:color/white"
-                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-                        android:text="سایر"/>
-
-                    <danialnoaein_widgets.RadioButton
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:button="@null"
-                        android:textColor="@android:color/white"
-                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-                        android:text="بارداری"/>
-
-                    <danialnoaein_widgets.RadioButton
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:button="@null"
-                        android:textColor="@android:color/white"
-                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-                        android:text="نوع دوم"/>
-
-                    <danialnoaein_widgets.RadioButton
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <danialnoaein_widgets.RadioButton
+                            android:id="@+id/rb_yes"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                            android:text="بله"
+                            android:textColor="@android:color/white" />
+
+                        <danialnoaein_widgets.RadioButton
+                            android:id="@+id/rb_no"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                            android:text="خیر"
+                            android:textColor="@android:color/white" />
+
+                    </RadioGroup>
+
+
+                    <danialnoaein_widgets.TextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:padding="8dp"
+                        android:text="آیا سابقه دیابت دارید : "
+                        android:textColor="@android:color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_diabet_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_edittext_first_visit"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <danialnoaein_widgets.TextViewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:paddingRight="8dp"
+                        android:text="نوع دیابت : "
+                        android:textColor="@android:color/white" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_diabet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingRight="8dp">
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                            android:text="سایر"
+                            android:textColor="@android:color/white" />
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                            android:text="بارداری"
+                            android:textColor="@android:color/white" />
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                            android:text="نوع دوم"
+                            android:textColor="@android:color/white" />
+
+                        <danialnoaein_widgets.RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableRight="?android:attr/listChoiceIndicatorSingle"
+                            android:text="نوع اول"
+                            android:textColor="@android:color/white" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <danialnoaein_widgets.EditText
+                    android:id="@+id/et_family_deseis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/bg_edittext_first_visit"
+                    android:hint="بیماری خانوادگی"
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bg_edittext_first_visit"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <danialnoaein_widgets.CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:button="@null"
-                        android:textColor="@android:color/white"
-                        android:drawableRight="?android:attr/listChoiceIndicatorSingle"
-                        android:text="نوع اول"/>
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:text="سیگار می کشم"
+                        android:textColor="@android:color/white" />
 
-                </RadioGroup>
+                    <danialnoaein_widgets.CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:text="مواد مخدر مصرف می کنم"
+                        android:textColor="@android:color/white" />
 
-            </LinearLayout>
+                    <danialnoaein_widgets.CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:text="مشروبات الکلی مصرف می کنم"
+                        android:textColor="@android:color/white" />
 
-            <danialnoaein_widgets.EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp"
-                android:maxLines="1"
-                android:maxLength="30"
-                android:textSize="14sp"
-                android:inputType="text"
-                android:id="@+id/et_family_deseis"
-                android:textColor="@android:color/white"
-                android:background="@drawable/bg_edittext_first_visit"
-                android:layout_marginBottom="8dp"
-                android:hint="بیماری خانوادگی"/>
+                    <danialnoaein_widgets.CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:text="باردار هستم"
+                        android:textColor="@android:color/white" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:orientation="vertical"
-                android:layout_gravity="right"
-                android:background="@drawable/bg_edittext_first_visit">
+                    <danialnoaein_widgets.CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                        android:text="به صورت منظم ورزش می کنم"
+                        android:textColor="@android:color/white" />
 
-                <danialnoaein_widgets.CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:textColor="@android:color/white"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-                    android:text="سیگار می کشم"/>
 
-                <danialnoaein_widgets.CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:textColor="@android:color/white"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-                    android:text="مواد مخدر مصرف می کنم"/>
-
-                <danialnoaein_widgets.CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:textColor="@android:color/white"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-                    android:text="مشروبات الکلی مصرف می کنم"/>
-
-                <danialnoaein_widgets.CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:textColor="@android:color/white"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-                    android:text="باردار هستم"/>
-
-                <danialnoaein_widgets.CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:button="@null"
-                    android:textColor="@android:color/white"
-                    android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
-                    android:text="به صورت منظم ورزش می کنم"/>
-
+                </LinearLayout>
 
             </LinearLayout>
-
         </LinearLayout>
+    </ScrollView>
 
-
-    </LinearLayout>
+</LinearLayout>

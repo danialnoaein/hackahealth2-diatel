@@ -1,5 +1,7 @@
 package fragments.main_fragments;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,6 +13,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 
 import com.github.mikephil.charting.charts.LineChart;
@@ -21,17 +25,24 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
+import com.nineoldandroids.animation.ValueAnimator;
+
 import java.util.ArrayList;
 
 import danialnoaein_widgets.TextView;
+import danialnoaein_widgets.TextViewBold;
 import hackahealth.diatel.GlucometerGuideActivity;
 import hackahealth.diatel.ImmediateCheckupActivity;
 import hackahealth.diatel.R;
 
+import static android.view.animation.Animation.RESTART;
+import static android.view.animation.Animation.REVERSE;
+
 public class CheckupFragment extends Fragment {
 
     RecyclerView rv_main_checkup;
-    TextView tv_no_checkup;
+    TextViewBold tvb_start_checkup_btn_title;
+    TextView tv_tap_hint;
     //AnyChartView anyChartView;
     LineChart chart;
     LinearLayout ll_im_checkup , ll_diabetes_risk_test;
@@ -56,6 +67,9 @@ public class CheckupFragment extends Fragment {
         ll_diabetes_risk_test = fragmentView.findViewById(R.id.ll_diabetes_risk_test);
         ll_im_checkup = fragmentView.findViewById(R.id.ll_im_checkup);
         chart = fragmentView.findViewById(R.id.chart);
+        tvb_start_checkup_btn_title = fragmentView.findViewById(R.id.tvb_start_checkup_btn_title);
+        tv_tap_hint = fragmentView.findViewById(R.id.tv_tap_hint);
+
     }
 
     @Override
@@ -63,6 +77,7 @@ public class CheckupFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         onClick();
         lineChart();
+        zoom();
     }
 
     private void onClick(){
@@ -122,6 +137,26 @@ public class CheckupFragment extends Fragment {
         chart.animateX(1000);
         //refresh
         chart.invalidate();
+        chart.setScaleEnabled(false);
+
+    }
+
+    public void zoom(){
+
+//        Animation animation = AnimationUtils.loadAnimation(getContext(),
+//                R.anim.animation_zoom);
+//        tvb_start_checkup_btn_title.startAnimation(animation);
+//        animation.setRepeatMode(Animation.INFINITE);
+
+        ObjectAnimator scaleAnim = ObjectAnimator.ofFloat(tv_tap_hint, "scaleX", 1.0f, 1.1f , 1.0f);
+        scaleAnim.setDuration(1000);
+        scaleAnim.setRepeatCount(ValueAnimator.INFINITE);
+        scaleAnim.setRepeatMode(ValueAnimator.REVERSE/RESTART);
+        scaleAnim.start();
+
+
+
+
     }
 }
 

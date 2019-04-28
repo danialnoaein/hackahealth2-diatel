@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim animation_zoom
 anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
@@ -1071,6 +1072,7 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_launcher_icon
 drawable ic_launcher_icon_without_bg
+drawable ic_menu
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1241,6 +1243,7 @@ id ll_diabetes_risk_test
 id ll_glu_guide
 id ll_im_checkup
 id ll_item_container
+id ll_load_data
 id ll_next_fragment
 id ll_toast
 id ll_toolbar
@@ -1358,8 +1361,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id tv_date
 id tv_result_message
+id tv_tap_hint
 id tv_title
 id tv_toast
+id tvb_start_checkup_btn_title
 id uniform
 id unlabeled
 id up
