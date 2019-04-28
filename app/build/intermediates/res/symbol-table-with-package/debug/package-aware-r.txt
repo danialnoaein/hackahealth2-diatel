@@ -1056,6 +1056,7 @@ drawable ic_alarm_bell
 drawable ic_alarm_bell_primary
 drawable ic_arrow_right
 drawable ic_avatar
+drawable ic_calendar
 drawable ic_content
 drawable ic_dermatology
 drawable ic_dish
@@ -1152,6 +1153,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btn_change_week_day
 id btn_checkup
 id btn_done_guide
 id btn_get_regime_program
@@ -1284,6 +1286,7 @@ id rb_no
 id rb_woman
 id rb_yes
 id rg_checkup_time
+id rg_days_of_week
 id rg_diabet_type
 id rg_gender
 id rg_have_diabet
@@ -1364,6 +1367,7 @@ id tv_result_message
 id tv_tap_hint
 id tv_title
 id tv_toast
+id tv_video_view
 id tvb_start_checkup_btn_title
 id uniform
 id unlabeled
@@ -1443,6 +1447,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_days_of_week
 layout fragment_first_visit_slide_four
 layout fragment_first_visit_slide_one
 layout fragment_first_visit_slide_three
