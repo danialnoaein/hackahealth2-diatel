@@ -7,19 +7,15 @@
         android:gravity="center"
         android:background="@color/firstVisitSlideBackground">
 
-
-
     <ImageView
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_first_aid_kit"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:layout_marginTop="4dp"
         android:padding="16dp"
         android:gravity="center">
 
@@ -42,16 +38,12 @@
 
     </RelativeLayout>
 
-
-
-
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:orientation="vertical">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -65,6 +57,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:gravity="right"
+                    android:id="@+id/rg_have_diabet"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
@@ -72,6 +65,7 @@
                         android:layout_width="80dp"
                         android:layout_height="match_parent"
                         android:button="@null"
+                        android:id="@+id/rb_yes"
                         android:textColor="@android:color/white"
                         android:drawableRight="?android:attr/listChoiceIndicatorSingle"
                         android:text="بله"/>
@@ -80,6 +74,7 @@
                         android:layout_width="80dp"
                         android:layout_height="match_parent"
                         android:button="@null"
+                        android:id="@+id/rb_no"
                         android:textColor="@android:color/white"
                         android:drawableRight="?android:attr/listChoiceIndicatorSingle"
                         android:text="خیر"/>
@@ -104,6 +99,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:gravity="right"
+                android:visibility="gone"
+                android:id="@+id/ll_diabet_type"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/bg_edittext_first_visit"
                 android:orientation="vertical">
@@ -120,14 +117,9 @@
                     android:layout_width="match_parent"
                     android:gravity="right"
                     android:paddingRight="8dp"
+                    android:id="@+id/rg_diabet_type"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
-
-
-
-
-
-
 
                     <danialnoaein_widgets.RadioButton
                         android:layout_width="0dp"
@@ -167,11 +159,6 @@
 
                 </RadioGroup>
 
-
-
-
-
-
             </LinearLayout>
 
             <danialnoaein_widgets.EditText
@@ -181,6 +168,8 @@
                 android:maxLines="1"
                 android:maxLength="30"
                 android:textSize="14sp"
+                android:inputType="text"
+                android:id="@+id/et_family_deseis"
                 android:textColor="@android:color/white"
                 android:background="@drawable/bg_edittext_first_visit"
                 android:layout_marginBottom="8dp"

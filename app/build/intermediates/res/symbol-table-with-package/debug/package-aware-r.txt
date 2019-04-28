@@ -628,6 +628,7 @@ color colorSuccess
 color colorSuccessDark
 color colorSuccessLight
 color colorWhiteAccent
+color cyan
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -1027,6 +1028,7 @@ drawable abc_vector_test
 drawable article_category_sample
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_btn_cyan
 drawable bg_btn_success
 drawable bg_edittext_first_visit
 drawable bg_edittext_primary_dark
@@ -1053,6 +1055,7 @@ drawable ic_content
 drawable ic_dermatology
 drawable ic_dish
 drawable ic_dish_primary
+drawable ic_download
 drawable ic_first_aid_kit
 drawable ic_glucometer
 drawable ic_glucose_meter
@@ -1175,6 +1178,13 @@ id edit_query
 id end
 id enterAlways
 id enterAlwaysCollapsed
+id et_age
+id et_family_deseis
+id et_height
+id et_name
+id et_nurse_phone_number
+id et_phone_number
+id et_weight
 id exitUntilCollapsed
 id exp_diatel
 id exp_magical
@@ -1211,6 +1221,7 @@ id line1
 id line3
 id listMode
 id list_item
+id ll_diabet_type
 id ll_glu_guide
 id ll_im_checkup
 id ll_item_container
@@ -1243,6 +1254,13 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
+id rb_man
+id rb_no
+id rb_woman
+id rb_yes
+id rg_diabet_type
+id rg_gender
+id rg_have_diabet
 id right
 id right_icon
 id right_side

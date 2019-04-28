@@ -8,16 +8,14 @@
     android:background="@color/firstVisitSlideBackground">
 
     <ImageView
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:tint="@android:color/white"
         app:srcCompat="@drawable/ic_phone_call"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="32dp"
         android:padding="16dp"
         android:gravity="center">
 
@@ -54,10 +52,24 @@
             android:background="@drawable/bg_edittext_first_visit"
             android:inputType="number"
             android:maxLines="1"
+            android:id="@+id/et_phone_number"
             android:textColor="@android:color/white"
             android:maxLength="11"
             android:layout_marginBottom="16dp"
             android:hint="شماره تلفن(09123456789)"/>
+
+        <danialnoaein_widgets.EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@drawable/bg_edittext_first_visit"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:maxLength="11"
+            android:id="@+id/et_nurse_phone_number"
+            android:layout_marginBottom="16dp"
+            android:hint="شماره تلفن پرستار یا همیار(09123456789)"/>
 
         <danialnoaein_widgets.ButtonBold
             android:layout_width="match_parent"
@@ -66,6 +78,15 @@
             android:id="@+id/btn_register"
             android:textColor="@color/firstVisitSlideBackground"
             android:background="@android:color/white"/>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/pb_loading"
+            style="@style/SpinKitView.Large.Circle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccentSecond"/>
 
     </LinearLayout>
 

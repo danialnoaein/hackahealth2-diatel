@@ -29,14 +29,29 @@
                 android:tint="@android:color/white"
                 app:srcCompat="@drawable/ic_dermatology" />
 
-            <danialnoaein_widgets.TextViewBold
+            <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="شروع چکاپ"
-                android:textColor="@android:color/white"
-                android:textSize="32sp" />
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <danialnoaein_widgets.TextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="شروع چکاپ"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp" />
+
+                <danialnoaein_widgets.TextViewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="زمان پیشنهادی برای انجام چکاپ"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout

@@ -1,27 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/firstVisitSlideBackground"
     android:gravity="center"
-    android:background="@color/firstVisitSlideBackground">
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
         android:tint="@android:color/white"
-        app:srcCompat="@drawable/ic_weight_scale"/>
+        app:srcCompat="@drawable/ic_weight_scale" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="32dp"
-        android:padding="16dp"
-        android:gravity="center">
+        android:gravity="center"
+        android:padding="16dp">
 
-        <View android:layout_width="match_parent"
+        <View
+            android:layout_width="match_parent"
             android:layout_height="2dp"
             android:layout_centerInParent="true"
             android:background="@android:color/white" />
@@ -29,14 +28,14 @@
         <danialnoaein_widgets.TextViewBold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:background="@color/firstVisitSlideBackground"
-            android:paddingRight="16dp"
-            android:paddingLeft="16dp"
             android:layout_centerInParent="true"
+            android:background="@color/firstVisitSlideBackground"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="مشخصات جسمی"
             android:textColor="@android:color/white"
-            android:text="مشخصات جسمی"/>
+            android:textSize="24sp" />
 
     </RelativeLayout>
 
@@ -48,28 +47,32 @@
         android:orientation="vertical">
 
         <danialnoaein_widgets.EditText
+            android:id="@+id/et_height"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="@drawable/bg_edittext_first_visit"
             android:layout_marginBottom="8dp"
-            android:textColor="@android:color/white"
+            android:background="@drawable/bg_edittext_first_visit"
+            android:hint="قد (به سانتیمتر)"
             android:inputType="number"
-            android:maxLines="1"
             android:maxLength="3"
-            android:hint="قد (به سانتیمتر)"/>
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
 
         <danialnoaein_widgets.EditText
+            android:id="@+id/et_weight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:background="@drawable/bg_edittext_first_visit"
             android:layout_marginBottom="8dp"
-            android:textColor="@android:color/white"
+            android:background="@drawable/bg_edittext_first_visit"
+            android:hint="وزن (به کیلوگرم)"
             android:inputType="number"
-            android:maxLines="1"
             android:maxLength="3"
-            android:hint="وزن (به کیلوگرم)"/>
+            android:maxLines="1"
+            android:padding="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
 
 
     </LinearLayout>

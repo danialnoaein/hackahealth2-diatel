@@ -29,7 +29,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 exp_diatel.expand();
             }
-        }, 1000);
+        }, 500);
 
         exp_diatel.setOnExpansionUpdateListener(new ExpandableLayout.OnExpansionUpdateListener() {
             @Override
@@ -54,7 +54,7 @@ public class SplashActivity extends AppCompatActivity {
                             startActivity(new Intent(getContext(), FirstVisitActivity.class));
                             finish();
                         }
-                    }, 1000);
+                    }, 500);
 
                 }
             }
