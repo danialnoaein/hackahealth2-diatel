@@ -99,7 +99,7 @@
         android:id="@+id/ll_diabetes_risk_test"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_get_gift_btn"
+        android:background="@drawable/bg_glucometer_guide_btn"
         android:gravity="right|center_vertical"
         android:orientation="horizontal"
         android:padding="4dp">

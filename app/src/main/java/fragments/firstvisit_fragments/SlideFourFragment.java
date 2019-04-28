@@ -132,13 +132,13 @@ public class SlideFourFragment extends Fragment {
 
                 Log.e("statusCode", statusCode + "");
                 Log.e("responseString", responseString + "");
+                editor.putInt("userId" , Integer.parseInt(responseString) );
+                editor.commit();
                 startMainActivity();
             }
         });
 
-
     }
-
 
     private void findViews(View fragmentView) {
 
