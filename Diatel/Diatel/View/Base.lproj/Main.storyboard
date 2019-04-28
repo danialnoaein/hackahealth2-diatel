@@ -71,10 +71,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-color" translatesAutoresizingMaskIntoConstraints="NO" id="tbJ-cD-vhS">
-                                <rect key="frame" x="0.0" y="64" width="1300" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="321" height="504"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSX-0L-xQW">
-                                <rect key="frame" x="0.0" y="20" width="1300" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="321" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bnP-PQ-I2j"/>
                                 </constraints>
@@ -100,7 +100,7 @@
                                 </items>
                             </navigationBar>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqi-v3-Ebg">
-                                <rect key="frame" x="0.0" y="64" width="1300" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="321" height="504"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock-" translatesAutoresizingMaskIntoConstraints="NO" id="sxg-th-KJd">
                                         <rect key="frame" x="120.5" y="10" width="80" height="80"/>
@@ -386,26 +386,143 @@
                                     <constraint firstItem="XEr-bD-Hg7" firstAttribute="centerY" secondItem="21s-eV-Kex" secondAttribute="centerY" id="twi-O2-YnL"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-color" translatesAutoresizingMaskIntoConstraints="NO" id="xhe-cX-tqG">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main-color" translatesAutoresizingMaskIntoConstraints="NO" id="xhe-cX-tqG">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wh9-NC-Iw3">
+                                <rect key="frame" x="16" y="94" width="288" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="میزان قند خون" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UNh-kC-Bg2">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="54"/>
+                                        <color key="backgroundColor" red="0.10063301769999999" green="0.3101731539" blue="0.48461413380000001" alpha="0.59926155820000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mjw-Ht-8EE">
+                                        <rect key="frame" x="0.0" y="66" width="288" height="54"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="17"/>
+                                        <state key="normal" title="زمان انجام آزمایش">
+                                            <color key="titleColor" red="0.12381372600793839" green="0.38760167360305786" blue="0.60771209001541138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectInterval:" destination="7fq-CI-BuU" eventType="touchUpInside" id="jhl-4w-nef"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="rWD-yh-4ef"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRJ-2y-rw2">
+                                <rect key="frame" x="16" y="224" width="288" height="324"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Ump-Vo-1WP">
+                                        <rect key="frame" x="40" y="10" width="243" height="274"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="علائم بالینی :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-Tw-R91">
+                                                <rect key="frame" x="146.5" y="0.0" width="96.5" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkv-PW-M3J">
+                                                <rect key="frame" x="110" y="45.5" width="133" height="46"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                <state key="normal" title=" سیگار می کشم" image="unchecked-checkbox">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="7fq-CI-BuU" eventType="touchUpInside" id="PKY-aM-fSI"/>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="Tfo-H9-bjF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsh-Rb-5z4">
+                                                <rect key="frame" x="41" y="91.5" width="202" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                <state key="normal" title=" مواد مخدر مصرف می کنم" image="unchecked-checkbox">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="Gma-sE-KmW"/>
+                                                    <action selector="checkboxTapped:" destination="7fq-CI-BuU" eventType="touchUpInside" id="ecU-Uj-lfX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-TM-eEX">
+                                                <rect key="frame" x="5" y="137" width="238" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                <state key="normal" title=" مشروبات الکلی مصرف می کنم" image="unchecked-checkbox">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="7fq-CI-BuU" eventType="touchUpInside" id="cby-Sj-nK1"/>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="uQW-d1-Tdf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsY-z4-Zd7">
+                                                <rect key="frame" x="131" y="182.5" width="112" height="46"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                <state key="normal" title=" باردار هستم" image="unchecked-checkbox">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="7fq-CI-BuU" eventType="touchUpInside" id="ZTf-BJ-VGy"/>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="sxE-oV-3o4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvt-L3-eKB">
+                                                <rect key="frame" x="11" y="228.5" width="232" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="17"/>
+                                                <state key="normal" title=" به صورت منظم ورزش می کنم" image="unchecked-checkbox">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="Y5o-gP-fQq"/>
+                                                    <action selector="checkboxTapped:" destination="7fq-CI-BuU" eventType="touchUpInside" id="uq6-nO-2IP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92538958787918091" green="0.92554813623428345" blue="0.92537957429885864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10063301771879196" green="0.3101731538772583" blue="0.48461413383483887" alpha="0.59926155821917804" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ump-Vo-1WP" secondAttribute="bottom" constant="40" id="Z6Y-aD-1wo"/>
+                                    <constraint firstItem="Ump-Vo-1WP" firstAttribute="leading" secondItem="VRJ-2y-rw2" secondAttribute="leading" constant="40" id="dPw-KH-yxV"/>
+                                    <constraint firstItem="Ump-Vo-1WP" firstAttribute="top" secondItem="VRJ-2y-rw2" secondAttribute="top" constant="10" id="sXm-ff-4Cj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ump-Vo-1WP" secondAttribute="trailing" constant="5" id="tnH-ic-pfR"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xhe-cX-tqG" firstAttribute="top" secondItem="o2h-y1-ILp" secondAttribute="bottom" id="CP8-zM-uEG"/>
+                            <constraint firstItem="71R-wr-dhl" firstAttribute="trailing" secondItem="wh9-NC-Iw3" secondAttribute="trailing" constant="16" id="E1q-xn-i9K"/>
+                            <constraint firstItem="wh9-NC-Iw3" firstAttribute="top" secondItem="o2h-y1-ILp" secondAttribute="bottom" constant="30" id="Ifa-6v-5kN"/>
+                            <constraint firstItem="wh9-NC-Iw3" firstAttribute="leading" secondItem="71R-wr-dhl" secondAttribute="leading" constant="16" id="NqZ-3L-6XU"/>
+                            <constraint firstItem="71R-wr-dhl" firstAttribute="trailing" secondItem="VRJ-2y-rw2" secondAttribute="trailing" constant="16" id="UGq-iv-ZCd"/>
                             <constraint firstItem="o2h-y1-ILp" firstAttribute="leading" secondItem="71R-wr-dhl" secondAttribute="leading" id="Ucy-9H-3Kb"/>
                             <constraint firstItem="xhe-cX-tqG" firstAttribute="trailing" secondItem="71R-wr-dhl" secondAttribute="trailing" id="V47-xO-M1b"/>
+                            <constraint firstItem="VRJ-2y-rw2" firstAttribute="top" secondItem="wh9-NC-Iw3" secondAttribute="bottom" constant="10" id="Wdf-Nl-OwF"/>
+                            <constraint firstItem="71R-wr-dhl" firstAttribute="bottom" secondItem="VRJ-2y-rw2" secondAttribute="bottom" constant="20" id="YO7-iX-J1z"/>
                             <constraint firstItem="o2h-y1-ILp" firstAttribute="trailing" secondItem="71R-wr-dhl" secondAttribute="trailing" id="cCa-ZF-RUq"/>
                             <constraint firstItem="o2h-y1-ILp" firstAttribute="top" secondItem="Cdq-5a-MNB" secondAttribute="top" id="iek-gx-IAa"/>
+                            <constraint firstItem="VRJ-2y-rw2" firstAttribute="leading" secondItem="71R-wr-dhl" secondAttribute="leading" constant="16" id="o9B-yD-QRe"/>
                             <constraint firstItem="xhe-cX-tqG" firstAttribute="leading" secondItem="71R-wr-dhl" secondAttribute="leading" id="uJn-cG-m1e"/>
                             <constraint firstItem="xhe-cX-tqG" firstAttribute="bottom" secondItem="71R-wr-dhl" secondAttribute="bottom" id="zHZ-cc-0ol"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="71R-wr-dhl"/>
                     </view>
+                    <connections>
+                        <outlet property="checkboxcontainer" destination="VRJ-2y-rw2" id="0vu-2I-0Gh"/>
+                        <outlet property="sugarAmount" destination="UNh-kC-Bg2" id="rC3-kV-zM3"/>
+                        <outlet property="timeTest" destination="Mjw-Ht-8EE" id="Udo-jC-IlA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KkO-7f-Lle" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2644" y="-6"/>
+            <point key="canvasLocation" x="2643.75" y="-6.3380281690140849"/>
         </scene>
         <!--رژیم غذایی-->
         <scene sceneID="APZ-qi-bif">
@@ -695,7 +812,7 @@
                                     <constraint firstAttribute="width" constant="85" id="NbC-Jw-7hZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="20"/>
-                                <state key="normal" title="&lt;-  ادامه">
+                                <state key="normal" title=" ادامه">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -914,7 +1031,7 @@
                                     <constraint firstAttribute="height" constant="45" id="1yb-4J-87g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="15"/>
-                                <state key="normal" title="&lt;-  ادامه">
+                                <state key="normal" title="  ادامه">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -1111,7 +1228,7 @@
                                     <constraint firstAttribute="width" constant="85" id="HdQ-d2-R1y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="20"/>
-                                <state key="normal" title="&lt;-  ادامه">
+                                <state key="normal" title="  ادامه">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
