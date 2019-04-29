@@ -93,6 +93,7 @@ public class CheckupFragment extends Fragment {
     }
 
     private void lineChart(){
+
         ArrayList<Entry> entries = new ArrayList<>();
         entries.add(new Entry(0, 110));
         entries.add(new Entry(1, 150));
@@ -100,9 +101,20 @@ public class CheckupFragment extends Fragment {
         entries.add(new Entry(3, 120));
         entries.add(new Entry(4, 130));
 
-        LineDataSet dataSet = new LineDataSet(entries, "میزان قند خون");
+        LineDataSet dataSet = new LineDataSet(entries, "قند خون ناشتا");
         dataSet.setColor(ContextCompat.getColor(getContext(), R.color.colorPrimary));
         dataSet.setValueTextColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
+
+        ArrayList<Entry> entriesB = new ArrayList<>();
+        entriesB.add(new Entry(0, 140));
+        entriesB.add(new Entry(1, 170));
+        entriesB.add(new Entry(2, 135));
+        entriesB.add(new Entry(3, 130));
+        entriesB.add(new Entry(4, 120));
+
+        LineDataSet dataSetB = new LineDataSet(entriesB, "قند خون دو ساعت قبل از غذا");
+        dataSetB.setColor(ContextCompat.getColor(getContext(), R.color.colorPink));
+        dataSetB.setValueTextColor(ContextCompat.getColor(getContext(), R.color.colorPinkDark));
 
         //****
         // Controlling X axis
@@ -132,9 +144,10 @@ public class CheckupFragment extends Fragment {
         yAxisLeft.setGranularity(1f);
 
         // Setting Data
-        LineData data = new LineData(dataSet);
+        LineData data = new LineData(dataSet , dataSetB);
         chart.setData(data);
         chart.animateX(1000);
+
         //refresh
         chart.invalidate();
         chart.setScaleEnabled(false);

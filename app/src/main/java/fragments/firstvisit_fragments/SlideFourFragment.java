@@ -1,5 +1,6 @@
 package fragments.firstvisit_fragments;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -13,6 +14,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.github.ybq.android.spinkit.SpinKitView;
@@ -31,6 +34,8 @@ public class SlideFourFragment extends Fragment {
     EditText et_phone_number, et_nurse_phone_number;
     ButtonBold btn_register;
     SpinKitView pb_loading;
+
+    ImageButton ib_nurse_phone_number_info;
 
     SharedPreferences sharedPref;
     SharedPreferences.Editor editor;
@@ -92,6 +97,16 @@ public class SlideFourFragment extends Fragment {
 
             }
         });
+        ib_nurse_phone_number_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setMessage(R.string.nurse_phone_number_info_dialog_message);
+                builder.setPositiveButton("خُب" , null);
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
     }
 
     private void registerUserInServer() {
@@ -106,7 +121,7 @@ public class SlideFourFragment extends Fragment {
         params.put("familyDisease", sharedPref.getString(FAMILY_DESEIS, ""));
         params.put("diabetType", sharedPref.getInt(HAS_DIABETES_KEY, 0));
         params.put("phoneNumber", sharedPref.getString(PHONE_NUMBER_KEY, ""));
-        params.put("nursePhoneNuber", sharedPref.getString(NURSE_PHONE_NUMBER_KEY, ""));
+        params.put("nursePhoneNumber", sharedPref.getString(NURSE_PHONE_NUMBER_KEY, ""));
         String requestUrl = "http://noaein.ir/diatel/index.php/app/registerUser";
 
         AsyncHttpClient client = new AsyncHttpClient();
@@ -146,6 +161,7 @@ public class SlideFourFragment extends Fragment {
         et_phone_number = fragmentView.findViewById(R.id.et_phone_number);
         et_nurse_phone_number = fragmentView.findViewById(R.id.et_nurse_phone_number);
         pb_loading = fragmentView.findViewById(R.id.pb_loading);
+        ib_nurse_phone_number_info = fragmentView.findViewById(R.id.ib_nurse_phone_number_info);
 
     }
 
@@ -153,38 +169,25 @@ public class SlideFourFragment extends Fragment {
 
         et_phone_number.addTextChangedListener(new TextWatcher() {
 
-            public void afterTextChanged(Editable s) {
-            }
+            public void afterTextChanged(Editable s) {}
 
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
-            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-            public void onTextChanged(CharSequence s, int start,
-                                      int before, int count) {
-
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
                 editor.putString(PHONE_NUMBER_KEY, s + "");
                 editor.commit();
-
-
             }
         });
 
         et_nurse_phone_number.addTextChangedListener(new TextWatcher() {
 
-            public void afterTextChanged(Editable s) {
-            }
+            public void afterTextChanged(Editable s) {}
 
-            public void beforeTextChanged(CharSequence s, int start,
-                                          int count, int after) {
-            }
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
-            public void onTextChanged(CharSequence s, int start,
-                                      int before, int count) {
-                if (count == 11) {
-                    editor.putString(NURSE_PHONE_NUMBER_KEY, s + "");
-                    editor.commit();
-                }
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                editor.putString(NURSE_PHONE_NUMBER_KEY, s + "");
+                editor.commit();
             }
         });
 

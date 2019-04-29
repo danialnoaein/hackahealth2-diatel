@@ -1069,6 +1069,7 @@ drawable ic_glucose_meter
 drawable ic_glucose_meter_primary
 drawable ic_glucosemeter
 drawable ic_hourglass
+drawable ic_information
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_launcher_icon
@@ -1221,6 +1222,7 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id ib_nurse_phone_number_info
 id icon
 id icon_group
 id ifRoom
@@ -1543,6 +1545,7 @@ string glu_guide_slide_two
 string hide_bottom_view_on_scroll_behavior
 string mtrl_chip_close_icon_content_description
 string next
+string nurse_phone_number_info_dialog_message
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
