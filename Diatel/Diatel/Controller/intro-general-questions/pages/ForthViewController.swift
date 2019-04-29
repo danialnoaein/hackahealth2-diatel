@@ -9,7 +9,8 @@
 import UIKit
 
 class ForthViewController: UIViewController {
-
+    //MARK: variables and outlets
+    /**********************************************************/
     @IBOutlet weak var phonenumber: UITextField!
     @IBOutlet weak var phoneFriend: UITextField!
     @IBOutlet weak var comingBtn: UIButton!
@@ -36,6 +37,8 @@ class ForthViewController: UIViewController {
         comingBtn.layer.cornerRadius = 10
     }
     
+    //MARK: Actions
+    /**********************************************************/
     @objc func doneclick() {
         self.view.endEditing(true)
     }

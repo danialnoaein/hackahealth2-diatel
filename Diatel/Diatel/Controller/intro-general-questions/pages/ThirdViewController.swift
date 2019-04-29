@@ -9,7 +9,8 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-
+    //MARK: variables and outlets
+    /**********************************************************/
     @IBOutlet weak var familyBackground: UITextField!
     @IBOutlet weak var container: UIView!
     override func viewDidLoad() {
@@ -33,6 +34,8 @@ class ThirdViewController: UIViewController {
         container.layer.cornerRadius = 10
     }
 
+    //MARK: Actions
+    /**********************************************************/
     @objc func doneclick() {
         self.view.endEditing(true)
     }

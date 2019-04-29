@@ -922,37 +922,49 @@
                                     <stackView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" distribution="equalCentering" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="6E5-x8-rci">
                                         <rect key="frame" x="0.0" y="40" width="288" height="40"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-U9-SF3">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="40"/>
-                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="16"/>
-                                                <state key="normal" title="سایر">
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-U9-SF3">
+                                                <rect key="frame" x="0.0" y="0.0" width="43" height="40"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="10"/>
+                                                <state key="normal" title="سایر" image="unchecked-checkbox">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="sf3-Dh-0sh"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-j7-fu8">
-                                                <rect key="frame" x="53" y="0.0" width="41" height="40"/>
-                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="15"/>
-                                                <state key="normal" title="بارداری">
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJQ-j7-fu8">
+                                                <rect key="frame" x="55" y="0.0" width="52" height="40"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="10"/>
+                                                <state key="normal" title="بارداری" image="unchecked-checkbox">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="zNj-Nb-6Sw"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2O-W0-Y0S">
-                                                <rect key="frame" x="115" y="0.0" width="34" height="40"/>
-                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="16"/>
-                                                <state key="normal" title="  دوم">
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2O-W0-Y0S">
+                                                <rect key="frame" x="119" y="0.0" width="45.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="10"/>
+                                                <state key="normal" title="  دوم" image="unchecked-checkbox">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="0a8-eR-Z4G"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-3H-UqQ">
-                                                <rect key="frame" x="175.5" y="0.0" width="30" height="40"/>
-                                                <fontDescription key="fontDescription" name="Shabnam-Bold" family="Shabnam" pointSize="15"/>
-                                                <state key="normal" title="  اول">
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkW-3H-UqQ">
+                                                <rect key="frame" x="176.5" y="0.0" width="43" height="40"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="10"/>
+                                                <state key="normal" title="  اول" image="unchecked-checkbox">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="checkboxTapped:" destination="Mzy-yP-j16" eventType="touchUpInside" id="qX5-fH-bFp"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع دیابت :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTU-Tm-6hP">
-                                                <rect key="frame" x="217.5" y="0.0" width="70.5" height="40"/>
-                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="15"/>
+                                                <rect key="frame" x="231.5" y="0.0" width="56.5" height="40"/>
+                                                <fontDescription key="fontDescription" name="Shabnam" family="Shabnam" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

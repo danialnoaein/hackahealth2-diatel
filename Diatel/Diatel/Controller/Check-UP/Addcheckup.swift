@@ -58,6 +58,11 @@ class Addcheckup: UIViewController {
         sickInPast.layer.cornerRadius = 10
     
     }
+    
+    
+    
+    //MARK: Actions
+    /**********************************************************/
     @objc func doneclick() {
         self.view.endEditing(true)
     }
@@ -157,6 +162,8 @@ class Addcheckup: UIViewController {
         }
     }
     
+    //MARK: save chechup after validating
+    /**********************************************************/
     @IBAction func savecheckup(_ sender: UIButton) {
         
         if sugarAmount.text != "" && sickInPast.titleLabel?.text != "سابقه دیابت" && timeTest.titleLabel?.text != "زمان انجام آزمایش"{

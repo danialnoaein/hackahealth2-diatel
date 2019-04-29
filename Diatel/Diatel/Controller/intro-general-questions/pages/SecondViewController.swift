@@ -9,7 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    //MARK: variables and outlets
+    /**********************************************************/
     @IBOutlet weak var height: UITextField!
     @IBOutlet weak var weight: UITextField!
     
@@ -35,6 +36,11 @@ class SecondViewController: UIViewController {
         height.layer.cornerRadius = 10
         weight.layer.cornerRadius = 10
     }
+    
+    
+    
+    //MARK: Actions
+    /**********************************************************/
     @objc func doneclick() {
         self.view.endEditing(true)
     }
