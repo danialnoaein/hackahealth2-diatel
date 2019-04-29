@@ -20,6 +20,7 @@
         android:supportsRtl="false"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="hackahealth.diatel.DiabetesTypeTwoTestActivity" />
         <activity android:name="hackahealth.diatel.CheckUpResultActivity" />
         <activity
             android:name="hackahealth.diatel.GlucometerGuideActivity"
@@ -30,15 +31,15 @@
             android:name="hackahealth.diatel.FirstVisitActivity"
             android:screenOrientation="portrait" />
         <activity android:name="hackahealth.diatel.SplashActivity" >
+        </activity>
+        <activity
+            android:name="hackahealth.diatel.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="hackahealth.diatel.MainActivity"
-            android:screenOrientation="portrait" >
         </activity>
     </application>
 

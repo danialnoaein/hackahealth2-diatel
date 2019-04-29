@@ -31,6 +31,7 @@ import java.util.ArrayList;
 
 import danialnoaein_widgets.TextView;
 import danialnoaein_widgets.TextViewBold;
+import hackahealth.diatel.DiabetesTypeTwoTestActivity;
 import hackahealth.diatel.GlucometerGuideActivity;
 import hackahealth.diatel.ImmediateCheckupActivity;
 import hackahealth.diatel.R;
@@ -88,6 +89,15 @@ public class CheckupFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        ll_diabetes_risk_test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity() , DiabetesTypeTwoTestActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
 
     }
@@ -156,19 +166,11 @@ public class CheckupFragment extends Fragment {
 
     public void zoom(){
 
-//        Animation animation = AnimationUtils.loadAnimation(getContext(),
-//                R.anim.animation_zoom);
-//        tvb_start_checkup_btn_title.startAnimation(animation);
-//        animation.setRepeatMode(Animation.INFINITE);
-
         ObjectAnimator scaleAnim = ObjectAnimator.ofFloat(tv_tap_hint, "scaleX", 1.0f, 1.1f , 1.0f);
         scaleAnim.setDuration(1000);
         scaleAnim.setRepeatCount(ValueAnimator.INFINITE);
         scaleAnim.setRepeatMode(ValueAnimator.REVERSE/RESTART);
         scaleAnim.start();
-
-
-
 
     }
 }
