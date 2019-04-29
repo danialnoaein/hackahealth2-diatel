@@ -1,0 +1,4 @@
+#Mon Apr 29 05:51:10 IRDT 2019
+base.0=D\:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Mon Apr 29 05:51:10 IRDT 2019
+1.base=D\:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+2.path=fonts/shabnam.ttf
+0.baseType=DIRECTORY
+2.base=D\:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\merged_assets\\release\\mergeReleaseAssets\\out
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=DEX
+0.path=fonts/shabnam_bold.ttf
+0.set=ASSET
+0.base=D\:\\Projects\\DiatelProject\\hackahealth2-diatel\\app\\build\\intermediates\\merged_assets\\release\\mergeReleaseAssets\\out
+2.baseType=DIRECTORY
+1.path=classes.dex
