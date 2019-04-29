@@ -174,8 +174,7 @@ class Reminder: UIViewController,UITableViewDelegate,UITableViewDataSource,UNUse
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let actionDelete = UITableViewRowAction(style: .destructive, title: "حذف") { (deleteAction, indexpath) in
-            //solution2:    let object = self.notificationArray[indexPath.row]
-            //solution1:
+ 
             let object = self.notificationArray.remove(at: indexPath.row)
             self.center.getPendingNotificationRequests(completionHandler: { requests in
                 for request in requests{
@@ -187,7 +186,7 @@ class Reminder: UIViewController,UITableViewDelegate,UITableViewDataSource,UNUse
             });
             
             self.managedContext.delete(object);
-            //solution1:
+
             self.tableview.beginUpdates();
             tableView.deleteRows(at: [indexpath], with: .fade)
             self.tableview.endUpdates()
@@ -203,7 +202,6 @@ class Reminder: UIViewController,UITableViewDelegate,UITableViewDataSource,UNUse
             
             do {
                 try self.managedContext.save()
-                //solution2:   self.fetchFromCoredataEntity()
             } catch {
                 fatalError("Failure to save context: \(error)")
             }

@@ -9,11 +9,15 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
+    //MARK: variables and outlets
+    /**********************************************************/
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var age: UITextField!
     @IBOutlet weak var femaleBtn: UIButton!
     @IBOutlet weak var maleBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let color1 = UIColor(red: 0.2352941176, green: 0.6823529412, blue: 0.6392156863, alpha: 1)
@@ -47,7 +51,8 @@ class FirstViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
+    //MARK: Actions
+    /**********************************************************/
 
     @IBAction func FemaleSelected(_ sender: UIButton) {
         sender.clipsToBounds = true
